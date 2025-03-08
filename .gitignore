@@ -3,6 +3,7 @@
 
 # Build output
 /.next/
+.next/
 
 # Dependency directories
 /pnpm-lock.yaml
