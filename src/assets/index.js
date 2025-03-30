@@ -147,3 +147,46 @@ export const skillsData = [
     icon: '/skills/git.png',
   }
 ]
+
+// Projects 
+
+export const projectsData = [
+  {
+    name: 'SparkleGlove.com',
+    desc: 'An e-commerce website for a fashion brand, showcasing their products and allowing users to make purchases online.',
+    url: '/projects/image-1.jpg',
+    tech: ['Figma', 'Photoshop', 'HTML'],
+  },
+  {
+    name: 'Portfolio Website',
+    desc: 'A personal portfolio website to showcase my skills, projects, and experience as a frontend developer.',
+    url: '/projects/image-2.jpg',
+    tech: ['Figma', 'Photoshop', 'HTML', 'CSS', 'Javascript'],
+  },
+  {
+    name: 'E-commerce Website',
+    desc: 'An e-commerce website for a fashion brand, showcasing their products and allowing users to make purchases online.',
+    url: '/projects/image-3.jpg',
+    tech: ['Figma', 'Photoshop', 'HTML', 'CSS'],
+  },
+  {
+    name: 'Social Media App',
+    desc: 'A social media application that allows users to create profiles, connect with friends, and share content.',
+    url: '/projects/image-4.jpg',
+    tech: ['Figma', 'Photoshop', 'HTML', 'CSS'],
+  },
+]
+
+export const projectsButton = [
+  'All',
+  'Figma',
+  'Photoshop',
+  'HTML',
+  'CSS',
+  'Javascript',
+  'ReactJS',
+  'TailwindCSS',
+  'NextJS',
+  'FramerMotion',
+  'ThreeJS',
+]
