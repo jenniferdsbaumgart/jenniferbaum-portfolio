@@ -4,16 +4,42 @@ import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
+import Navbar from "@/components/Navbar";
+import { useState, useRef, useEffect } from 'react'
 
 export default function Home() {
+  const [id, setId] = useState(0)
+  const compsRef = useRef(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const intersecting = entry.isIntersecting
+          if (intersecting) {
+            setId(entry.target.id)
+          }
+        })
+      },
+      { threshould: 0.3 },
+    )
+
+    const compsArr = Array.from(compsRef.current.children)
+    compsArr.forEach((comp) => {
+      observer.observe(comp)
+    })
+  }, [])
   return (
-    <div>
-          <Hero />
-          <About />
-          <Experience />
-          <Skills />
-          <Projects />
-          <Contact />
-    </div>
+    <>
+      <Navbar id={id}/>
+      <div ref={compsRef}>
+            <Hero />
+            <About />
+            <Experience />
+            <Skills />
+            <Projects />
+            <Contact />
+      </div>
+    </>
   )
 }
