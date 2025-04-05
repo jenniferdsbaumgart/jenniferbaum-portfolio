@@ -88,10 +88,10 @@ const Hero = () => {
           transition={{ delay: 0.5 }}
           className="mt-8 flex justify-center gap-x-10 text-3xl text-yellow-600 sm:text-2xl"
         >
-          {heroIcons.map((icon, i) => (
+          {heroIcons.map((id, icon) => (
             <a
               href="#"
-              key={i}
+              key={id}
               className="rounded-lg hover:bg-red-400 hover:text-white transition-colors"
             >
               {icon}
