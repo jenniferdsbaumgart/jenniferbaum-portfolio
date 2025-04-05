@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Jennifer Baum – Portfolio
+![Status](https://img.shields.io/badge/status-in%20progress-yellow)
 
-## Getting Started
+This is my personal portfolio project, created to showcase my work as a Front-End Developer and UX/UI Designer. It's currently a work in progress, and will soon be deployed online.
 
-First, run the development server:
+## 🛠 Technologies Used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **React** (with Next.js)
+- **Tailwind CSS**
+- **Framer Motion**
+- **JavaScript**
+- **Git & GitHub**
+- **Figma** (for UI/UX design)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 💡 Components
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+The project includes modular and reusable components, such as:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `Navbar` – navigation bar with dark mode toggle
+- `Hero` – introduction section
+- `About` – personal background and story
+- `Skills` – highlights my technical skills
+- `Projects` – selected projects
+- `Experience` – previous roles and contributions
+- `Contact` – ways to get in touch
+- Subcomponents: `Heading`, `Load`, `Toggle`, `Project`, `Achievements`, etc.
 
-## Learn More
+## 📌 Status
 
-To learn more about Next.js, take a look at the following resources:
+The portfolio is still under construction. A live version will be available soon!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Future Plans
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Add blog functionality to share insights and tutorials.
+- Optimize for SEO and performance.
+- Expand the portfolio with more projects and case studies.
+- Deploy the portfolio using Vercel.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Stay tuned for updates!
