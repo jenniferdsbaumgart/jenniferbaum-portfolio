@@ -1,7 +1,7 @@
 "use client"
 import Achievements from "./sub/Achievements";
 import Heading from "./sub/Heading";
-import Image from "./sub/Image";
+import Image from "next/image";
 import { aboutData, aboutText, downloadIcon, arrowLeftIcon } from "@/assets";
 
 const About = () => {

@@ -6,12 +6,13 @@ import YoutubeLineIcon from "remixicon-react/YoutubeLineIcon";
 import GithubLineIcon from "remixicon-react/GithubLineIcon";
 
 export const heroIcons = [
-  <InstagramLineIcon key="first" />,
-  <FacebookCircleLineIcon key="second" />,
-  <DribbbleLineIcon key="third" />,
-  <YoutubeLineIcon key="forth" />,
-  <GithubLineIcon key="fifth" />,
+  { id: "instagram", icon: <InstagramLineIcon /> },
+  { id: "facebook", icon: <FacebookCircleLineIcon /> },
+  { id: "dribbble", icon: <DribbbleLineIcon /> },
+  { id: "youtube", icon: <YoutubeLineIcon /> },
+  { id: "github", icon: <GithubLineIcon /> },
 ];
+
 
 // About Me
 import GithubFillIcon from "remixicon-react/GithubFillIcon";
@@ -128,23 +129,19 @@ export const skillsData = [
   },
   {
     name: 'Tailwind CSS',
-    icon: '/skills/tailwindcss.png',
-  },
-  {
-    name: 'Bootstrap',
-    icon: '/skills/bootstrap.png',
+    icon: '/skills/tailwind.png',
   },
   {
     name: 'Javascript',
-    icon: '/skills/javascript.png',
+    icon: '/skills/js.png',
   },
   {
-    name: 'HTML/CSS',
-    icon: '/skills/htmlcss.png',
+    name: 'HTML',
+    icon: '/skills/html.png',
   },
   {
-    name: 'Git',
-    icon: '/skills/git.png',
+    name: 'CSS',
+    icon: '/skills/css.png',
   }
 ]
 

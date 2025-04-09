@@ -1,7 +1,7 @@
-import { motion, useMotionvalue } from "framer-motion";
+import { motion, useMotionValue } from "framer-motion";
 
 const Achievements = ({ title, amount, children }) => {
-  const number = useMotionvalue(0);
+  const number = useMotionValue(0);
 
   const count = (amount) => {
     let i = 0;

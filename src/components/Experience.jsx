@@ -3,7 +3,8 @@
 import Heading from "./sub/Heading";
 import { arrowLeftIcon, experienceData } from "@/assets";
 import { motion, useScroll, useSpring } from "framer-motion";
-import { useRef } from `react`
+import { useRef } from 'react'
+import Image from "next/image";
 
 const Experience = () => {
   const date = new Date().getFullYear();
@@ -21,7 +22,7 @@ const Experience = () => {
       <Heading text={"Experience & Education"} />
       <Image
         src={"/education.png"}
-        alt={"Experiece Image"}
+        alt={"Experience Image"}
         width={400}
         height={400}
         className="absolute -top-4 right-0 opacity-70 lg:hidden"
@@ -32,8 +33,8 @@ const Experience = () => {
             key={`id-${i}`}
             className={`w-[600px] xl:w-[480px] sm:w-full px-12 sm:px-0 relative ${
               i % 2 === 0
-                ? "-left-[300px] xl:-left-[240px] lg:-left-0"
-                : "left-[300px] xl:left-[240px] lg:left-0"
+                ? "xl:-left-[240px] lg:-left-0"
+                : "left-[600px] xl:left-[240px] lg:left-0"
             }]`}
           >
             <motion.div
@@ -81,7 +82,7 @@ const Experience = () => {
             </div>
           </div>
         ))}
-        <motion.div initial={{ scaleY: 0 }} style={{ scaleY: scrollY }} className="absolute w-1 h-full rounded-full bg-gray-300 origin-top"></motion.div>
+        <motion.div initial={{ scaleY: 0 }} style={{ scaleY: scrollY }} className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full rounded-full bg-gray-300 origin-top z-10"></motion.div>
       </div>
     </div>
   );

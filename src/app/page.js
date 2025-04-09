@@ -1,3 +1,4 @@
+'use client'
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
@@ -36,7 +37,7 @@ export default function Home() {
     <Load />
     <Toggle>
       <Navbar id={id}/>
-      <div className="w-min" ref={compsRef}>
+      <div className="" ref={compsRef}>
             <Hero />
             <About />
             <Experience />

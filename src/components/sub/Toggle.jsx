@@ -1,8 +1,8 @@
 'use client'
 import { moonIcon, sunIcon } from "@/assets"
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 import { reactLocalStorage } from "reactjs-localstorage"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 const Toggle = ({children}) => {
     const [darkTheme, setDarkTheme] = useState(false)

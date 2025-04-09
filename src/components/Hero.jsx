@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { heroIcons } from "@/assets/index";
-import { useMotionValue, useSpring, useTransform } from "framer-motion";
+import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useState } from "react";
 
 const Hero = () => {
@@ -44,7 +44,7 @@ const Hero = () => {
       <div>
         <motion.div
           initial={{ opacity: 0, y: -100 }}
-          animate={{ opacty: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
           className="flex flex-col items-center justify-center gap-y-3 font-light capitalize"
         >
@@ -57,14 +57,14 @@ const Hero = () => {
             }}
           >
             <Image
-              src={"/public/person.png"}
+              src={"/person.png"}
               alt="Person Image"
-              width={400}
-              height={400}
+              width={300}
+              height={300}
               priority={true}
             />
             <motion.span
-              classname="absolute text-3xl font-semibold text-white"
+              className="absolute text-3xl font-semibold text-white"
               initial={{ scale: 0 }}
               animate={{
                 opacity: buttonHover ? 0 : 1,
@@ -75,7 +75,7 @@ const Hero = () => {
               Hi!
             </motion.span>
           </motion.div>
-          <h1 classname="text-lg tracking-wider text-gray-700 sm:text-2xl dark:text-white transition-colors">
+          <h1 className="text-lg tracking-wider text-gray-700 sm:text-2xl dark:text-white transition-colors">
             My name is Jennifer &
           </h1>
           <p className="text-lg tracking-wider text-gray-700 dark:text-gray-200 transition-colors">
@@ -88,13 +88,13 @@ const Hero = () => {
           transition={{ delay: 0.5 }}
           className="mt-8 flex justify-center gap-x-10 text-3xl text-yellow-600 sm:text-2xl"
         >
-          {heroIcons.map((id, icon) => (
+          {heroIcons.map((item) => (
             <a
               href="#"
-              key={id}
+              key={item.id}
               className="rounded-lg hover:bg-red-400 hover:text-white transition-colors"
             >
-              {icon}
+              {item.icon}
             </a>
           ))}
         </motion.div>
