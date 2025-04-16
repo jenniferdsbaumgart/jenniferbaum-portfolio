@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import textStroke from "tailwindcss-text-stroke";
+
 module.exports = {
   content: [
     './src/app/**/*.{js,ts,jsx,tsx}',
@@ -12,6 +14,10 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        abril: ['var(--font-abril-fatface)'],
+        kumar: ['var(--font-kumar-one)'],
+      },
     },
     screens: {
       xl: { max: "1400px" },
@@ -21,6 +27,6 @@ module.exports = {
       xs: { max: "393px" },
     },
   },
-  plugins: [],
+  plugins: [textStroke],
   darkMode: "class",
 };

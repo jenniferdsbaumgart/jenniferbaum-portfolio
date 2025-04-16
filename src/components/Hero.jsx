@@ -34,14 +34,14 @@ const Hero = () => {
   const ySpring = useSpring(y, { stiffness: 100, damping: 10 });
 
   const rotateY = useTransform(xSpring, [0, innerWidth], [-30, 30]);
-  const rotateX = useTransform(ySpring, [0, innerHeight], [10, -50]);
+  const rotateX = useTransform(ySpring, [0, innerHeight], [10, 3]);
   return (
     <div
       className="h-screen grid place-items-center"
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
     >
-      <div>
+      <div className="flex flex-row-reverse items-center space-x-8">
         <motion.div
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
@@ -56,18 +56,20 @@ const Hero = () => {
               transition: "0.1s",
             }}
           >
-            <Image
-              src={"/person.png"}
-              alt="Person Image"
-              width={300}
-              height={300}
-              priority={true}
-            />
+            <div className="relative w-[700px] aspect-[3/4]">
+              <Image
+                src={"/hero-image-jb.png"}
+                alt="Person Image"
+                fill
+                priority={true}
+                className="object-contain"
+              />
+            </div>
             <motion.span
               className="absolute text-3xl font-semibold text-white"
               initial={{ scale: 0 }}
               animate={{
-                opacity: buttonHover ? 0 : 1,
+                opacity: buttonHover ? 1 : 0,
                 scale: buttonHover ? 2 : 0,
                 y: buttonHover ? -40 : 0,
               }}
@@ -75,40 +77,42 @@ const Hero = () => {
               Hi!
             </motion.span>
           </motion.div>
-          <h1 className="text-lg tracking-wider text-gray-700 sm:text-2xl dark:text-white transition-colors">
-            My name is Jennifer &
-          </h1>
-          <p className="text-lg tracking-wider text-gray-700 dark:text-gray-200 transition-colors">
-            I like animations!
-          </p>
         </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-          className="mt-8 flex justify-center gap-x-10 text-3xl text-yellow-600 sm:text-2xl"
-        >
-          {heroIcons.map((item) => (
-            <a
-              href="#"
-              key={item.id}
-              className="rounded-lg hover:bg-red-400 hover:text-white transition-colors"
+        <div className="flex flex-col items-center">
+          <h1 className="font-abril text-transparent bg-clip-text bg-gradient-to-r from-[#41587c] to-[#4e1968] leading-[3rem] mb-5 text-6xl text-right tracking-wider dark:text-violet-100 transition-colors sm:text-2xl">
+              Jennifer Baumgart
+            </h1>
+            <p className="font-kumar text-left text-lg tracking-wider text-gray-700 dark:text-gray-100 transition-colors">
+              Frontend Developer & UX/UI Designer
+            </p>
+            <motion.div
+              initial={{ opacity: 0, y: 100 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+              className="mt-8 flex justify-center gap-x-10 text-3xl text-violet-300 sm:text-2xl"
             >
-              {item.icon}
-            </a>
-          ))}
-        </motion.div>
-      </div>
-      <motion.a initial={{ opacity: 0, x: -30 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.7 }}
-        href="#"
-        className="mx-auto mt-7 block w-max rounded-lg bg-red-400 px-3 py-1 font-light capitalize tracking-wider text-white hover:bg-red-500 transition-colors"
-        onMouseEnter={() => setButtonHover(true)}
-        onMouseLeave={() => setButtonHover(false)}
-      >
-        Talk to me
-      </motion.a>
+              {heroIcons.map((item) => (
+                <a
+                  href="#"
+                  key={item.id}
+                  className="rounded-lg hover:bg-red-400 hover:text-white transition-colors"
+                >
+                  {item.icon}
+                </a>
+              ))}
+            </motion.div>
+            <motion.a initial={{ opacity: 0, x: -30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.7 }}
+              href="#"
+              className="mx-auto mt-7 block w-max rounded-lg px-4 py-2 font-light capitalize tracking-wider text-black  bg-gradient-to-r from-[#B3CCF4] to-[#D9B8EA] hover:from-[#c382e4] hover:to-[#6097ee] hover:scale-200 transition-transform duration-300 ease-in-out"
+              onMouseEnter={() => setButtonHover(true)}
+              onMouseLeave={() => setButtonHover(false)}
+            >
+              Talk to me
+            </motion.a>
+          </div>
+        </div>
     </div>
   );
 };

@@ -1,8 +1,21 @@
-import { Outfit } from "next/font/google";
+import { Inter, Kumar_One, Abril_Fatface } from "next/font/google";
 import "./globals.css";
 
-const outfit = Outfit({
+const inter = Inter({
   subsets: ["latin"],
+  weight: ['400', '700'],
+});
+
+const abrilFatface = Abril_Fatface({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-abril-fatface',
+});
+
+const kumarOne = Kumar_One({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-kumar-one',
 });
 
 export const metadata = {
@@ -12,8 +25,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${outfit.className} antialiased`}>{children}</body>
+    <html lang="en" className={`${abrilFatface.variable} ${kumarOne.variable}`}>
+      <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );
 }
