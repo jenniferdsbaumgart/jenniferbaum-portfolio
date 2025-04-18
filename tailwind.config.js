@@ -16,7 +16,9 @@ module.exports = {
       },
       fontFamily: {
         abril: ['var(--font-abril-fatface)'],
-        kumar: ['var(--font-kumar-one)'],
+        oswald: ['var(--font-oswald)', 'sans-serif'],
+        bebas: ['var(--font-bebas)'],
+        montserrat: ['var(--font-montserrat)', 'sans-serif'],
       },
     },
     screens: {

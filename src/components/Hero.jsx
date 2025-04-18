@@ -3,6 +3,7 @@ import Image from "next/image";
 import { heroIcons } from "@/assets/index";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useState } from "react";
+import MailLineIcon from "remixicon-react/MailLineIcon";
 
 const Hero = () => {
   const [windowOffset, setWindowOffset] = useState({
@@ -36,8 +37,8 @@ const Hero = () => {
   const rotateY = useTransform(xSpring, [0, innerWidth], [-30, 30]);
   const rotateX = useTransform(ySpring, [0, innerHeight], [10, 3]);
   return (
-    <div
-      className="h-screen grid place-items-center"
+    <div id="home"
+      className="min-h-screen grid place-items-center"
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
     >
@@ -48,7 +49,7 @@ const Hero = () => {
           transition={{ delay: 0.5 }}
           className="flex flex-col items-center justify-center gap-y-3 font-light capitalize"
         >
-          <motion.div
+          <div
             className="flex items-center justify-center"
             style={{
               rotateX: mouseMove ? rotateX : 0,
@@ -58,7 +59,7 @@ const Hero = () => {
           >
             <div className="relative w-[700px] aspect-[3/4]">
               <Image
-                src={"/hero-image-jb.png"}
+                src={"/jb2.png"}
                 alt="Person Image"
                 fill
                 priority={true}
@@ -76,14 +77,14 @@ const Hero = () => {
             >
               Hi!
             </motion.span>
-          </motion.div>
+          </div>
         </motion.div>
         <div className="flex flex-col items-center">
-          <h1 className="font-abril text-transparent bg-clip-text bg-gradient-to-r from-[#41587c] to-[#4e1968] leading-[3rem] mb-5 text-6xl text-right tracking-wider dark:text-violet-100 transition-colors sm:text-2xl">
+          <h1 className="font-bebas text-gray-300 leading-[6rem] mb-0 text-9xl text-center transition-colors sm:text-2xl">
               Jennifer Baumgart
             </h1>
-            <p className="font-kumar text-left text-lg tracking-wider text-gray-700 dark:text-gray-100 transition-colors">
-              Frontend Developer & UX/UI Designer
+            <p className="font-oswald text-center uppercase text-semibold text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#7aa6ee] to-[#ca5fff] transition-colors">
+              Frontend Developer
             </p>
             <motion.div
               initial={{ opacity: 0, y: 100 }}
@@ -95,7 +96,7 @@ const Hero = () => {
                 <a
                   href="#"
                   key={item.id}
-                  className="rounded-lg hover:bg-red-400 hover:text-white transition-colors"
+                  className="rounded-lg hover:bg-violet-400 hover:text-white transition-colors"
                 >
                   {item.icon}
                 </a>
@@ -105,11 +106,11 @@ const Hero = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.7 }}
               href="#"
-              className="mx-auto mt-7 block w-max rounded-lg px-4 py-2 font-light capitalize tracking-wider text-black  bg-gradient-to-r from-[#B3CCF4] to-[#D9B8EA] hover:from-[#c382e4] hover:to-[#6097ee] hover:scale-200 transition-transform duration-300 ease-in-out"
+              className="mx-auto mt-7 flex flex-row rounded-2xl px-8 py-3 font-light capitalize tracking-wider text-gray-200 bg-violet-500 hover:bg-violet-400 transition-transform duration-300 ease-in-out gap-2"
               onMouseEnter={() => setButtonHover(true)}
               onMouseLeave={() => setButtonHover(false)}
             >
-              Talk to me
+              <MailLineIcon/> Talk to me
             </motion.a>
           </div>
         </div>

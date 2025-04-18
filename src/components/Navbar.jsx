@@ -5,7 +5,7 @@ const Navbar = ({ id }) => {
   return (
     <div className="w-[70px] h-full fixed left-0 top-0 flex flex-col justify-between border-r borde-gray-200 px-4 py-10 xl:py-6 z-10">
         <a href="/#home">
-            <span className="text-3xl font-semibold text-red-400">N</span>.<span className="block w-min rotate-90 origin-bottom text-[12px] font-semibold">Baum</span>
+            <span className="text-3xl font-semibold text-violet-400">J</span>.<span className="block w-min rotate-90 text-gray-400 origin-bottom text-[12px] font-semibold">Baum</span>
         </a>
         <div className="flex flex-col gap-y-3 sm:gap-y-2 xl:gap-y-1 xs:gap-y-0">
             {navbarData.map((item, i) => (
