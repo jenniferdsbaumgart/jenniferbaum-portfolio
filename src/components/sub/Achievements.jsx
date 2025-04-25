@@ -18,9 +18,9 @@ const Achievements = ({ title, amount, children }) => {
   };
   return (
     <div className="flex items-end gap-x-3">
-      <span className="text4xl lg:text-2xl text-gray-300">{children}</span>
+      <span className="text4xl lg:text-2xl text-gray-700 dark:text-gray-400">{children}</span>
       <h1 className="flex flex-col gap-y-2">
-        <motion.span className="text-2xl lg:text-xl font-light text-yellow-500" whileInView={() => count(amount)} viewport={{once: true}}>
+        <motion.span className="text-2xl lg:text-xl font-light text-violet-500" whileInView={() => count(amount)} viewport={{once: true}}>
           {number}
         </motion.span>
         <span className="text-sm tracking-wide text-gray-500  dark:text-white transition-colors">{title}</span>

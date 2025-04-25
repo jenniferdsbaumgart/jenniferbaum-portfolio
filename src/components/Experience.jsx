@@ -21,11 +21,11 @@ const Experience = () => {
     <div id="experience" className="relative py-20">
       <Heading text={"Experience & Education"} />
       <Image
-        src={"/education.png"}
+        src={"/jenny-seated.png"}
         alt={"Experience Image"}
-        width={400}
+        width={350}
         height={400}
-        className="absolute -top-4 right-0 opacity-70 lg:hidden"
+        className="absolute -top-4 right-10 opacity-70 lg:hidden"
       />
       <div ref={containerRef} className="relative w-full h-full flex flex-col tems-center justify-center gap-y-10 lg:gap-y-20">
         {experienceData.map((data, i) => (
@@ -42,19 +42,19 @@ const Experience = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0., type: 'spring', stiffness: 50 }}
-              className="relative flex flex-col gap-y-3 rounded-md border-red-300 bg-white p-4 tracking-wide sm:text-sm dark:bg-zinc-700 transition-colors z-20"
+              className="relative flex flex-col gap-y-3 rounded-md border-violet-300 bg-white p-4 tracking-wide sm:text-sm dark:bg-zinc-800 transition-colors"
             >
-              <h1 className="text-xl sm:text-lg font-light text-gray-700 dark:text-white transition-colors">
+              <h1 className="font-oswald text-2xl sm:text-lg font-bold text-violet-900 dark:text-violet-500 transition-colors">
                 {data.title}
               </h1>
-              <p className="text-gray-800 dark:text-gray-100 transition-colors">
-                <span className="block font-light">Education:</span>
-                <span className="block pl-2 font-extralight">
+              <p className="text-gray-800 transition-colors">
+                <span className="block font-oswald font-semibold text-lg dark:text-violet-200">Education:</span>
+                <span className="block pl-2 dark:text-gray-100">
                   {data.education}
                 </span>
               </p>
               <div className="text-gray-800 dark:text-gray-200 transition-colors">
-                <span className="font-light">Experience:</span>
+                <span className="font-oswald font-semibold text-lg dark:text-violet-200">Experience:</span>
                 <ul className="pl-2">
                   {data.experience.map((exp, j) => (
                     <li key={j} className="my-1 font-extralight">
@@ -64,7 +64,7 @@ const Experience = () => {
                 </ul>
               </div>
               <span
-                className={`absolute top-20 text-red-300 -translate-y-1/2 lg:hidden ${
+                className={`absolute top-20 text-violet-300 -translate-y-1/2 lg:hidden ${
                   i % 2 === 0 ? "left-full rotate-180" : "right-full"
                 }`}
               >
@@ -72,7 +72,7 @@ const Experience = () => {
               </span>
             </motion.div>
             <div
-              className={`w-14 absolute top-20 border border-gray-300 rounded-full aspect-square grid place-items-center text-red-400 font-light -translate-y-1/2 z-10 bg-whte ${
+              className={`w-14 absolute top-20 border border-gray-400 bg-gray-200 dark:bg-zinc-800 rounded-full aspect-square grid place-items-center text-violet-400 font-light -translate-y-1/2 z-50 ${
                 i % 2 === 0
                   ? "left-full -translate-x-1/2 lg:left-1/2"
                   : "right-full translate-x-1/2 lg:right-1/2"
@@ -82,7 +82,7 @@ const Experience = () => {
             </div>
           </div>
         ))}
-        <motion.div initial={{ scaleY: 0 }} style={{ scaleY: scrollY }} className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full rounded-full bg-gray-300 origin-top z-10"></motion.div>
+        <motion.div initial={{ scaleY: 0 }} style={{ scaleY: scrollY }} className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full rounded-full bg-violet-500/50 origin-top z-10"></motion.div>
       </div>
     </div>
   );

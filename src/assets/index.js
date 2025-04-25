@@ -50,7 +50,7 @@ export const downloadIcon = <DownloadLineIcon />;
 export const arrowLeftIcon = <ArrowLeftSFillIcon />;
 
 export const aboutText = 
-  "Hi, I'm Jennifer Baum, a passionate frontend developer with a strong interest in ux/ui design. I have experience in building web applications using modern technologies like React, Next.js Node.js, and MongoDB. I am a quick learner and a team player who loves to work in a collaborative environment. I am always eager to learn new technologies and improve my skills. I am currently looking for new opportunities to work on exciting projects and grow as a developer.";
+  "Hi! I'm Jennifer Baumgart — a Front-End Developer and UI/UX Designer who loves bringing ideas to life through clean code and thoughtful design. I work with HTML, CSS, JavaScript, React, and Figma to build responsive, accessible, and visually engaging interfaces. Curious by nature and detail-oriented by habit, I enjoy bridging the gap between design and development to craft seamless user experiences. Whether I'm refining a layout or debugging a tricky component, I'm always aiming for clarity, usability, and impact. I'm currently diving deeper into React and design systems, and I get excited by projects that make people's lives easier.";
 
 
 // Experience
@@ -58,37 +58,41 @@ export const experienceData = [
   {
     year: 1,
     title: 'Foundation and Basics',
-    education: 'High School Diploma; Fcus on computer science, mathematics, and art/design courses.',
+    education: 'Introductory courses in HTML, CSS, and JavaScript. First contact with programming through self-study and online platforms.',
     experience: [
-      'Basic HTML/CSS; Learn through online tutorials and courses.',
-      'Personal Projects: create simple personal websites or blogs.'
+      'Built simple personal websites and experimented with visual design.',
+      'Completed beginner-level projects to understand core front-end concepts.',
     ],
   },
   {
     year: 2,
     title: 'Advanced Learning and Early Experience',
-    education: 'Associate`s Degree in Web development or Design: Enroll in a 2-year program covering web development and design principles.',
+    education: 'Enrolled in a degree in Analysis and Systems Development (UNINTER). Started focusing on web development and UI/UX.',
     experience: [
-      'Freelance Work: take on small freelance projects to build a portfolio.',
-      'Online Courses and Certifications: Learn Javascript, responsive design, and UX/UI design.'
+      'Landed my first work experience in tech as a Webmaster at The Brooklyn Brothers, working on Unilever brands using AEM, HTML/CSS, and agile tools like Jira.',
+      'Dove deeper into UX design through courses and hands-on experience with Figma.',
+      'Started building the bridge between design and code.',
     ],
   },
   {
     year: 3,
-    title: 'Specialized Education and real-World Application',
+    title: 'Exploration and Independence',
     education: 'Online Courses and Bootcamps: Focus on specialized areas like front-end frameworks (React, Angular) and back-end technologies (Node.js)',
     experience: [
-      'Advanced HTML/CSS; Learn through online tutorials and courses.',
-      'Personal Projects: create simple personal websites or blogs.'
+      'Worked as a freelancer, creating real solutions for real clients.',
+      'Expanded my toolkit with JavaScript, React, accessibility best practices, and design systems.',
+      'Joined Minerva Controls as a UI/UX and Front-End developer, growing through teamwork and feedback.',
     ],
   },
   {
     year: 4,
-    title: 'Experience and Growth',
-    education: 'Bachelor of Science in Computer Science; Focus on web development and design.',
+    title: 'Building with Purpose',
+    education: 'Final phase of my degree, focused on creating meaningful digital products.',
     experience: [
-      'Advanced HTML/CSS; Learn through online tutorials and courses.',
-      'Personal Projects: create simple personal websites or blogs.'
+      'Working at Minerva Controls, contributing to UI/UX and front-end development.',
+      'Completed the Google UX Design Certificate (Coursera), building case studies from research to high-fidelity prototypes.',
+      'Currently working on VidaPlus, a healthcare management system with a focus on usability and accessibility, as my degree final project.',
+      'Co-developing Compath, a platform that empowers entrepreneurs through AI — from design to front-end implementation.',
     ],
   },
 ]
@@ -96,78 +100,120 @@ export const experienceData = [
 // Skills
 export const skillsData = [
   {
-    name: 'Figma',
-    icon: '/skills/figma.png',
+    name: 'HTML',
+    icon: '/skills/html5.png',
   },
   {
-    name: 'Photoshop',
-    icon: '/skills/photoshop.png',
-  },
-  {
-    name: 'Blender',
-    icon: '/skills/blender.png',
-  },
-  {
-    name: 'VS Code',
-    icon: '/skills/vscode.png',
+    name: 'CSS',
+    icon: '/skills/css3.png',
   },
   {
     name: 'React',
-    icon: '/skills/react.png',
+    icon: '/skills/react2.png',
   },
   {
     name: 'Next.js',
     icon: '/skills/nextjs.png',
   },
   {
-    name: 'Node.js',
-    icon: '/skills/nodejs.png',
+    name: 'Javascript',
+    icon: '/skills/javascript.png',
   },
   {
-    name: 'MongoDB',
-    icon: '/skills/mongodb.png',
+    name: 'Typescript',
+    icon: '/skills/typescript.png',
   },
   {
     name: 'Tailwind CSS',
-    icon: '/skills/tailwind.png',
+    icon: '/skills/tailwindcss.png',
   },
   {
-    name: 'Javascript',
-    icon: '/skills/js.png',
+    name: 'Sass',
+    icon: '/skills/sass.png',
   },
   {
-    name: 'HTML',
-    icon: '/skills/html.png',
+    name: 'Figma',
+    icon: '/skills/figma2.png',
   },
   {
-    name: 'CSS',
-    icon: '/skills/css.png',
+    name: 'Adobe Photoshop',
+    icon: '/skills/adobephotoshop.png',
+  },
+
+  {
+    name: 'WordPress',
+    icon: '/skills/wordpress.png',
+  },
+  {
+    name: 'Node.js',
+    icon: '/skills/nodejs2.png',
+  },
+  {
+    name: 'Express',
+    icon: '/skills/express.png',
+  },
+  {
+    name: 'PostgreSQL',
+    icon: '/skills/postgressql.png',
+  },
+  {
+    name: 'Selenium',
+    icon: '/skills/selenium.png',
+  },
+  {
+    name: 'Python',
+    icon: '/skills/python.png',
+  },
+  {
+    name: 'Git',
+    icon: '/skills/git.png',
+  },
+  {
+    name: 'VS Code',
+    icon: '/skills/VisualStudioCode.png',
   }
 ]
 
 // Projects 
-
 export const projectsData = [
   {
-    name: 'SparkleGlove.com',
+    name: 'Expenses Tracker',
     desc: 'An e-commerce website for a fashion brand, showcasing their products and allowing users to make purchases online.',
     url: '/projects/image-1.jpg',
-    tech: ['Figma', 'Photoshop', 'HTML'],
+    tech: ['React', 'Typescript', 'HTML'],
   },
   {
     name: 'Portfolio Website',
     desc: 'A personal portfolio website to showcase my skills, projects, and experience as a frontend developer.',
     url: '/projects/image-2.jpg',
-    tech: ['Figma', 'Photoshop', 'HTML', 'CSS', 'Javascript'],
+    tech: ['Figma', 'HTML', 'CSS', 'Javascript'],
   },
   {
-    name: 'E-commerce Website',
+    name: 'Notícias Cidade',
     desc: 'An e-commerce website for a fashion brand, showcasing their products and allowing users to make purchases online.',
     url: '/projects/image-3.jpg',
     tech: ['Figma', 'Photoshop', 'HTML', 'CSS'],
   },
   {
-    name: 'Social Media App',
+    name: 'TOL',
+    desc: 'A social media application that allows users to create profiles, connect with friends, and share content.',
+    url: '/projects/image-4.jpg',
+    tech: ['Figma', 'Photoshop', 'HTML', 'CSS'],
+  },
+  {
+    name: 'ClimaAgora',
+    desc: 'A social media application that allows users to create profiles, connect with friends, and share content.',
+    url: '/projects/image-4.jpg',
+    tech: ['Figma', 'Photoshop', 'HTML', 'CSS'],
+  },
+  {
+    name: 'Cashpath.ai',
+    desc: 'A social media application that allows users to create profiles, connect with friends, and share content.',
+    url: '/projects/image-4.jpg',
+    tech: ['Figma', 'Photoshop', 'HTML', 'CSS'],
+  },
+  {
+    name: 'Household Budget',
     desc: 'A social media application that allows users to create profiles, connect with friends, and share content.',
     url: '/projects/image-4.jpg',
     tech: ['Figma', 'Photoshop', 'HTML', 'CSS'],
