@@ -174,51 +174,72 @@ export const skillsData = [
   }
 ]
 
-// Projects 
 export const projectsData = [
   {
     name: 'Expenses Tracker',
-    desc: 'An e-commerce website for a fashion brand, showcasing their products and allowing users to make purchases online.',
+    shortDesc: 'Controle seus gastos com praticidade.',
+    desc: 'Uma aplicação para registrar, visualizar e categorizar despesas. Ideal para usuários que desejam organizar seu orçamento pessoal com gráficos e filtros intuitivos.',
     url: '/projects/image-1.jpg',
     tech: ['React', 'Typescript', 'HTML'],
+    github: 'https://github.com/seuusuario/expenses-tracker',
+    demo: 'https://expenses-tracker.vercel.app',
   },
   {
     name: 'Portfolio Website',
-    desc: 'A personal portfolio website to showcase my skills, projects, and experience as a frontend developer.',
+    shortDesc: 'Meu portfólio pessoal como dev front-end.',
+    desc: 'Um site pessoal para exibir minhas habilidades, projetos e trajetória como desenvolvedora front-end e designer UX/UI. Design responsivo e moderno, inspirado em boas práticas de acessibilidade.',
     url: '/projects/image-2.jpg',
     tech: ['Figma', 'HTML', 'CSS', 'Javascript'],
+    github: 'https://github.com/seuusuario/portfolio',
+    demo: 'https://seusite.vercel.app',
   },
   {
     name: 'Notícias Cidade',
-    desc: 'An e-commerce website for a fashion brand, showcasing their products and allowing users to make purchases online.',
+    shortDesc: 'Portal de notícias local com interatividade.',
+    desc: 'Uma aplicação que permite aos usuários acessar notícias locais de uma cidade específica. A plataforma permite o envio de notícias e interação com os leitores.',
     url: '/projects/image-3.jpg',
     tech: ['Figma', 'Photoshop', 'HTML', 'CSS'],
+    github: 'https://github.com/seuusuario/noticias-cidade',
+    demo: 'https://noticias-cidade.vercel.app',
   },
   {
     name: 'TOL',
-    desc: 'A social media application that allows users to create profiles, connect with friends, and share content.',
+    shortDesc: 'Plataforma social de compartilhamento de conteúdo.',
+    desc: 'Uma rede social onde usuários podem criar perfis, compartilhar fotos e interagir com outros usuários. O design prioriza a experiência do usuário.',
     url: '/projects/image-4.jpg',
     tech: ['Figma', 'Photoshop', 'HTML', 'CSS'],
+    github: 'https://github.com/seuusuario/tol',
+    demo: 'https://tol-app.vercel.app',
   },
   {
     name: 'ClimaAgora',
-    desc: 'A social media application that allows users to create profiles, connect with friends, and share content.',
-    url: '/projects/image-4.jpg',
+    shortDesc: 'Aplicação para previsões do tempo em tempo real.',
+    desc: 'ClimaAgora oferece dados atualizados sobre o clima em diversas cidades, com visualizações gráficas das condições climáticas e previsões para os próximos dias.',
+    url: '/projects/image-5.jpg',
     tech: ['Figma', 'Photoshop', 'HTML', 'CSS'],
+    github: 'https://github.com/seuusuario/climaagora',
+    demo: 'https://climaagora.vercel.app',
   },
   {
     name: 'Cashpath.ai',
-    desc: 'A social media application that allows users to create profiles, connect with friends, and share content.',
-    url: '/projects/image-4.jpg',
+    shortDesc: 'Sistema de inteligência artificial para finanças.',
+    desc: 'Cashpath.ai utiliza IA para ajudar usuários a gerenciar suas finanças pessoais, oferecendo sugestões personalizadas para investimentos e economias.',
+    url: '/projects/image-6.jpg',
     tech: ['Figma', 'Photoshop', 'HTML', 'CSS'],
+    github: 'https://github.com/seuusuario/cashpath-ai',
+    demo: 'https://cashpathai.vercel.app',
   },
   {
     name: 'Household Budget',
-    desc: 'A social media application that allows users to create profiles, connect with friends, and share content.',
-    url: '/projects/image-4.jpg',
+    shortDesc: 'Gestão de orçamento doméstico simples e eficiente.',
+    desc: 'Um aplicativo focado em ajudar os usuários a organizar suas finanças domésticas. Permite categorizar gastos e controlar receitas, facilitando a gestão de orçamentos.',
+    url: '/projects/image-7.jpg',
     tech: ['Figma', 'Photoshop', 'HTML', 'CSS'],
+    github: 'https://github.com/seuusuario/household-budget',
+    demo: 'https://household-budget.vercel.app',
   },
-]
+];
+
 
 export const projectsButton = [
   'All',
