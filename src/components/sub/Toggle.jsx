@@ -10,11 +10,13 @@ const Toggle = ({children}) => {
 
     const addDarkTheme = () => {
         mainRef.current.classList.add('dark')
+        document.documentElement.classList.add('dark')
         setDarkTheme(true)
     }
 
     const removeDarkTheme = () => {
         mainRef.current.classList.remove('dark')
+        document.documentElement.classList.remove('dark')
         setDarkTheme(false)
     }
     

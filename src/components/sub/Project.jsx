@@ -4,7 +4,7 @@ import {
   DialogPanel,
   DialogTitle,
   Transition,
-  TransitionChild
+  TransitionChild,
 } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import Image from "next/image";
@@ -56,10 +56,11 @@ const Project = ({ data, index }) => {
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <DialogPanel className="w-full max-w-lg transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all dark:bg-zinc-800">
-                <DialogTitle className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+              <DialogPanel className="w-full max-w-7xl transform overflow-hidden rounded-2xl dark:bg-zinc-900 bg-white p-6 text-left align-middle shadow-xl transition-all  max-h-[90vh] overflow-y-auto">
+                <DialogTitle className="font-bebas text-6xl font-semibold text-gray-900 dark:text-violet-500 mb-1">
                   {data.name}
                 </DialogTitle>
+                <p className="text-md text-gray-600 dark:text-gray-400 mb-4">{data.tagline}</p>
 
                 <Image
                   src={data.url}
@@ -68,16 +69,50 @@ const Project = ({ data, index }) => {
                   height={400}
                   className="rounded-lg mb-4 object-cover w-full h-auto"
                 />
+                <p className="text-gray-700 dark:text-gray-300 mb-4">
+                  {data.desc}
+                </p>
+                {/* Identidade Visual */}
+                <section className="mb-6">
+                  <h3 className="font-oswald text-2xl font-semibold  dark:text-violet-500 mb-1">
+                    Identidade Visual
+                  </h3>
+                  <p className="pl-4 text-gray-700 dark:text-gray-300">
+                    {data.visualIdentity}
+                  </p>
+                </section>
+                {/* Tecnologias */}
+                <section className="mb-6">
+                  <h3 className="font-oswald text-2xl font-semibold  dark:text-violet-500 mb-1">
+                    Tecnologias Utilizadas
+                  </h3>
+                  <p className="pl-4 text-gray-700 dark:text-gray-300 text-justify">
+                    {data.techUsed}
+                  </p>
+                </section>
 
-                <p className="text-gray-700 dark:text-gray-200 mb-4">{data.desc}</p>
-
+                {/* Funcionalidades */}
+                <section className="mb-6">
+                  <h3 className="font-oswald text-2xl font-semibold  dark:text-violet-500 mb-1">
+                    Funcionalidades
+                  </h3>
+                  <ul className="pl-6 list-item text-gray-700 dark:text-gray-300">
+                    {Array.isArray(data.features) &&
+                      data.features.map((feature, i) => (
+                        <li key={i} className="mb-1">
+                          • {feature}
+                        </li>
+                      ))}
+                  </ul>
+                </section>
+                {/* Links */}
                 <div className="flex gap-4">
                   {data.demo && (
                     <a
                       href={data.demo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-violet-600 text-white px-4 py-2 rounded hover:bg-violet-700 transition"
+                      className="bg-violet-700 text-white px-4 py-2 rounded hover:bg-violet-600 transition"
                     >
                       Ver Demo
                     </a>
@@ -87,7 +122,7 @@ const Project = ({ data, index }) => {
                       href={data.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900 transition"
+                      className="bg-zinc-700 text-white px-4 py-2 rounded hover:bg-zinc-600 transition"
                     >
                       Ver Código
                     </a>

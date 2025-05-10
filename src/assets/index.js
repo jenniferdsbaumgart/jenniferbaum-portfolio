@@ -175,10 +175,35 @@ export const skillsData = [
 ]
 
 export const projectsData = [
+    {
+    name: 'Monicount - Finances Application',
+    tagline: 'Sistema de inteligência artificial para finanças.',
+    desc: 'Monicount é uma aplicação web elegante e minimalista desenvolvida para ajudar você a gerenciar suas finanças com eficiência e clareza. Com uma interface moderna e intuitiva, Monicount oferece ferramentas para rastreamento financeiro, planejamento e visualização de gastos. Incluindo Relatórios gerados por IA com insights sobre suas finanças, no modo de assinatura Premium.',
+    visualIdentity: 'A identidade visual do Monicount foi cuidadosamente projetada com foco em UI/UX Design, garantindo uma experiência intuitiva e agradável para o usuário. O uso do turquesa como cor principal transmite confiança e tranquilidade, criando um ambiente acolhedor e moderno. O fundo em tons de preto e cinza traz contraste, permitindo que as informações se destaquem de forma clara e sem distrações. O dourado foi escolhido para representar investimentos, evocando uma sensação de valor e prosperidade, enquanto o vermelho é usado de maneira estratégica para destacar despesas, criando uma alerta visual eficaz. Cada elemento da interface foi projetado com acessibilidade e usabilidade em mente, priorizando a simplicidade e a clareza. A navegação é fluida e as interações são rápidas e responsivas, com botões e gráficos interativos que facilitam o uso. O design foi desenvolvido para proporcionar uma experiência de usuário agradável, sem sobrecarregar visualmente o usuário, permitindo que ele foque no que é mais importante: o controle de suas finanças.',
+    techUsed: 'Para o desenvolvimento da aplicação Monicount, utilizei tecnologias modernas para garantir performance e uma experiência de usuário otimizada. O Next.js e o React permitiram a criação de uma aplicação dinâmica e performática, enquanto o TypeScript garantiu segurança no código. Usei o Tailwind CSS para estilização rápida e responsiva, e o shadcn/ui para componentes de UI acessíveis e personalizáveis. O Prisma foi utilizado para integrar o banco de dados PostgreSQL de maneira eficiente, e a autenticação foi implementada com Clerk. Para o processamento de pagamentos, utilizei o Stripe, e a validação de dados foi feita com o Zod, garantindo a integridade dos dados ao longo do desenvolvimento.',
+    features: [
+      'Registro de Despesas: Permite o registro de despesas de forma simples e organizada, com categorias personalizáveis para facilitar o gerenciamento financeiro.',
+      'Visualização Interativa de Gráficos: Oferece gráficos interativos para análise visual dos gastos, permitindo uma visão clara e detalhada do seu comportamento financeir',
+      'Filtros Avançados: Possibilita a filtragem das despesas por categoria, data e valor, proporcionando flexibilidade na análise dos dados.',
+      'Relatórios Gerados por IA: Utiliza inteligência artificial para gerar relatórios detalhados, oferecendo insights valiosos sobre seus hábitos financeiros e sugerindo áreas para otimização.',
+    ],
+    url: '/projects/monicount.svg',
+    tech: ['Figma', 'HTML', 'TailwindCSS', 'ReactJS', 'NextJS', 'Typescript'],
+    github: 'https://github.com/jenniferdsbaumgart/monicount-fullstack-finances-app',
+    demo: 'https://monicount.vercel.app',
+  },
   {
     name: 'Expenses Tracker',
-    shortDesc: 'Controle seus gastos com praticidade.',
+    tagline: 'Controle seus gastos com praticidade.',
     desc: 'Uma aplicação para registrar, visualizar e categorizar despesas. Ideal para usuários que desejam organizar seu orçamento pessoal com gráficos e filtros intuitivos.',
+    visualIdentity: 'A identidade visual é moderna e minimalista, com uma paleta de cores suaves e tipografia clara. O design prioriza a usabilidade, com botões e gráficos interativos que facilitam a navegação e a compreensão dos dados financeiros.',
+    techUsed: 'Fo utilizado React para a construção da interface, com Typescript para garantir a tipagem e segurança do código. O design foi desenvolvido no Figma, priorizando a responsividade e acessibilidade.',
+    features: [
+      'Registro de despesas com categorias personalizáveis.',
+      'Visualização de gráficos interativos para análise de gastos.',
+      'Filtros para visualizar despesas por categoria, data e valor.',
+      'Exportação de relatórios em PDF.',
+    ],
     url: '/projects/image-1.jpg',
     tech: ['React', 'Typescript', 'HTML'],
     github: 'https://github.com/seuusuario/expenses-tracker',
@@ -186,7 +211,7 @@ export const projectsData = [
   },
   {
     name: 'Portfolio Website',
-    shortDesc: 'Meu portfólio pessoal como dev front-end.',
+    tagline: 'Meu portfólio pessoal como dev front-end.',
     desc: 'Um site pessoal para exibir minhas habilidades, projetos e trajetória como desenvolvedora front-end e designer UX/UI. Design responsivo e moderno, inspirado em boas práticas de acessibilidade.',
     url: '/projects/image-2.jpg',
     tech: ['Figma', 'HTML', 'CSS', 'Javascript'],
@@ -195,7 +220,7 @@ export const projectsData = [
   },
   {
     name: 'Notícias Cidade',
-    shortDesc: 'Portal de notícias local com interatividade.',
+    tagline: 'Portal de notícias local com interatividade.',
     desc: 'Uma aplicação que permite aos usuários acessar notícias locais de uma cidade específica. A plataforma permite o envio de notícias e interação com os leitores.',
     url: '/projects/image-3.jpg',
     tech: ['Figma', 'Photoshop', 'HTML', 'CSS'],
@@ -204,7 +229,7 @@ export const projectsData = [
   },
   {
     name: 'TOL',
-    shortDesc: 'Plataforma social de compartilhamento de conteúdo.',
+    tagline: 'Plataforma social de compartilhamento de conteúdo.',
     desc: 'Uma rede social onde usuários podem criar perfis, compartilhar fotos e interagir com outros usuários. O design prioriza a experiência do usuário.',
     url: '/projects/image-4.jpg',
     tech: ['Figma', 'Photoshop', 'HTML', 'CSS'],
@@ -213,7 +238,7 @@ export const projectsData = [
   },
   {
     name: 'ClimaAgora',
-    shortDesc: 'Aplicação para previsões do tempo em tempo real.',
+    tagline: 'Aplicação para previsões do tempo em tempo real.',
     desc: 'ClimaAgora oferece dados atualizados sobre o clima em diversas cidades, com visualizações gráficas das condições climáticas e previsões para os próximos dias.',
     url: '/projects/image-5.jpg',
     tech: ['Figma', 'Photoshop', 'HTML', 'CSS'],
@@ -221,17 +246,8 @@ export const projectsData = [
     demo: 'https://climaagora.vercel.app',
   },
   {
-    name: 'Cashpath.ai',
-    shortDesc: 'Sistema de inteligência artificial para finanças.',
-    desc: 'Cashpath.ai utiliza IA para ajudar usuários a gerenciar suas finanças pessoais, oferecendo sugestões personalizadas para investimentos e economias.',
-    url: '/projects/image-6.jpg',
-    tech: ['Figma', 'Photoshop', 'HTML', 'CSS'],
-    github: 'https://github.com/seuusuario/cashpath-ai',
-    demo: 'https://cashpathai.vercel.app',
-  },
-  {
     name: 'Household Budget',
-    shortDesc: 'Gestão de orçamento doméstico simples e eficiente.',
+    tagline: 'Gestão de orçamento doméstico simples e eficiente.',
     desc: 'Um aplicativo focado em ajudar os usuários a organizar suas finanças domésticas. Permite categorizar gastos e controlar receitas, facilitando a gestão de orçamentos.',
     url: '/projects/image-7.jpg',
     tech: ['Figma', 'Photoshop', 'HTML', 'CSS'],
@@ -252,7 +268,7 @@ export const projectsButton = [
   'TailwindCSS',
   'NextJS',
   'FramerMotion',
-  'ThreeJS',
+  'Typescript',
 ]
 
 // Navbar
