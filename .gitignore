@@ -4,6 +4,9 @@
 # Build output
 /.next/
 .next/
+.next
+.next/cache
+.next\
 
 # Dependency directories
 /pnpm-lock.yaml
