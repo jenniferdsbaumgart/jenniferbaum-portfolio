@@ -64,7 +64,7 @@ const Project = ({ data, index }) => {
 
                 <Image
                   src={data.url}
-                  alt={`Imagem do projeto ${data.name}`}
+                  alt={`Project image ${data.name}`}
                   width={600}
                   height={400}
                   className="rounded-lg mb-4 object-cover w-full h-auto"
@@ -72,29 +72,29 @@ const Project = ({ data, index }) => {
                 <p className="text-gray-700 dark:text-gray-300 mb-4">
                   {data.desc}
                 </p>
-                {/* Identidade Visual */}
+                {/* Visual Identity */}
                 <section className="mb-6">
                   <h3 className="font-oswald text-2xl font-semibold  dark:text-violet-500 mb-1">
-                    Identidade Visual
+                    Visual Identity
                   </h3>
                   <p className="pl-4 text-gray-700 dark:text-gray-300">
                     {data.visualIdentity}
                   </p>
                 </section>
-                {/* Tecnologias */}
+                {/* Technologies Used */}
                 <section className="mb-6">
                   <h3 className="font-oswald text-2xl font-semibold  dark:text-violet-500 mb-1">
-                    Tecnologias Utilizadas
+                    Technologies Used
                   </h3>
                   <p className="pl-4 text-gray-700 dark:text-gray-300 text-justify">
                     {data.techUsed}
                   </p>
                 </section>
 
-                {/* Funcionalidades */}
+                {/* Features */}
                 <section className="mb-6">
                   <h3 className="font-oswald text-2xl font-semibold  dark:text-violet-500 mb-1">
-                    Funcionalidades
+                    Features
                   </h3>
                   <ul className="pl-6 list-item text-gray-700 dark:text-gray-300">
                     {Array.isArray(data.features) &&
@@ -105,6 +105,25 @@ const Project = ({ data, index }) => {
                       ))}
                   </ul>
                 </section>
+                {/* Challenges & Solutions */}
+                {Array.isArray(data.challengesAndSolutions) && data.challengesAndSolutions.length > 0 && (
+                  <section className="mb-6">
+                    <h3 className="font-oswald text-2xl font-semibold  dark:text-violet-500 mb-1">
+                      Challenges & Solutions
+                    </h3>
+                    <ul className="pl-6 list-disc text-gray-700 dark:text-gray-300">
+                      {data.challengesAndSolutions.map((item, index) => (
+                        <li key={index} className="mb-3">
+                          <strong className="text-violet-600 dark:text-violet-400">Challenge:</strong>{" "}
+                          {item.challenge}
+                          <br />
+                          <strong className="text-green-600 dark:text-green-400">Solution:</strong>{" "}
+                          {item.solution}
+                        </li>
+                      ))}
+                    </ul>
+                  </section>
+                )}
                 {/* Links */}
                 <div className="flex gap-4">
                   {data.demo && (
@@ -114,7 +133,7 @@ const Project = ({ data, index }) => {
                       rel="noopener noreferrer"
                       className="bg-violet-700 text-white px-4 py-2 rounded hover:bg-violet-600 transition"
                     >
-                      Ver Demo
+                      See Demo
                     </a>
                   )}
                   {data.github && (
@@ -124,7 +143,7 @@ const Project = ({ data, index }) => {
                       rel="noopener noreferrer"
                       className="bg-zinc-700 text-white px-4 py-2 rounded hover:bg-zinc-600 transition"
                     >
-                      Ver Código
+                      See Code
                     </a>
                   )}
                 </div>
@@ -134,7 +153,7 @@ const Project = ({ data, index }) => {
                     onClick={() => setIsOpen(false)}
                     className="text-sm text-violet-600 hover:underline"
                   >
-                    Fechar
+                    Close
                   </button>
                 </div>
               </DialogPanel>
