@@ -1,16 +1,12 @@
 // Hero
 import InstagramLineIcon from "remixicon-react/InstagramLineIcon";
-import FacebookCircleLineIcon from "remixicon-react/FacebookCircleLineIcon";
-import DribbbleLineIcon from "remixicon-react/DribbbleLineIcon";
-import YoutubeLineIcon from "remixicon-react/YoutubeLineIcon";
 import GithubLineIcon from "remixicon-react/GithubLineIcon";
+import LinkedinBoxLineIcon from "remixicon-react/LinkedinBoxLineIcon";
 
 export const heroIcons = [
-  { id: "instagram", icon: <InstagramLineIcon /> },
-  { id: "facebook", icon: <FacebookCircleLineIcon /> },
-  { id: "dribbble", icon: <DribbbleLineIcon /> },
-  { id: "youtube", icon: <YoutubeLineIcon /> },
-  { id: "github", icon: <GithubLineIcon /> },
+  { id: "instagram", icon: <InstagramLineIcon />, url: "https://www.instagram.com/codingjenny/" },
+  { id: "linkedin", icon: <LinkedinBoxLineIcon />, url: "https://www.instagram.com/codingjenny/" },
+  { id: "github", icon: <GithubLineIcon />, url: "https://github.com/jenniferdsbaumgart" },
 ];
 
 
@@ -20,28 +16,28 @@ import Projector2LineIcon from "remixicon-react/Projector2LineIcon";
 import GroupLineIcon from "remixicon-react/GroupLineIcon";
 import AwardFillIcon from "remixicon-react/AwardFillIcon";
 
-export const aboutData = [
-  {
-    icon: <GithubFillIcon />,
-    amount: "348",
-    text: "Github Repos",
-  },
-  {
-    icon: <Projector2LineIcon />,
-    amount: "227",
-    text: "Succesful Projects",
-  },
-  {
-    icon: <GroupLineIcon />,
-    amount: "176",
-    text: "Satisfied Clients",
-  },
-  {
-    icon: <AwardFillIcon />,
-    amount: "107",
-    text: "Awards and Recognition",
-  },
-];
+// export const aboutData = [
+//   {
+//     icon: <GithubFillIcon />,
+//     amount: "348",
+//     text: "Github Repos",
+//   },
+//   {
+//     icon: <Projector2LineIcon />,
+//     amount: "227",
+//     text: "Succesful Projects",
+//   },
+//   {
+//     icon: <GroupLineIcon />,
+//     amount: "176",
+//     text: "Satisfied Clients",
+//   },
+//   {
+//     icon: <AwardFillIcon />,
+//     amount: "107",
+//     text: "Awards and Recognition",
+//   },
+// ];
 
 import DownloadLineIcon from 'remixicon-react/DownloadLineIcon'
 import ArrowLeftSFillIcon from 'remixicon-react/ArrowLeftSFillIcon'
@@ -144,6 +140,14 @@ export const skillsData = [
     name: 'WordPress',
     icon: '/skills/wordpress.png',
   },
+    {
+    name: 'MySQL',
+    icon: '/skills/mysql.png',
+  },
+  {
+    name: 'PostgreSQL',
+    icon: '/skills/postgressql.png',
+  },
   {
     name: 'Node.js',
     icon: '/skills/nodejs2.png',
@@ -151,10 +155,6 @@ export const skillsData = [
   {
     name: 'Express',
     icon: '/skills/express.png',
-  },
-  {
-    name: 'PostgreSQL',
-    icon: '/skills/postgressql.png',
   },
   {
     name: 'Selenium',
@@ -319,6 +319,7 @@ export const navbarData = [
 // Toggle
 import MoonFoggyFillIcon from 'remixicon-react/MoonFoggyFillIcon'
 import SunFoggyFillIcon from 'remixicon-react/SunFoggyFillIcon'	
+import { LinkedinIcon } from "lucide-react";
 
 export const moonIcon = <MoonFoggyFillIcon />
 export const sunIcon = <SunFoggyFillIcon />

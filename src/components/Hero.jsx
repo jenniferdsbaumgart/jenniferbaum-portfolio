@@ -61,7 +61,7 @@ const Hero = () => {
           >
             <div className="relative w-[700px] aspect-[3/4]">
               <Image
-                src={"/jb2.png"}
+                src={"/jb4.png"}
                 alt="Person Image"
                 fill
                 priority={true}
@@ -103,7 +103,7 @@ const Hero = () => {
           >
             {heroIcons.map((item) => (
               <a
-                href="#"
+                href={item.url}
                 key={item.id}
                 className="rounded-lg hover:bg-violet-400 hover:text-white transition-colors"
               >
