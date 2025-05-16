@@ -253,6 +253,82 @@ export const projectsData = [
     demo: "https://todolist-svelte.vercel.app",
   },
   {
+    name: "Compath",
+    tagline: "A strategic AI companion for entrepreneurs to find their way.",
+    desc: "Compath is a platform designed to guide current and aspiring entrepreneurs through strategic decisions. Its core is an AI that helps users identify viable niches, analyze competitors, and discover opportunities based on regional data. The system is gamified: users earn and spend coins for insights and can boost their balance through referrals or purchases. Compath also includes learning modules to empower users with business and marketing skills. I’m leading the front-end development from Figma to React, ensuring a smooth user experience and accessibility.",
+    url: "/images/compath.png",
+    demo: "",
+    github: "",
+    visualIdentity:
+      "Modern, vibrant, and goal-oriented. The interface uses a mix of violet, deep blue, and soft greens to convey trust and innovation. Icons and cards reinforce clarity and decision-making, with gamified elements designed to feel rewarding and user-friendly.",
+    techUsed:
+      "React.js, TailwindCSS, Next.js, Node.js, PostgreSQL. Hosted on Vercel and Supabase (MVP phase). Figma for UI/UX design.",
+    features: [
+      "AI-powered niche and opportunity analysis",
+      "Interactive dashboard with regional business insights",
+      "Gamified coin system for platform engagement",
+      "User onboarding with progress tracking",
+      "Business learning modules (courses and tips)",
+    ],
+    challengesAndSolutions: [
+      {
+        challenge: "Designing an intuitive interface for complex AI results.",
+        solution:
+          "Created wireframes and interactive prototypes in Figma, then tested flows with potential users before building with React and Tailwind.",
+      },
+      {
+        challenge: "Incorporating gamification without overwhelming the user.",
+        solution:
+          "Balanced visual elements and feedback systems with simple reward mechanics, clearly displaying coin balances and goals.",
+      },
+      {
+        challenge: "Handling user input and feedback to customize AI results.",
+        solution:
+          "Structured clean forms and filters to feed structured data to the backend AI logic, ensuring accuracy and usability.",
+      },
+    ],
+  },
+  {
+    name: "VidaPlus",
+    tagline:
+      "A personal finance app designed for neurodivergent users and those with chronic conditions.",
+    desc: "VidaPlus is a finance management tool tailored for people with variable income, chronic illnesses, and neurodivergent traits. It goes beyond spreadsheets — users can set budgets by life categories, compare planned vs. actual expenses, manage multiple credit cards, receive alerts, and define personal goals called 'Little Boxes'. The app aims to reduce the cognitive load of traditional finance apps by offering a more humane and flexible system. I'm developing the MVP from design to front-end using React and Next.js.",
+    url: "/images/vidaplus.png",
+    demo: "",
+    github: "",
+    visualIdentity:
+      "Soft tones, rounded elements, and a warm UI aimed to reduce overwhelm. Uses subtle animations, intuitive icons, and clearly structured sections. The goal is to make financial planning feel safe, achievable, and even enjoyable.",
+    techUsed:
+      "React.js, TailwindCSS, Next.js, PostgreSQL, Node.js. Potential deployment on Vercel or Supabase. Figma for wireframing and prototyping.",
+    features: [
+      "Category-based budgeting system (Essentials, Lifestyle, Investments)",
+      "Comparison of planned vs. real expenses",
+      "Credit card tracking and alerts",
+      "Emergency fund tracker and progress bar",
+      "Custom goals called 'Little Boxes'",
+      "Neurodivergent-friendly interface with simplified flows",
+    ],
+    challengesAndSolutions: [
+      {
+        challenge:
+          "Designing for users with executive dysfunction and fatigue.",
+        solution:
+          "Developed simplified navigation and visual grouping of data, with minimal steps to complete key actions.",
+      },
+      {
+        challenge:
+          "Creating a system that adapts to irregular income patterns.",
+        solution:
+          "Implemented flexible budgeting logic that recalculates balances based on user-defined cycles and variations.",
+      },
+      {
+        challenge: "Standing out from generic finance apps.",
+        solution:
+          "Focused on a niche audience, created a unique visual and emotional tone, and added customization options like 'Little Boxes' for motivation.",
+      },
+    ],
+  },
+  {
     name: "First Portfolio",
     tagline: "My first personal portfolio built from scratch in 2023.",
     desc: "This project marks the beginning of my journey as a developer and designer. It was my very first personal portfolio, handcrafted with only HTML, CSS, and JavaScript. I used this site to showcase my early projects, talk about who I am, and demonstrate the foundational skills I had at the time. It helped me build confidence, test visual ideas, and put my name out there online.",
