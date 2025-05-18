@@ -243,7 +243,7 @@ export const projectsData = [
       "HTML",
       "JavaScript",
       "TailwindCSS",
-      "Node.js",
+      "NodeJS",
       "Express",
       "MySQL",
       "REST API",
@@ -256,9 +256,18 @@ export const projectsData = [
     name: "Compath",
     tagline: "A strategic AI companion for entrepreneurs to find their way.",
     desc: "Compath is a platform designed to guide current and aspiring entrepreneurs through strategic decisions. Its core is an AI that helps users identify viable niches, analyze competitors, and discover opportunities based on regional data. The system is gamified: users earn and spend coins for insights and can boost their balance through referrals or purchases. Compath also includes learning modules to empower users with business and marketing skills. I’m leading the front-end development from Figma to React, ensuring a smooth user experience and accessibility.",
-    url: "/images/compath.png",
+    tech: [
+      "NextJS",
+      "Typescript",
+      "TailwindCSS",
+      "NodeJS",
+      "Express",
+      "REST API",
+      "Full Stack",
+    ],
+    url: "/projects/compath.svg",
     demo: "",
-    github: "",
+    github: "https://github.com/jenniferdsbaumgart/compath.ai",
     visualIdentity:
       "Modern, vibrant, and goal-oriented. The interface uses a mix of violet, deep blue, and soft greens to convey trust and innovation. Icons and cards reinforce clarity and decision-making, with gamified elements designed to feel rewarding and user-friendly.",
     techUsed:
@@ -291,40 +300,49 @@ export const projectsData = [
   {
     name: "VidaPlus",
     tagline:
-      "A personal finance app designed for neurodivergent users and those with chronic conditions.",
-    desc: "VidaPlus is a finance management tool tailored for people with variable income, chronic illnesses, and neurodivergent traits. It goes beyond spreadsheets — users can set budgets by life categories, compare planned vs. actual expenses, manage multiple credit cards, receive alerts, and define personal goals called 'Little Boxes'. The app aims to reduce the cognitive load of traditional finance apps by offering a more humane and flexible system. I'm developing the MVP from design to front-end using React and Next.js.",
-    url: "/images/vidaplus.png",
+      "A smart and secure healthcare management system for clinics, hospitals, labs, and home care teams.",
+    desc: "The VidaPlus Health Management System (SGHSS) is a comprehensive platform designed to streamline operations across hospitals, neighborhood clinics, laboratories, and home care services. It centralizes patient care, medical staff coordination, administrative tasks, and telemedicine — all while ensuring high standards of data security and compliance with LGPD. The system supports functionalities such as patient registration, appointment scheduling, digital prescriptions, real-time access to medical records, and hospital bed management. I'm developing the system from interface design to front-end implementation using modern technologies to ensure performance, accessibility, and scalability across multiple healthcare units.",
+    url: "/projects/image-1.jpg",
     demo: "",
     github: "",
+    tech: [
+      "Figma",	
+      "ReactJS",
+      "Typescript",
+      "TailwindCSS",
+      "NodeJS",
+      "Express",
+      "PostgreSQL",
+      "REST API",
+      "Full Stack",
+    ],
     visualIdentity:
       "Soft tones, rounded elements, and a warm UI aimed to reduce overwhelm. Uses subtle animations, intuitive icons, and clearly structured sections. The goal is to make financial planning feel safe, achievable, and even enjoyable.",
     techUsed:
-      "React.js, TailwindCSS, Next.js, PostgreSQL, Node.js. Potential deployment on Vercel or Supabase. Figma for wireframing and prototyping.",
+      "This project was designed in Figma, where high-fidelity wireframes and a custom style guide were created to ensure a modern, accessible, and responsive UI across all devices.The frontend was developed using React with TypeScript for robust component architecture and type safety. Vite was used for fast builds, and Tailwind CSS provided utility-first styling. Navigation was handled by React Router DOM, while React Hook Form and Zod enabled efficient form management and validation.Additional libraries included Lucide React (icons), clsx and tailwind-merge (class merging), date-fns (date manipulation), and uuid (unique ID generation). Chart.js and react-chartjs-2 were used for data visualization. The backend was powered by Supabase, providing a PostgreSQL database, authentication, real-time updates, and storage—all managed via secure environment variables. Code quality was ensured with ESLint, and tools like PostCSS and Autoprefixer supported cross-browser styling compatibility.",
     features: [
-      "Category-based budgeting system (Essentials, Lifestyle, Investments)",
-      "Comparison of planned vs. real expenses",
-      "Credit card tracking and alerts",
-      "Emergency fund tracker and progress bar",
-      "Custom goals called 'Little Boxes'",
-      "Neurodivergent-friendly interface with simplified flows",
+    "Patient registration and access to clinical history",
+    "Appointment scheduling, cancellation, and notifications",
+    "Electronic medical records and digital prescriptions",
+    "Telemedicine with secure video consultations",
+    "Healthcare professional management (schedules, prescriptions, records)",
+    "Hospital administration (bed control, supplies, financial reports)",
+    "Access control by user profile and audit logging",
+    "Data encryption and compliance with LGPD",
+    "Responsive and accessible interface (W3C/WCAG standards)",
     ],
     challengesAndSolutions: [
       {
         challenge:
-          "Designing for users with executive dysfunction and fatigue.",
+          "Centralizing hospitals, clinics, labs, and home care.",
         solution:
-          "Developed simplified navigation and visual grouping of data, with minimal steps to complete key actions.",
+          "Built a modular system with role-based access and multi-unit support."
       },
       {
         challenge:
-          "Creating a system that adapts to irregular income patterns.",
+          "Making the system easy for all users.",
         solution:
-          "Implemented flexible budgeting logic that recalculates balances based on user-defined cycles and variations.",
-      },
-      {
-        challenge: "Standing out from generic finance apps.",
-        solution:
-          "Focused on a niche audience, created a unique visual and emotional tone, and added customization options like 'Little Boxes' for motivation.",
+          "Designed a responsive and accessible interface."
       },
     ],
   },
@@ -406,7 +424,6 @@ export const projectsData = [
 export const projectsButton = [
   "All",
   "Figma",
-  "Photoshop",
   "HTML",
   "CSS",
   "Javascript",
@@ -416,7 +433,6 @@ export const projectsButton = [
   "FramerMotion",
   "Typescript",
   "Full Stack",
-  "Svelte",
 ];
 
 // Navbar

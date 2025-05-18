@@ -115,7 +115,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.7 }}
-            href="#"
+            href="#contact"
             className="mx-auto mt-7 flex flex-row rounded-2xl px-8 py-3 font-light capitalize tracking-wider text-gray-200 bg-violet-500 hover:bg-violet-400 transition-transform duration-300 ease-in-out gap-2"
             onMouseEnter={() => setButtonHover(true)}
             onMouseLeave={() => setButtonHover(false)}
