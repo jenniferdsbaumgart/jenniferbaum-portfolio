@@ -3,8 +3,47 @@
 import Heading from "./sub/Heading";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [status, setStatus] = useState(null)
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const result = await response.json();
+
+    if (response.ok) {
+      setStatus('Mensagem enviada com sucesso!');
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } else {
+      setStatus(`Erro: ${result.message}`);
+    }
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
   return (
     <div id="contact" className="h-screen lg:h-auto py-20 lg:py-40 xs:pb-20">
       <Heading text={"Get in touch"} />
