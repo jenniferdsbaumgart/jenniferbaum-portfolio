@@ -207,7 +207,7 @@ export const projectsData = [
     tech: ["Figma", "HTML", "TailwindCSS", "ReactJS", "NextJS", "Typescript"],
     github:
       "https://github.com/jenniferdsbaumgart/monicount-fullstack-finances-app",
-    demo: "https://monicount.vercel.app",
+    demo: "https://monicount.vercel.app/",
   },
   {
     name: "ToDo List",
@@ -250,7 +250,7 @@ export const projectsData = [
       "Full Stack",
     ],
     github: "https://github.com/jenniferdsbaumgart/todo-list-svelte",
-    demo: "https://todolist-svelte.vercel.app",
+    demo: "https://todo-list-svelte-mu.vercel.app/",
   },
   {
     name: "Compath",

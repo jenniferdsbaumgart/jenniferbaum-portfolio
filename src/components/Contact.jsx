@@ -2,7 +2,7 @@
 
 import Heading from "./sub/Heading";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 const Contact = () => {
@@ -13,15 +13,15 @@ const Contact = () => {
     message: "",
   });
 
-  const [status, setStatus] = useState(null)
+  const [status, setStatus] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    const response = await fetch('/api/contact', {
-      method: 'POST',
+
+    const response = await fetch("/api/contact", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(formData),
     });
@@ -29,10 +29,10 @@ const Contact = () => {
     const result = await response.json();
 
     if (response.ok) {
-      setStatus('Mensagem enviada com sucesso!');
+      setStatus("Message sent successfully!");
       setFormData({ name: "", email: "", subject: "", message: "" });
     } else {
-      setStatus(`Erro: ${result.message}`);
+      setStatus(`Error: ${result.message}`);
     }
   };
 
@@ -63,6 +63,7 @@ const Contact = () => {
           />
         </motion.div>
         <motion.form
+          onSubmit={handleSubmit}
           initial={{ opacity: 0, x: 150 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.4 }}
@@ -71,23 +72,35 @@ const Contact = () => {
         >
           <div className="w-full flex lg:flex-col gap-x-3 lg:gap-y-3">
             <input
+              name="name"
               type="text"
-              className="w-full border border-violet-500 rounded-md bg-zinc-100 dark:bg-zinc-800 px-4 py-2 text-sm tracking-wider text-gray-500 outline-none"
+              value={formData.name}
+              onChange={handleChange}
+              className="w-full border border-violet-500 rounded-md bg-zinc-100 dark:bg-zinc-800 px-4 py-2 text-sm tracking-wider text-gray-500 dark:text-gray-300 outline-none"
               placeholder="Your Name"
             />
             <input
+              name="email"
               type="email"
-              className="w-full border border-violet-500 rounded-md bg-zinc-100 dark:bg-zinc-800 px-4 py-2 text-sm tracking-wider text-gray-500 outline-none"
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full border border-violet-500 rounded-md bg-zinc-100 dark:bg-zinc-800 px-4 py-2 text-sm tracking-wider text-gray-500 dark:text-gray-300 outline-none"
               placeholder="Your Email"
             />
           </div>
           <input
+            name="subject"
             type="text"
-            className="w-full border border-violet-500 rounded-md bg-zinc-100 dark:bg-zinc-800 px-4 py-2 text-sm tracking-wider text-gray-500 outline-none"
+            value={formData.subject}
+            onChange={handleChange}
+            className="w-full border border-violet-500 rounded-md bg-zinc-100 dark:bg-zinc-800 px-4 py-2 text-sm tracking-wider text-gray-500 dark:text-gray-300 outline-none"
             placeholder="Subject"
           />
           <textarea
-            className="max-h-[250px] min-h-[150px] border border-violet-500 rounded-md bg-zinc-100 dark:bg-zinc-800 px-4 py-2 text-sm tracking-wider text-gray-500 outline-none"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            className="max-h-[250px] min-h-[150px] border border-violet-500 rounded-md bg-zinc-100 dark:bg-zinc-800 px-4 py-2 text-sm tracking-wider text-gray-500 dark:text-gray-300 outline-none"
             placeholder="Write Me..."
           ></textarea>
           <button
@@ -96,6 +109,25 @@ const Contact = () => {
           >
             Send Message
           </button>
+
+          <AnimatePresence>
+            {status && (
+              <motion.p
+                key="status-message"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.3 }}
+                className={`text-sm mt-2 ${
+                  status.startsWith("Error")
+                    ? "text-red-500 dark:text-red-400"
+                    : "text-green-500 dark:text-green-300"
+                }`}
+              >
+                {status}
+              </motion.p>
+            )}
+          </AnimatePresence>
         </motion.form>
       </div>
     </div>
