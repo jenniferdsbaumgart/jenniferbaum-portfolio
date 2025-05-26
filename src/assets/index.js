@@ -306,7 +306,7 @@ export const projectsData = [
     demo: "",
     github: "",
     tech: [
-      "Figma",	
+      "Figma",
       "ReactJS",
       "Typescript",
       "TailwindCSS",
@@ -321,28 +321,66 @@ export const projectsData = [
     techUsed:
       "This project was designed in Figma, where high-fidelity wireframes and a custom style guide were created to ensure a modern, accessible, and responsive UI across all devices.The frontend was developed using React with TypeScript for robust component architecture and type safety. Vite was used for fast builds, and Tailwind CSS provided utility-first styling. Navigation was handled by React Router DOM, while React Hook Form and Zod enabled efficient form management and validation.Additional libraries included Lucide React (icons), clsx and tailwind-merge (class merging), date-fns (date manipulation), and uuid (unique ID generation). Chart.js and react-chartjs-2 were used for data visualization. The backend was powered by Supabase, providing a PostgreSQL database, authentication, real-time updates, and storage—all managed via secure environment variables. Code quality was ensured with ESLint, and tools like PostCSS and Autoprefixer supported cross-browser styling compatibility.",
     features: [
-    "Patient registration and access to clinical history",
-    "Appointment scheduling, cancellation, and notifications",
-    "Electronic medical records and digital prescriptions",
-    "Telemedicine with secure video consultations",
-    "Healthcare professional management (schedules, prescriptions, records)",
-    "Hospital administration (bed control, supplies, financial reports)",
-    "Access control by user profile and audit logging",
-    "Data encryption and compliance with LGPD",
-    "Responsive and accessible interface (W3C/WCAG standards)",
+      "Patient registration and access to clinical history",
+      "Appointment scheduling, cancellation, and notifications",
+      "Electronic medical records and digital prescriptions",
+      "Telemedicine with secure video consultations",
+      "Healthcare professional management (schedules, prescriptions, records)",
+      "Hospital administration (bed control, supplies, financial reports)",
+      "Access control by user profile and audit logging",
+      "Data encryption and compliance with LGPD",
+      "Responsive and accessible interface (W3C/WCAG standards)",
+    ],
+    challengesAndSolutions: [
+      {
+        challenge: "Centralizing hospitals, clinics, labs, and home care.",
+        solution:
+          "Built a modular system with role-based access and multi-unit support.",
+      },
+      {
+        challenge: "Making the system easy for all users.",
+        solution: "Designed a responsive and accessible interface.",
+      },
+    ],
+  },
+  {
+    name: "Terra Pura",
+    tagline:
+      "Landing page for a sustainable cosmetics brand that blends nature and technology.",
+    desc: "Terra Pura is a fictional natural cosmetics brand focused on sustainability, purity, and transparency. The landing page presents the brand's mission, best-selling products, and eco-friendly philosophy with a soft, modern design. The website invites conscious consumers to explore clean beauty solutions backed by nature and science. I designed and developed the interface prioritizing emotional connection, responsive layout, and clear storytelling.",
+    url: "/projects/terra-pura.svg",
+    demo: "https://terra-pura-ecommerce.vercel.app/",
+    github: "https://github.com/jenniferdsbaumgart/terra-pura-ecommerce",
+    tech: [
+      "Figma",
+      "ReactJS",
+      "Typescript",
+      "TailwindCSS",
+    ],
+    visualIdentity:
+      "A serene and organic look, with earthy tones (sage green, soft beige, off-white) and rounded UI elements. Gentle transitions and nature-inspired textures support a calm and mindful browsing experience. Typography is elegant and minimal, with generous white space.",
+    techUsed:
+      "The layout was designed in Figma with a custom design system tailored for wellness brands. ReactJS and Vite were used to build a fast, responsive, and scalable landing page. TailwindCSS provided utility-first styling with full mobile responsiveness. Animations were added using Framer Motion for scroll and hover interactions. Components were designed to be modular and easily reusable in a real e-commerce context.",
+    features: [
+      "Hero section with brand mission and immersive background",
+      "Highlight of best-selling products with smooth hover effects",
+      "Section about the brand’s sustainable values",
+      "Customer testimonials with quote cards",
+      "Call-to-action with newsletter sign-up and shop invitation",
+      "Fully responsive layout for mobile and desktop",
+      "Lightweight build for fast loading times",
     ],
     challengesAndSolutions: [
       {
         challenge:
-          "Centralizing hospitals, clinics, labs, and home care.",
+          "Creating a luxurious feel while remaining minimal and clean.",
         solution:
-          "Built a modular system with role-based access and multi-unit support."
+          "Balanced whitespace, soft gradients, and elegant typography to convey purity and sophistication.",
       },
       {
-        challenge:
-          "Making the system easy for all users.",
+        challenge: "Conveying sustainability and trust visually.",
         solution:
-          "Designed a responsive and accessible interface."
+          "Used earth tones, nature-inspired icons, and storytelling-focused layout to strengthen brand values.",
       },
     ],
   },
