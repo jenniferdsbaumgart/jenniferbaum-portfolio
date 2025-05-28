@@ -1,0 +1,275 @@
+{
+  "hero": {
+    "title": "Jennifer Baumgart",
+    "subtitle": "Where logic meets creativity and users come first",
+    "contactButton": "Talk to me",
+    "saudation": "Hi!"
+  },
+  "about": {
+    "title": "About Me",
+    "aboutText": "Hi! I'm Jennifer Baumgart — a Front-End Developer and UI/UX Designer passionate about turning ideas into engaging digital experiences. With a toolkit that includes HTML, CSS, JavaScript, React, and Figma, I create responsive, accessible, and visually appealing interfaces. Curious by nature and detail-obsessed by habit, I bridge design and development to deliver seamless experiences. Whether tweaking a layout or squashing a bug, my focus is always on clarity, usability, and real impact. Currently, I'm diving deeper into React and design systems — and I love building tools that make life easier, smarter, and more beautiful."
+  },
+  "experience": {
+    "title": "Education & Experience",
+    "educationTitle": "Education",
+    "experienceTitle": "Experience",
+    "experienceData": [
+      {
+        "year": 1,
+        "title": "Fundamentals and First Steps",
+        "education": "Introductory courses in HTML, CSS, and JavaScript. First contact with programming through self-study and online platforms.",
+        "experience": [
+          "Built simple personal websites and experimented with visual design.",
+          "Completed beginner projects to grasp core front-end concepts."
+        ]
+      },
+      {
+        "year": 2,
+        "title": "Advanced Learning and First Experiences",
+        "education": "Started the Systems Analysis and Development course (UNINTER). Focused on web development and UI/UX.",
+        "experience": [
+          "Gained my first role as a Webmaster at The Brooklyn Brothers, working with Unilever brands using AEM, HTML/CSS, and agile tools like Jira.",
+          "Deepened my UX design knowledge through courses and Figma practice.",
+          "Began bridging design and code."
+        ]
+      },
+      {
+        "year": 3,
+        "title": "Exploration and Independence",
+        "education": "Online courses and bootcamps focusing on specialized areas like front-end frameworks (React, Angular) and back-end technologies (Node.js).",
+        "experience": [
+          "Worked as a freelancer, creating real solutions for real clients.",
+          "Expanded my skillset with JavaScript, React, accessibility practices, and design systems.",
+          "Joined Minerva Controls as a Front-End and UI/UX Developer, growing through teamwork and constant feedback."
+        ]
+      },
+      {
+        "year": 4,
+        "title": "Building with Purpose",
+        "education": "Final phase of college, focusing on creating meaningful digital products.",
+        "experience": [
+          "Contributing at Minerva Controls, working on interface design and front-end development.",
+          "Completed Google's UX Design Certificate (Coursera), building case studies from scratch to high-fidelity prototypes.",
+          "Currently working on VidaPlus, a healthcare management system focused on usability and accessibility — my capstone project.",
+          "Co-founding Compath, a platform helping entrepreneurs via AI — from design to front-end implementation."
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "projectsData": [
+      {
+        "title": "Monicount - Finances Application",
+        "tagline": "Minimalist finance management, powered by AI.",
+        "description": "Monicount is a personal finance app built for people with variable income. It focuses on category-based budgeting (Essentials, Lifestyle, Investments), tracking planned vs. actual spending, credit card management, and personalized goal-setting. Designed for clarity and control, Monicount helps you visualize, plan, and grow your wealth — one coin at a time. I'm leading the front-end development with React, Tailwind CSS, and Next.js.",
+        "features": [
+          "Register and categorize expenses for streamlined tracking.",
+          "Visualize financial behavior with dynamic charts.",
+          "Filter by category, date, and value for detailed analysis.",
+          "Generate AI-driven insights and optimization tips."
+        ],
+        "visualIdentity": "The design embraces minimalism with a smart, approachable feel. Friendly illustrations and structured layouts reduce friction and cognitive load. A soft color palette keeps users focused on their finances without stress. Every element is crafted for accessibility and practicality.",
+        "url": "/projects/monicount.svg",
+        "github": "https://github.com/jenniferdsbaumgart/monicount-fullstack-finances-app",
+        "demo": "https://monicount.vercel.app/",
+        "tech": [
+          "ReactJS",
+          "Next.js",
+          "TailwindCSS",
+          "Figma",
+          "TypeScript",
+          "Full Stack"
+        ],
+        "techUsed": "For Monicount’s development, I used modern technologies to ensure performance and an optimized user experience. Next.js and React enabled the creation of a dynamic and high-performance app, while TypeScript ensured code safety. I used Tailwind CSS for fast and responsive styling, and shadcn/ui for accessible and customizable UI components. Prisma was used to efficiently integrate the PostgreSQL database, and authentication was implemented with Clerk. For payment processing, I used Stripe, and data validation was handled with Zod, ensuring data integrity throughout development.",
+        "challenges": []
+      },
+      {
+        "title": "ToDo List",
+        "tagline": "Simple, fast, and accessible.",
+        "description": "This productivity tool allows users to create and manage task lists intuitively. Built with Svelte for snappy performance, it features a clean, responsive interface and uses LocalStorage to persist data. Tasks can be filtered by status (completed, pending, all). Designed with a focus on accessibility and performance.",
+        "features": [
+          "Task CRUD Functionality: Users can create, update, complete, and delete tasks with real-time feedback.",
+          "Editable Interface: Tasks can be edited inline, allowing for a smooth and intuitive editing experience.",
+          "Progress Tracking: The app dynamically displays the number of created and completed tasks.",
+          "Responsive Design: Fully responsive layout ensures usability on desktops, tablets, and mobile devices.",
+          "Data Persistence: Tasks are stored in a MySQL database, enabling persistent data management through an Express-based REST API."
+        ],
+        "visualIdentity": "The visual identity of the ToDo List was crafted to be both modern and accessible. A soft, gradient-based color palette combined with a bold typographic hierarchy creates an aesthetically pleasing experience while keeping the user focused on their tasks. The layout is responsive and adapts seamlessly across devices.",
+        "url": "/projects/todolist.svg",
+        "github": "https://github.com/jenniferdsbaumgart/todolist",
+        "demo": "https://todolist.vercel.app/",
+        "tech": [
+          "Svelte",
+          "JavaScript",
+          "TailwindCSS",
+          "NodeJS",
+          "Express",
+          "MySQL",
+          "REST API",
+          "Full Stack"
+        ],
+        "techUsed": "This project was developed using Svelte for the front-end framework, with TailwindCSS for utility-first styling. JavaScript handles client-side interactions, while Node.js and Express power the backend. Data is stored and managed using MySQL. The system communicates through a RESTful API, enabling efficient and scalable interaction between front and back end.",
+        "challenges": [
+          {
+            "challenge": "Implement inline editing without affecting the layout.",
+            "solution": "Used local state management in Svelte to isolate the editable task and synchronize updates to the backend only on save."
+          },
+          {
+            "challenge": "Ensure full responsiveness across devices.",
+            "solution": "Applied TailwindCSS utility classes and rigorous device testing to maintain consistent UX."
+          }
+        ]
+      },
+      {
+        "title": "Compath",
+        "tagline": "Your AI-powered entrepreneurial compass.",
+        "description": "Compath is a platform that helps entrepreneurs discover niches, analyze competition, and identify opportunities based on their region. It features a coin-based system where searches consume credits, which can be earned through invites or purchases. It also includes a learning hub with courses. I'm leading the front-end development, from Figma designs to a responsive React interface.",
+        "features": [
+          "Search for business opportunities by region.",
+          "Gamified coin-based system.",
+          "AI-driven recommendations and analysis.",
+          "Interactive dashboard with a user-friendly design."
+        ],
+        "visualIdentity": "Modern, vibrant, and goal-oriented. The interface uses a mix of deep blue and soft greens to convey trust and innovation. Icons and cards reinforce clarity and decision-making. The interface is clean, modular, and designed to navigate complex information with clarity and confidence.",
+        "url": "/projects/compath.svg",
+        "github": "https://github.com/jenniferdsbaumgart/compath",
+        "demo": "https://compath.vercel.app/",
+        "tech": [
+          "NextJS",
+          "Typescript",
+          "TailwindCSS",
+          "NodeJS",
+          "Express",
+          "REST API",
+          "Full Stack"
+        ],
+        "techUsed": "React.js, TailwindCSS, Next.js, Node.js, PostgreSQL. Hosted on Vercel and Supabase (MVP phase). Figma for UI/UX design.",
+        "challenges": [
+          {
+            "challenge": "Designing an intuitive interface for complex AI results.",
+            "solution": "Created wireframes and interactive prototypes in Figma, then tested flows with potential users before building with React and Tailwind."
+          },
+          {
+            "challenge": "Incorporating gamification without overwhelming the user.",
+            "solution": "Balanced visual elements and feedback systems with simple reward mechanics, clearly displaying coin balances and goals."
+          },
+          {
+            "challenge": "Handling user input and feedback to customize AI results.",
+            "solution": "Structured clean forms and filters to feed structured data to the backend AI logic, ensuring accuracy and usability."
+          }
+        ]
+      },
+      {
+        "title": "VidaPlus",
+        "tagline": "Modern healthcare management platform.",
+        "description": "VidaPlus is my capstone project, developed in a team. It's a hospital and healthcare service management system focused on accessibility, usability, and intuitive dashboards. It supports role-based access (patient, doctor, admin). I handle the front-end and contribute to the back-end with Node.js, Express, PostgreSQL, and Prisma.",
+        "features": [
+          "Patient registration and appointment scheduling.",
+          "Appointment scheduling, cancellation, and notifications",
+          "Secure login for doctors, admins, and patients.",
+          "Healthcare professional management (schedules, prescriptions, records)",
+          "Dashboard with service history and charts.",
+          "Telemedicine with secure video consultations"
+        ],
+        "visualIdentity": "Soft teal and greens convey calm and trust, creating a soothing experience for healthcare professionals and patients. Rounded elements and well-structured sections reduce cognitive load, ensuring accessibility and performance across devices.",
+        "url": "/projects/vida-plus.svg",
+        "github": "https://github.com/jenniferdsbaumgart/vidaplus",
+        "demo": "https://vidaplus.vercel.app/",
+        "tech": [
+          "Figma",
+          "ReactJS",
+          "Typescript",
+          "TailwindCSS",
+          "NodeJS",
+          "Express",
+          "PostgreSQL",
+          "REST API",
+          "Full Stack"
+        ],
+        "techUsed": "This project was designed in Figma, where high-fidelity wireframes and a custom style guide were created to ensure a modern, accessible, and responsive UI across all devices.The frontend was developed using React with TypeScript for robust component architecture and type safety. Vite was used for fast builds, and Tailwind CSS provided utility-first styling. Navigation was handled by React Router DOM, while React Hook Form and Zod enabled efficient form management and validation.Additional libraries included Lucide React (icons), clsx and tailwind-merge (class merging), date-fns (date manipulation), and uuid (unique ID generation). Chart.js and react-chartjs-2 were used for data visualization. The backend was powered by Supabase, providing a PostgreSQL database, authentication, real-time updates, and storage—all managed via secure environment variables. Code quality was ensured with ESLint, and tools like PostCSS and Autoprefixer supported cross-browser styling compatibility.",
+        "challenges": [
+          {
+            "challenge": "Centralizing hospitals, clinics, labs, and home care.",
+            "solution": "Built a modular system with role-based access and multi-unit support."
+          },
+          {
+            "challenge": "Making the system easy for all users.",
+            "solution": "Designed a responsive and accessible interface."
+          }
+        ]
+      },
+      {
+        "title": "First Portfolio",
+        "tagline": "My first showcase of projects.",
+        "description": "My first portfolio, created to display my initial projects as a developer. Built with pure HTML, CSS, and JavaScript, it was an opportunity to learn the fundamentals of web development and responsive design.",
+        "features": [
+          "Display of projects with descriptions and images.",
+          "Responsive design for desktop and mobile.",
+          "Simple and intuitive navigation.",
+          "Custom Javascript animations for UI elements",
+          "Contact form functional"
+        ],
+        "visualIdentity": "The visual identity was clean and minimalistic, focusing on shades of pink, card-style layout, and subtle transitions. I emphasized readability and tried to bring a calm and personal vibe that matched my story.",
+        "url": "/projects/first-portfolio.svg",
+        "github": "https://github.com/jenniferdsbaumgart/first-portfolio",
+        "demo": "https://first-portfolio.vercel.app/",
+        "tech": ["Figma", "HTML", "CSS", "JavaScript"],
+        "techUsed": "HTML5, CSS3 (custom styling, media queries), Vanilla JavaScript (for interactivity). No frameworks or libraries were used — everything was coded manually from scratch.",
+        "challenges": [
+          {
+            "challenge": "Building a responsive layout without using any frameworks.",
+            "solution": "I learned and applied media queries manually and structured the layout with Flexbox and percentage-based widths."
+          },
+          {
+            "challenge": "Creating engaging UI interactions with no libraries.",
+            "solution": "Used basic JavaScript DOM manipulation and event listeners to create hover effects and simple transitions."
+          },
+          {
+            "challenge": "Designing without experience in UX/UI.",
+            "solution": "Studied examples online and followed basic principles of alignment, contrast, and spacing to maintain a clean look."
+          }
+        ]
+      },
+      {
+        "title": "Terra Pura",
+        "tagline": "Landing page for a sustainable cosmetics brand that blends nature and technology.",
+        "description": "Terra Pura is a fictional natural cosmetics brand focused on sustainability, purity, and transparency. The landing page presents the brand's mission, best-selling products, and eco-friendly philosophy with a soft, modern design. The website invites conscious consumers to explore clean beauty solutions backed by nature and science. I designed and developed the interface prioritizing emotional connection, responsive layout, and clear storytelling.",
+        "features": [
+          "Hero section with brand mission and immersive background",
+          "Highlight of best-selling products with smooth hover effects",
+          "Section about the brand’s sustainable values",
+          "Customer testimonials with quote cards",
+          "Call-to-action with newsletter sign-up and shop invitation",
+          "Fully responsive layout for mobile and desktop",
+          "Lightweight build for fast loading times"
+        ],
+        "visualIdentity": "A serene and organic look, with earthy tones (sage green, soft beige, off-white) and rounded UI elements. Gentle transitions and nature-inspired textures support a calm and mindful browsing experience. Typography is elegant and minimal, with generous white space.",
+        "url": "/projects/terra-pura.svg",
+        "github": "https://github.com/jenniferdsbaumgart/terra-pura",
+        "demo": "https://terra-pura.vercel.app/",
+        "tech": [
+          "Figma",
+          "ReactJS",
+          "Typescript",
+          "TailwindCSS",
+          "FramerMotion"
+        ],
+        "techUsed": "The layout was designed in Figma with a custom design system tailored for wellness brands. ReactJS and Vite were used to build a fast, responsive, and scalable landing page. TailwindCSS provided utility-first styling with full mobile responsiveness. Animations were added using Framer Motion for scroll and hover interactions. Components were designed to be modular and easily reusable in a real e-commerce context.",
+        "challenges": [
+          {
+            "challenge":
+              "Creating a luxurious feel while remaining minimal and clean.",
+            "solution":
+              "Balanced whitespace, soft gradients, and elegant typography to convey purity and sophistication."
+          },
+          {
+            "challenge": "Conveying sustainability and trust visually.",
+            "solution":
+              "Used earth tones, nature-inspired icons, and storytelling-focused layout to strengthen brand values."
+          }
+        ]
+      }
+    ]
+  }
+}
