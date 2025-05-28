@@ -5,8 +5,11 @@ import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useState } from "react";
 import MailLineIcon from "remixicon-react/MailLineIcon";
 import { ReactTyped } from "react-typed";
+import { useContext } from 'react';
+import { LanguageContext } from '@/contexts/LanguageContext';
 
 const Hero = () => {
+  const { translations } = useContext(LanguageContext);
   const [windowOffset, setWindowOffset] = useState({
     innerWidth: 0,
     innerHeight: 0,
@@ -77,13 +80,13 @@ const Hero = () => {
                 y: buttonHover ? -40 : 0,
               }}
             >
-              Hi!
+              {translations.hero.saudation}
             </motion.span>
           </div>
         </motion.div>
         <div className="flex flex-col items-center">
           <h1 className="font-bebas text-gray-700 dark:text-zinc-300 leading-[6rem] mb-0 text-9xl text-center transition-colors sm:text-2xl">
-            Jennifer Baumgart
+            {translations.hero.title}
           </h1>
           <ReactTyped
             strings={["Frontend Developer", "UI/UX Designer"]}
@@ -93,7 +96,7 @@ const Hero = () => {
             className="font-oswald text-center uppercase text-semibold text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#a98df5] to-[#7c1bfc] transition-colors"
           />
           <p className="font-oswald text-center uppercase text-light text-lg text-gray-400">
-          Where logic meets creativity and users come first
+          {translations.hero.subtitle}
           </p>
           <motion.div
             initial={{ opacity: 0, y: 100 }}
@@ -120,7 +123,7 @@ const Hero = () => {
             onMouseEnter={() => setButtonHover(true)}
             onMouseLeave={() => setButtonHover(false)}
           >
-            <MailLineIcon /> Talk to me
+            <MailLineIcon /> {translations.hero.contactButton}
           </motion.a>
         </div>
       </div>

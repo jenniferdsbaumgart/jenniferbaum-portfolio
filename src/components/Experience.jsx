@@ -1,12 +1,15 @@
 'use client'
-'use client'
+
 import Heading from "./sub/Heading";
-import { arrowLeftIcon, experienceData } from "@/assets";
+import { arrowLeftIcon } from "@/assets";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { useRef } from 'react'
 import Image from "next/image";
+import { useContext } from 'react';
+import { LanguageContext } from '@/contexts/LanguageContext';
 
 const Experience = () => {
+  const { translations } = useContext(LanguageContext);
   const date = new Date().getFullYear();
 
   const containerRef = useRef(null)
@@ -19,7 +22,7 @@ const Experience = () => {
   const scrollY = useSpring(scrollYProgress, { stiffness: 200, damping: 20 })
   return (
     <div id="experience" className="relative py-20">
-      <Heading text={"Experience & Education"} />
+      <Heading text={translations.experience.title} />
       <Image
         src={"/jenny-seated.png"}
         alt={"Experience Image"}
@@ -28,7 +31,7 @@ const Experience = () => {
         className="absolute -top-4 right-10 opacity-70 lg:hidden"
       />
       <div ref={containerRef} className="relative w-full h-full flex flex-col tems-center justify-center gap-y-10 lg:gap-y-20">
-        {experienceData.map((data, i) => (
+        {translations.experience.experienceData.map((data, i) => (
           <div
             key={`id-${i}`}
             className={`w-[600px] xl:w-[480px] sm:w-full px-12 sm:px-0 relative ${
@@ -48,15 +51,15 @@ const Experience = () => {
                 {data.title}
               </h1>
               <p className="text-gray-800 transition-colors">
-                <span className="block font-oswald font-semibold text-lg dark:text-violet-200">Education:</span>
+                <span className="block font-oswald font-semibold text-lg dark:text-violet-200">{translations.experience.educationTitle}:</span>
                 <span className="block pl-2 dark:text-gray-100">
                   {data.education}
                 </span>
               </p>
               <div className="text-gray-800 dark:text-gray-200 transition-colors">
-                <span className="font-oswald font-semibold text-lg dark:text-violet-200">Experience:</span>
+                <span className="font-oswald font-semibold text-lg dark:text-violet-200">{translations.experience.experienceTitle}:</span>
                 <ul className="pl-2">
-                  {data.experience.map((exp, j) => (
+                  {data.experience && data.experience.map((exp, j) => (
                     <li key={j} className="my-1 font-extralight">
                       {exp}
                     </li>
@@ -78,7 +81,7 @@ const Experience = () => {
                   : "right-full translate-x-1/2 lg:right-1/2"
               }`}
             >
-              {date - experienceData.length + i + 1}
+              {date - translations.experience.experienceData.length + i + 1}
             </div>
           </div>
         ))}

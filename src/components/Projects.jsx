@@ -4,47 +4,61 @@ import Heading from "./sub/Heading";
 import Project from "./sub/Project";
 import { projectsData, projectsButton } from "@/assets";
 import { animate, motion } from "framer-motion";
+import { useContext } from "react";
+import { LanguageContext } from "@/contexts/LanguageContext";
+import { LanguageProvider } from "@/contexts/LanguageContext";
 
 const Projects = () => {
+  const { translations } = useContext(LanguageContext);
   const [tech, setTech] = useState("All");
   const [index, setIndex] = useState(0);
   const prevIndex = useRef(0);
   const buttonsRef = useRef([]);
+  const projects = translations?.projects?.projectsData || [];
 
   const handleClick = () => {
-    animate(buttonsRef.current[prevIndex.current], {opacity: .5, scale: 1})
-    animate(buttonsRef.current[index], {opacity: 1, scale: 1.2})
-    }
+    animate(buttonsRef.current[prevIndex.current], { opacity: 0.5, scale: 1 });
+    animate(buttonsRef.current[index], { opacity: 1, scale: 1.2 });
+  };
 
-    useEffect(() => {
-        handleClick()
-        prevIndex.current = index
-    }, [index])
+  useEffect(() => {
+    handleClick();
+    prevIndex.current = index;
+  }, [index]);
   return (
-    <div id="projects" className="min-h-screen py-20 px-8">
-      <Heading text={"Projects"} />
-      <div className="flex flex-wrap items-center justify-start gap-4 mb-2">
-        {projectsButton.map((text, i) => (
-          <motion.button
-            key={i}
-            initial={{opacity: i === 0 ? 1 : 0.5, scale: i === 0 ? 1.2 : 1}}
-            ref={(el) => buttonsRef.current.push(el)}
-            onClick={() => {setTech(text), setIndex(i)}}
-            className="border border-violet-500 rounded-xl px-4 py-2 text-sm font-light tracking-wider text-gray-400"
-          >
-            {text}
-          </motion.button>
-        ))}
+    <LanguageProvider>
+      <div id="projects" className="min-h-screen py-20 px-8">
+        <Heading text={translations.projects.title} />
+        <div className="flex flex-wrap items-center justify-start gap-4 mb-2">
+          {projectsButton.map((text, i) => (
+            <motion.button
+              key={i}
+              initial={{ opacity: i === 0 ? 1 : 0.5, scale: i === 0 ? 1.2 : 1 }}
+              ref={(el) => buttonsRef.current.push(el)}
+              onClick={() => {
+                setTech(text), setIndex(i);
+              }}
+              className="border border-violet-500 rounded-xl px-4 py-2 text-sm font-light tracking-wider text-gray-400"
+            >
+              {text}
+            </motion.button>
+          ))}
+        </div>
+        <div className="flex flex-wrap items-center justify-center gap-5 py-4">
+          {projects
+            .filter((project) => {
+              return project.tech.some((item) =>
+                tech === "All" ? true : item === tech
+              );
+            })
+            .map((data, i) => (
+              <motion.div key={`id-${i}`} layout>
+                <Project data={data} index={i} />
+              </motion.div>
+            ))}
+        </div>
       </div>
-      <div className="flex flex-wrap items-center justify-center gap-5 py-4">
-        {projectsData.filter((project) => {return project.tech.some((item) => (tech === "All" ? true : item === tech))})
-        .map((data, i) => (
-          <motion.div key={`id-${i}`} layout>
-            <Project data={data} index={i} />
-          </motion.div>
-        ))}
-      </div>
-    </div>
+    </LanguageProvider>
   );
 };
 
