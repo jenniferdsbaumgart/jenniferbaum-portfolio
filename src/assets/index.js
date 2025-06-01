@@ -22,10 +22,10 @@ export const heroIcons = [
 ];
 
 // About Me
-import GithubFillIcon from "remixicon-react/GithubFillIcon";
-import Projector2LineIcon from "remixicon-react/Projector2LineIcon";
-import GroupLineIcon from "remixicon-react/GroupLineIcon";
-import AwardFillIcon from "remixicon-react/AwardFillIcon";
+// import GithubFillIcon from "remixicon-react/GithubFillIcon";
+// import Projector2LineIcon from "remixicon-react/Projector2LineIcon";
+// import GroupLineIcon from "remixicon-react/GroupLineIcon";
+// import AwardFillIcon from "remixicon-react/AwardFillIcon";
 
 // export const aboutData = [
 //   {
@@ -302,9 +302,9 @@ export const projectsData = [
     tagline:
       "A smart and secure healthcare management system for clinics, hospitals, labs, and home care teams.",
     desc: "The VidaPlus Health Management System (SGHSS) is a comprehensive platform designed to streamline operations across hospitals, neighborhood clinics, laboratories, and home care services. It centralizes patient care, medical staff coordination, administrative tasks, and telemedicine — all while ensuring high standards of data security and compliance with LGPD. The system supports functionalities such as patient registration, appointment scheduling, digital prescriptions, real-time access to medical records, and hospital bed management. I'm developing the system from interface design to front-end implementation using modern technologies to ensure performance, accessibility, and scalability across multiple healthcare units.",
-    url: "/projects/image-1.jpg",
+    url: "/projects/vida-plus.svg",
     demo: "",
-    github: "",
+    github: "https://github.com/jenniferdsbaumgart/vidaplus-healthcare-platform",
     tech: [
       "Figma",
       "ReactJS",
@@ -356,6 +356,7 @@ export const projectsData = [
       "ReactJS",
       "Typescript",
       "TailwindCSS",
+      "FramerMotion",
     ],
     visualIdentity:
       "A serene and organic look, with earthy tones (sage green, soft beige, off-white) and rounded UI elements. Gentle transitions and nature-inspired textures support a calm and mindful browsing experience. Typography is elegant and minimal, with generous white space.",
@@ -521,7 +522,6 @@ export const navbarData = [
 // Toggle
 import MoonFoggyFillIcon from "remixicon-react/MoonFoggyFillIcon";
 import SunFoggyFillIcon from "remixicon-react/SunFoggyFillIcon";
-import { LinkedinIcon } from "lucide-react";
 
 export const moonIcon = <MoonFoggyFillIcon />;
 export const sunIcon = <SunFoggyFillIcon />;

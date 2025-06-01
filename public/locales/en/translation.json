@@ -82,7 +82,7 @@
           "Full Stack"
         ],
         "techUsed": "For Monicount’s development, I used modern technologies to ensure performance and an optimized user experience. Next.js and React enabled the creation of a dynamic and high-performance app, while TypeScript ensured code safety. I used Tailwind CSS for fast and responsive styling, and shadcn/ui for accessible and customizable UI components. Prisma was used to efficiently integrate the PostgreSQL database, and authentication was implemented with Clerk. For payment processing, I used Stripe, and data validation was handled with Zod, ensuring data integrity throughout development.",
-        "challenges": []
+        "challengesAndSolutions": []
       },
       {
         "title": "ToDo List",
@@ -110,7 +110,7 @@
           "Full Stack"
         ],
         "techUsed": "This project was developed using Svelte for the front-end framework, with TailwindCSS for utility-first styling. JavaScript handles client-side interactions, while Node.js and Express power the backend. Data is stored and managed using MySQL. The system communicates through a RESTful API, enabling efficient and scalable interaction between front and back end.",
-        "challenges": [
+        "challengesAndSolutions": [
           {
             "challenge": "Implement inline editing without affecting the layout.",
             "solution": "Used local state management in Svelte to isolate the editable task and synchronize updates to the backend only on save."
@@ -188,7 +188,7 @@
           "Full Stack"
         ],
         "techUsed": "This project was designed in Figma, where high-fidelity wireframes and a custom style guide were created to ensure a modern, accessible, and responsive UI across all devices.The frontend was developed using React with TypeScript for robust component architecture and type safety. Vite was used for fast builds, and Tailwind CSS provided utility-first styling. Navigation was handled by React Router DOM, while React Hook Form and Zod enabled efficient form management and validation.Additional libraries included Lucide React (icons), clsx and tailwind-merge (class merging), date-fns (date manipulation), and uuid (unique ID generation). Chart.js and react-chartjs-2 were used for data visualization. The backend was powered by Supabase, providing a PostgreSQL database, authentication, real-time updates, and storage—all managed via secure environment variables. Code quality was ensured with ESLint, and tools like PostCSS and Autoprefixer supported cross-browser styling compatibility.",
-        "challenges": [
+        "challengesAndSolutions": [
           {
             "challenge": "Centralizing hospitals, clinics, labs, and home care.",
             "solution": "Built a modular system with role-based access and multi-unit support."
@@ -216,7 +216,7 @@
         "demo": "https://first-portfolio.vercel.app/",
         "tech": ["Figma", "HTML", "CSS", "JavaScript"],
         "techUsed": "HTML5, CSS3 (custom styling, media queries), Vanilla JavaScript (for interactivity). No frameworks or libraries were used — everything was coded manually from scratch.",
-        "challenges": [
+        "challengesAndSolutions": [
           {
             "challenge": "Building a responsive layout without using any frameworks.",
             "solution": "I learned and applied media queries manually and structured the layout with Flexbox and percentage-based widths."
@@ -256,7 +256,7 @@
           "FramerMotion"
         ],
         "techUsed": "The layout was designed in Figma with a custom design system tailored for wellness brands. ReactJS and Vite were used to build a fast, responsive, and scalable landing page. TailwindCSS provided utility-first styling with full mobile responsiveness. Animations were added using Framer Motion for scroll and hover interactions. Components were designed to be modular and easily reusable in a real e-commerce context.",
-        "challenges": [
+        "challengesAndSolutions": [
           {
             "challenge":
               "Creating a luxurious feel while remaining minimal and clean.",
@@ -271,5 +271,16 @@
         ]
       }
     ]
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submitButton": "Send Message"
+    },
+    "thankYouMessage": "Thank you for reaching out! I'll get back to you as soon as possible."
   }
 }

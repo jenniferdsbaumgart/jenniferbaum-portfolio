@@ -82,7 +82,7 @@
           "Full Stack"
         ],
         "techUsed": "Para o desenvolvimento do Monicount, utilizei tecnologias modernas para garantir desempenho e uma experiência otimizada. Next.js e React permitiram criar um app dinâmico e de alta performance, enquanto TypeScript garantiu segurança no código. Usei Tailwind CSS para estilização rápida e responsiva, e shadcn/ui para componentes de UI acessíveis e customizáveis. Prisma foi utilizado para integrar eficientemente o banco de dados PostgreSQL, e a autenticação foi implementada com Clerk. Para pagamentos, utilizei Stripe, e a validação de dados foi feita com Zod, garantindo integridade dos dados durante todo o desenvolvimento.",
-        "challenges": []
+        "challengesAndSolutions": []
       },
       {
         "title": "ToDo List",
@@ -110,7 +110,7 @@
           "Full Stack"
         ],
         "techUsed": "Este projeto foi desenvolvido usando Svelte no front-end, com TailwindCSS para estilização utilitária. JavaScript gerencia as interações do lado do cliente, enquanto Node.js e Express alimentam o backend. Os dados são armazenados e gerenciados em MySQL. O sistema se comunica via API RESTful, permitindo interação eficiente e escalável entre front e back-end.",
-        "challenges": [
+        "challengesAndSolutions": [
           {
             "challenge": "Implementar edição inline sem afetar o layout.",
             "solution": "Usei gerenciamento de estado local no Svelte para isolar a tarefa editável e sincronizar as atualizações com o backend apenas ao salvar."
@@ -145,7 +145,7 @@
           "Full Stack"
         ],
         "techUsed": "React.js, TailwindCSS, Next.js, Node.js, PostgreSQL. Hospedado na Vercel e Supabase (fase MVP). Figma para design UI/UX.",
-        "challenges": [
+        "challengesAndSolutions": [
           {
             "challenge": "Projetar uma interface intuitiva para resultados complexos de IA.",
             "solution": "Criei wireframes e protótipos interativos no Figma, depois testei fluxos com usuários potenciais antes de construir com React e Tailwind."
@@ -188,7 +188,7 @@
           "Full Stack"
         ],
         "techUsed": "Este projeto foi desenhado no Figma, onde criei wireframes de alta fidelidade e um guia de estilos personalizado para garantir uma UI moderna, acessível e responsiva em todos os dispositivos. O front-end foi desenvolvido com React e TypeScript para arquitetura robusta de componentes e segurança de tipos. Vite foi usado para builds rápidos, e Tailwind CSS para estilização utilitária. A navegação foi feita com React Router DOM, enquanto React Hook Form e Zod permitiram gerenciamento e validação eficiente de formulários. Outras bibliotecas incluíram Lucide React (ícones), clsx e tailwind-merge (mesclagem de classes), date-fns (manipulação de datas) e uuid (geração de IDs únicos). Chart.js e react-chartjs-2 foram usados para visualização de dados. O backend foi alimentado pelo Supabase, fornecendo banco PostgreSQL, autenticação, atualizações em tempo real e armazenamento — tudo gerenciado por variáveis de ambiente seguras. A qualidade do código foi garantida com ESLint, e ferramentas como PostCSS e Autoprefixer deram suporte à compatibilidade de estilos entre navegadores.",
-        "challenges": [
+        "challengesAndSolutions": [
           {
             "challenge": "Centralizar hospitais, clínicas, laboratórios e home care.",
             "solution": "Construi um sistema modular com acesso por perfil e suporte a múltiplas unidades."
@@ -216,7 +216,7 @@
         "demo": "https://first-portfolio.vercel.app/",
         "tech": ["Figma", "HTML", "CSS", "JavaScript"],
         "techUsed": "HTML5, CSS3 (estilização customizada, media queries), JavaScript puro (para interatividade). Nenhum framework ou biblioteca foi utilizado — tudo foi codado manualmente do zero.",
-        "challenges": [
+        "challengesAndSolutions": [
           {
             "challenge": "Construir um layout responsivo sem usar frameworks.",
             "solution": "Aprendi e apliquei media queries manualmente e estruturei o layout com Flexbox e larguras em porcentagem."
@@ -256,7 +256,7 @@
           "FramerMotion"
         ],
         "techUsed": "O layout foi desenhado no Figma com um sistema de design customizado para marcas de bem-estar. ReactJS e Vite foram usados para construir uma landing page rápida, responsiva e escalável. TailwindCSS forneceu estilização utilitária com total responsividade mobile. As animações foram adicionadas com Framer Motion para interações de rolagem e hover. Os componentes foram projetados para serem modulares e facilmente reutilizáveis em um contexto real de e-commerce.",
-        "challenges": [
+        "challengesAndSolutions": [
           {
             "challenge":
               "Criar uma sensação de luxo mantendo o visual minimalista e limpo.",
@@ -271,5 +271,16 @@
         ]
       }
     ]
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "form": {
+      "name": "Nome",
+      "email": "Email",
+      "subject": "Assunto",
+      "message": "Mensagem",
+      "submitButton": "Enviar Mensagem"
+    },
+    "thankYouMessage": "Obrigado por entrar em contato! Responderei o mais breve possível."
   }
 }
