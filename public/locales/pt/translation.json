@@ -71,6 +71,12 @@
         ],
         "visualIdentity": "O design adota o minimalismo com um toque inteligente e acessível. Ilustrações amigáveis e layouts estruturados reduzem o atrito e a carga cognitiva. Uma paleta de cores suave mantém o foco do usuário nas finanças sem estresse. Cada elemento é pensado para acessibilidade e praticidade.",
         "url": "/projects/monicount.svg",
+        "images": [
+          "/projects/monicount/monicount1.svg",
+          "/projects/monicount/monicount2.svg",
+          "/projects/monicount/monicount3.svg",
+          "/projects/monicount/monicount4.svg"
+        ],
         "github": "https://github.com/jenniferdsbaumgart/monicount-fullstack-finances-app",
         "demo": "https://monicount.vercel.app/",
         "tech": [
@@ -97,8 +103,13 @@
         ],
         "visualIdentity": "A identidade visual do ToDo List foi criada para ser moderna e acessível. Uma paleta de cores suaves em degradê combinada com hierarquia tipográfica marcante cria uma experiência agradável, mantendo o foco do usuário nas tarefas. O layout é responsivo e se adapta perfeitamente a diferentes dispositivos.",
         "url": "/projects/todolist.svg",
-        "github": "https://github.com/jenniferdsbaumgart/todolist",
-        "demo": "https://todolist.vercel.app/",
+        "images": [
+          "/projects/todolist/todolist1.svg",
+          "/projects/todolist/todolist2.svg",
+          "/projects/todolist/todolist3.svg"
+        ],
+        "github": "https://github.com/jenniferdsbaumgart/todo-list-svelte",
+        "demo": "https://todo-list-svelte-mu.vercel.app/",
         "tech": [
           "Svelte",
           "JavaScript",
@@ -133,8 +144,19 @@
         ],
         "visualIdentity": "Moderna, vibrante e orientada a objetivos. A interface usa azul profundo e verdes suaves para transmitir confiança e inovação. Ícones e cards reforçam clareza e tomada de decisão. O layout é limpo, modular e projetado para navegar informações complexas com clareza e confiança.",
         "url": "/projects/compath.svg",
-        "github": "https://github.com/jenniferdsbaumgart/compath",
-        "demo": "https://compath.vercel.app/",
+        "images": [
+          "/projects/compath/compath1.svg",
+          "/projects/compath/compath2.svg",
+          "/projects/compath/compath3.svg",
+          "/projects/compath/compath4.svg",
+          "/projects/compath/compath5.svg",
+          "/projects/compath/compath6.svg",
+          "/projects/compath/compath7.svg",
+          "/projects/compath/compath8.svg",
+          "/projects/compath/compath9.svg"
+        ],
+        "github": "https://github.com/jenniferdsbaumgart/compath.ai",
+        "demo": "",
         "tech": [
           "NextJS",
           "Typescript",
@@ -174,8 +196,16 @@
         ],
         "visualIdentity": "Tons suaves de verde transmitem calma e confiança, criando uma experiência acolhedora para profissionais de saúde e pacientes. Elementos arredondados e seções bem estruturadas reduzem a carga cognitiva, garantindo acessibilidade e performance em todos os dispositivos.",
         "url": "/projects/vida-plus.svg",
-        "github": "https://github.com/jenniferdsbaumgart/vidaplus",
-        "demo": "https://vidaplus.vercel.app/",
+        "images": [
+          "/projects/vidaplus/vidaplus1.svg",
+          "/projects/vidaplus/vidaplus2.svg",
+          "/projects/vidaplus/vidaplus3.svg",
+          "/projects/vidaplus/vidaplus4.svg",
+          "/projects/vidaplus/vidaplus5.svg",
+          "/projects/vidaplus/vidaplus6.svg"
+        ],
+        "github": "https://github.com/jenniferdsbaumgart/vidaplus-healthcare-platform",
+        "demo": "",
         "tech": [
           "Figma",
           "ReactJS",
@@ -212,8 +242,14 @@
         ],
         "visualIdentity": "A identidade visual foi limpa e minimalista, focando em tons de rosa, layout em cards e transições sutis. Dei ênfase à legibilidade e busquei trazer um clima calmo e pessoal que combinasse com minha história.",
         "url": "/projects/first-portfolio.svg",
-        "github": "https://github.com/jenniferdsbaumgart/first-portfolio",
-        "demo": "https://first-portfolio.vercel.app/",
+        "images": [
+          "/projects/firstportfolio/firstportfolio1.svg",
+          "/projects/firstportfolio/firstportfolio2.svg",
+          "/projects/firstportfolio/firstportfolio3.svg",
+          "/projects/firstportfolio/firstportfolio4.svg"
+        ],
+        "github": "https://github.com/jenniferdsbaumgart/projectJDS2.0",
+        "demo": "https://jenniferds.netlify.app/",
         "tech": ["Figma", "HTML", "CSS", "JavaScript"],
         "techUsed": "HTML5, CSS3 (estilização customizada, media queries), JavaScript puro (para interatividade). Nenhum framework ou biblioteca foi utilizado — tudo foi codado manualmente do zero.",
         "challengesAndSolutions": [
@@ -246,8 +282,14 @@
         ],
         "visualIdentity": "Visual sereno e orgânico, com tons terrosos (verde sálvia, bege suave, off-white) e elementos arredondados. Transições suaves e texturas inspiradas na natureza proporcionam uma navegação calma e consciente. Tipografia elegante e minimalista, com bastante espaço em branco.",
         "url": "/projects/terra-pura.svg",
-        "github": "https://github.com/jenniferdsbaumgart/terra-pura",
-        "demo": "https://terra-pura.vercel.app/",
+        "images": [
+          "/projects/terrapura/terrapura1.svg",
+          "/projects/terrapura/terrapura2.svg",
+          "/projects/terrapura/terrapura3.svg",
+          "/projects/terrapura/terrapura4.svg"
+        ],
+        "github": "https://github.com/jenniferdsbaumgart/terra-pura-ecommerce",
+        "demo": "https://terra-pura-ecommerce.vercel.app/",
         "tech": [
           "Figma",
           "ReactJS",
