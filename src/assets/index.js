@@ -4,11 +4,11 @@ import GithubLineIcon from "remixicon-react/GithubLineIcon";
 import LinkedinBoxLineIcon from "remixicon-react/LinkedinBoxLineIcon";
 
 export const heroIcons = [
-  {
-    id: "instagram",
-    icon: <InstagramLineIcon />,
-    url: "https://www.instagram.com/codingjenny/",
-  },
+  // {
+  //   id: "instagram",
+  //   icon: <InstagramLineIcon />,
+  //   url: "https://www.instagram.com/codingjenny/",
+  // },
   {
     id: "linkedin",
     icon: <LinkedinBoxLineIcon />,
