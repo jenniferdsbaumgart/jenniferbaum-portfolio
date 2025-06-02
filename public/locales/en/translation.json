@@ -7,7 +7,7 @@
   },
   "about": {
     "title": "About Me",
-    "aboutText": "Hi! I'm Jennifer Baumgart — a Front-End Developer and UI/UX Designer passionate about turning ideas into engaging digital experiences. With a toolkit that includes HTML, CSS, JavaScript, React, and Figma, I create responsive, accessible, and visually appealing interfaces. Curious by nature and detail-obsessed by habit, I bridge design and development to deliver seamless experiences. Whether tweaking a layout or squashing a bug, my focus is always on clarity, usability, and real impact. Currently, I'm diving deeper into React and design systems — and I love building tools that make life easier, smarter, and more beautiful."
+    "aboutText": "Hi! I'm Jennifer Baumgart — a Front-End Developer and UI/UX Designer passionate about turning ideas into engaging digital experiences. With a toolkit that includes HTML, CSS, JavaScript, React, NextJS, TypeScript, and Figma, I create responsive, accessible, and visually appealing interfaces. Curious by nature and detail-obsessed by habit, I bridge design and development to deliver seamless experiences. Whether tweaking a layout or squashing a bug, my focus is always on clarity, usability, and real impact. Currently, I'm diving deeper into React and design systems, and I love building tools that make life easier, smarter, and more beautiful."
   },
   "experience": {
     "title": "Education & Experience",
@@ -20,15 +20,15 @@
         "education": "Introductory courses in HTML, CSS, and JavaScript. First contact with programming through self-study and online platforms.",
         "experience": [
           "Built simple personal websites and experimented with visual design.",
-          "Completed beginner projects to grasp core front-end concepts."
+          "Completed beginner projects to grasp core front-end and programming concepts."
         ]
       },
       {
         "year": 2,
         "title": "Advanced Learning and First Experiences",
-        "education": "Started the Systems Analysis and Development course (UNINTER). Focused on web development and UI/UX.",
+        "education": "Started the Systems Analysis and Development course (UNINTER). Focussed on web development and UI/UX.",
         "experience": [
-          "Gained my first role as a Webmaster at The Brooklyn Brothers, working with Unilever brands using AEM, HTML/CSS, and agile tools like Jira.",
+          "Gained my first role as a Frontend Developer at The Brooklyn Brothers, working with Unilever brands using AEM, HTML/CSS, and agile tools like Jira.",
           "Deepened my UX design knowledge through courses and Figma practice.",
           "Began bridging design and code."
         ]
@@ -36,7 +36,7 @@
       {
         "year": 3,
         "title": "Exploration and Independence",
-        "education": "Online courses and bootcamps focusing on specialized areas like front-end frameworks (React, Angular) and back-end technologies (Node.js).",
+        "education": "Online courses and bootcamps focussing on specialised areas like front-end frameworks (React, Angular) and back-end technologies (Node.js).",
         "experience": [
           "Worked as a freelancer, creating real solutions for real clients.",
           "Expanded my skillset with JavaScript, React, accessibility practices, and design systems.",
@@ -46,12 +46,12 @@
       {
         "year": 4,
         "title": "Building with Purpose",
-        "education": "Final phase of college, focusing on creating meaningful digital products.",
+        "education": "Final phase of university, focussing on creating meaningful digital products. Joined a JavaScript Specialist course.",
         "experience": [
           "Contributing at Minerva Controls, working on interface design and front-end development.",
           "Completed Google's UX Design Certificate (Coursera), building case studies from scratch to high-fidelity prototypes.",
-          "Currently working on VidaPlus, a healthcare management system focused on usability and accessibility — my capstone project.",
-          "Co-founding Compath, a platform helping entrepreneurs via AI — from design to front-end implementation."
+          "Currently working on VidaPlus, a healthcare management system focussed on usability and accessibility — my capstone project.",
+          "Lead on Compath project, a platform helping entrepreneurs via AI — from design to front-end implementation as part of the JavaScript Specialist course."
         ]
       }
     ]
@@ -62,14 +62,14 @@
       {
         "title": "Monicount - Finances Application",
         "tagline": "Minimalist finance management, powered by AI.",
-        "description": "Monicount is a personal finance app built for people with variable income. It focuses on category-based budgeting (Essentials, Lifestyle, Investments), tracking planned vs. actual spending, credit card management, and personalized goal-setting. Designed for clarity and control, Monicount helps you visualize, plan, and grow your wealth — one coin at a time. I'm leading the front-end development with React, Tailwind CSS, and Next.js.",
+        "description": "Monicount is a personal finance app built for people with variable income. It focusses on category-based budgeting (Expenses, Deposits, Investments), tracking actual spending, receiving personalised insights and optimisation tips. Designed for clarity and control, Monicount helps you visualise, plan, and grow your wealth — one coin at a time.",
         "features": [
-          "Register and categorize expenses for streamlined tracking.",
-          "Visualize financial behavior with dynamic charts.",
+          "Register and categorise expenses for streamlined tracking.",
+          "Visualise financial behaviour with dynamic charts.",
           "Filter by category, date, and value for detailed analysis.",
-          "Generate AI-driven insights and optimization tips."
+          "Generate AI-driven insights and optimisation tips."
         ],
-        "visualIdentity": "The design embraces minimalism with a smart, approachable feel. Friendly illustrations and structured layouts reduce friction and cognitive load. A soft color palette keeps users focused on their finances without stress. Every element is crafted for accessibility and practicality.",
+        "visualIdentity": "The design embraces minimalism with a smart, approachable feel. Friendly illustrations and structured layouts reduce friction and cognitive load. A modern and dark colour palette keeps users focussed on their finances without stress. The interface is designed to be intuitive, with clear navigation and responsive elements.",
         "url": "/projects/monicount.svg",
         "images": [
           "/projects/monicount/monicount1.svg",
@@ -85,15 +85,32 @@
           "TailwindCSS",
           "Figma",
           "TypeScript",
+          "Prisma",
+          "PostgreSQL",
+          "Clerk",
+          "Stripe",
           "Full Stack"
         ],
-        "techUsed": "For Monicount’s development, I used modern technologies to ensure performance and an optimized user experience. Next.js and React enabled the creation of a dynamic and high-performance app, while TypeScript ensured code safety. I used Tailwind CSS for fast and responsive styling, and shadcn/ui for accessible and customizable UI components. Prisma was used to efficiently integrate the PostgreSQL database, and authentication was implemented with Clerk. For payment processing, I used Stripe, and data validation was handled with Zod, ensuring data integrity throughout development.",
-        "challengesAndSolutions": []
+        "techUsed": "For Monicount’s development, I used modern technologies to ensure performance and an optimised user experience. Next.js and React enabled the creation of a dynamic and high-performance app, while TypeScript ensured code safety. I used Tailwind CSS for fast and responsive styling, and shadcn/ui for accessible and customisable UI components. Prisma was used to efficiently integrate the PostgreSQL database, and authentication was implemented with Clerk. For payment processing, I used Stripe, and data validation was handled with Zod, ensuring data integrity throughout development.",
+        "challengesAndSolutions": [
+          {
+            "challenge": "Creating a user-friendly interface for complex financial data.",
+            "solution": "Designed intuitive navigation and clear visualisations to simplify data interpretation."
+          },
+          {
+            "challenge": "Ensuring real-time updates without page reloads.",
+            "solution": "Implemented React's state management and Next.js's server-side rendering for dynamic content."
+          },
+          {
+            "challenge": "Integrating AI insights without overwhelming the user.",
+            "solution": "Used concise, actionable tips and visual cues to present insights clearly."
+          }
+        ]
       },
       {
         "title": "ToDo List",
         "tagline": "Simple, fast, and accessible.",
-        "description": "This productivity tool allows users to create and manage task lists intuitively. Built with Svelte for snappy performance, it features a clean, responsive interface and uses LocalStorage to persist data. Tasks can be filtered by status (completed, pending, all). Designed with a focus on accessibility and performance.",
+        "description": "This productivity tool allows users to create and manage task lists intuitively. Built with Svelte for snappy performance, it features a clean, responsive interface. Tasks can be created, updated, completed, and deleted with real-time feedback. The app uses a MySQL database for persistent storage, accessed through an Express-based REST API. It’s designed to be accessible and user-friendly, with inline editing and progress tracking.",
         "features": [
           "Task CRUD Functionality: Users can create, update, complete, and delete tasks with real-time feedback.",
           "Editable Interface: Tasks can be edited inline, allowing for a smooth and intuitive editing experience.",
@@ -101,7 +118,7 @@
           "Responsive Design: Fully responsive layout ensures usability on desktops, tablets, and mobile devices.",
           "Data Persistence: Tasks are stored in a MySQL database, enabling persistent data management through an Express-based REST API."
         ],
-        "visualIdentity": "The visual identity of the ToDo List was crafted to be both modern and accessible. A soft, gradient-based color palette combined with a bold typographic hierarchy creates an aesthetically pleasing experience while keeping the user focused on their tasks. The layout is responsive and adapts seamlessly across devices.",
+        "visualIdentity": "The visual identity of the ToDo List was crafted to be both modern and simple. A soft, violet and turquoise colour palette combined with a bold typographic hierarchy creates an aesthetically pleasing experience while keeping the user focussed on their tasks.",
         "url": "/projects/todolist.svg",
         "images": [
           "/projects/todolist/todolist1.svg",
@@ -124,18 +141,18 @@
         "challengesAndSolutions": [
           {
             "challenge": "Implement inline editing without affecting the layout.",
-            "solution": "Used local state management in Svelte to isolate the editable task and synchronize updates to the backend only on save."
+            "solution": "Used local state management in Svelte to isolate the editable task and synchronise updates to the backend only on save."
           },
           {
-            "challenge": "Ensure full responsiveness across devices.",
-            "solution": "Applied TailwindCSS utility classes and rigorous device testing to maintain consistent UX."
+            "challenge": "Ensuring real-time updates without page reloads.",
+            "solution": "Implemented Svelte's reactive features to automatically update the UI when tasks are created, updated, or deleted."
           }
         ]
       },
       {
         "title": "Compath",
         "tagline": "Your AI-powered entrepreneurial compass.",
-        "description": "Compath is a platform that helps entrepreneurs discover niches, analyze competition, and identify opportunities based on their region. It features a coin-based system where searches consume credits, which can be earned through invites or purchases. It also includes a learning hub with courses. I'm leading the front-end development, from Figma designs to a responsive React interface.",
+        "description": "Compath is a platform that helps entrepreneurs discover niches, analyse competition, and identify opportunities based on their region. It features a coin-based system where searches consume credits, which can be earned through invites or purchases. It also includes a learning hub with courses. I'm leading the project, working not only on the front-end development, from Figma designs to a responsive React interface, but also on the back-end integration, database management, API development, and AI implementation.",
         "features": [
           "Search for business opportunities by region.",
           "Gamified coin-based system.",
@@ -159,25 +176,29 @@
         "demo": "",
         "tech": [
           "NextJS",
-          "Typescript",
+          "TypeScript",
           "TailwindCSS",
           "NodeJS",
           "Express",
           "REST API",
+          "MongoDB",
+          "OpenAI API",
+          "Figma",
+          "Stripe",
           "Full Stack"
         ],
-        "techUsed": "React.js, TailwindCSS, Next.js, Node.js, PostgreSQL. Hosted on Vercel and Supabase (MVP phase). Figma for UI/UX design.",
+        "techUsed": "Compath is being developed using a modern full-stack approach. The front-end leverages Next.js and TypeScript for robust, type-safe development and seamless routing, while TailwindCSS ensures a responsive and visually consistent UI. The back-end is powered by Node.js and Express, providing scalable API endpoints, and MongoDB is used for flexible, document-based data storage. Integration with the OpenAI API enables advanced AI-driven features. UI/UX design was crafted in Figma, allowing for rapid prototyping and user testing before implementation.",
         "challenges": [
           {
             "challenge": "Designing an intuitive interface for complex AI results.",
-            "solution": "Created wireframes and interactive prototypes in Figma, then tested flows with potential users before building with React and Tailwind."
+            "solution": "Created modular components and clear visual hierarchies to present information in digestible formats, using cards and tooltips for additional context."
           },
           {
             "challenge": "Incorporating gamification without overwhelming the user.",
             "solution": "Balanced visual elements and feedback systems with simple reward mechanics, clearly displaying coin balances and goals."
           },
           {
-            "challenge": "Handling user input and feedback to customize AI results.",
+            "challenge": "Handling user input and feedback to customise AI results.",
             "solution": "Structured clean forms and filters to feed structured data to the backend AI logic, ensuring accuracy and usability."
           }
         ]
@@ -185,7 +206,7 @@
       {
         "title": "VidaPlus",
         "tagline": "Modern healthcare management platform.",
-        "description": "VidaPlus is my capstone project, developed in a team. It's a hospital and healthcare service management system focused on accessibility, usability, and intuitive dashboards. It supports role-based access (patient, doctor, admin). I handle the front-end and contribute to the back-end with Node.js, Express, PostgreSQL, and Prisma.",
+        "description": "VidaPlus is my capstone project, developed by myself. It's a hospital and healthcare service management system focussed on accessibility, usability, and intuitive dashboards. It supports role-based access (patient, doctor, admin). I handled the front-end and am currently working on the back-end with Node.js, Express, PostgreSQL, and Prisma.",
         "features": [
           "Patient registration and appointment scheduling.",
           "Appointment scheduling, cancellation, and notifications",
@@ -209,7 +230,7 @@
         "tech": [
           "Figma",
           "ReactJS",
-          "Typescript",
+          "TypeScript",
           "TailwindCSS",
           "NodeJS",
           "Express",
@@ -217,11 +238,15 @@
           "REST API",
           "Full Stack"
         ],
-        "techUsed": "This project was designed in Figma, where high-fidelity wireframes and a custom style guide were created to ensure a modern, accessible, and responsive UI across all devices.The frontend was developed using React with TypeScript for robust component architecture and type safety. Vite was used for fast builds, and Tailwind CSS provided utility-first styling. Navigation was handled by React Router DOM, while React Hook Form and Zod enabled efficient form management and validation.Additional libraries included Lucide React (icons), clsx and tailwind-merge (class merging), date-fns (date manipulation), and uuid (unique ID generation). Chart.js and react-chartjs-2 were used for data visualization. The backend was powered by Supabase, providing a PostgreSQL database, authentication, real-time updates, and storage—all managed via secure environment variables. Code quality was ensured with ESLint, and tools like PostCSS and Autoprefixer supported cross-browser styling compatibility.",
+        "techUsed": "This project was designed in Figma, where high-fidelity wireframes and a custom style guide were created to ensure a modern, accessible, and responsive UI across all devices. The frontend was developed using React with TypeScript for robust component architecture and type safety. Vite was used for fast builds, and Tailwind CSS provided utility-first styling. Navigation was handled by React Router DOM, while React Hook Form and Zod enabled efficient form management and validation. Chart.js and react-chartjs-2 were used for data visualisation. The backend is being built using a PostgreSQL database, authentication, real-time updates, and storage—all managed via secure environment variables. Prisma is being used for database interactions, ensuring type safety and efficient queries. The REST API was built with Express, providing a clear structure for data exchange between the front-end and back-end.",
         "challengesAndSolutions": [
           {
-            "challenge": "Centralizing hospitals, clinics, labs, and home care.",
-            "solution": "Built a modular system with role-based access and multi-unit support."
+            "challenge": "Designing a complex system with multiple user roles.",
+            "solution": "Created modular components and role-based access control to ensure each user type has a tailored experience."
+          },
+          {
+            "challenge": "Ensuring data integrity and security in healthcare management.",
+            "solution": "Implemented secure authentication, encrypted data storage, and role-based access control to protect sensitive information."
           },
           {
             "challenge": "Making the system easy for all users.",
@@ -237,10 +262,10 @@
           "Display of projects with descriptions and images.",
           "Responsive design for desktop and mobile.",
           "Simple and intuitive navigation.",
-          "Custom Javascript animations for UI elements",
+          "Custom JavaScript animations for UI elements",
           "Contact form functional"
         ],
-        "visualIdentity": "The visual identity was clean and minimalistic, focusing on shades of pink, card-style layout, and subtle transitions. I emphasized readability and tried to bring a calm and personal vibe that matched my story.",
+        "visualIdentity": "The visual identity was inspired by my personality, focussing on shades of pink, a card-style layout, and subtle transitions. I emphasised readability and tried to bring a calm and personal vibe that matched my story.",
         "url": "/projects/first-portfolio.svg",
         "images": [
           "/projects/firstportfolio/firstportfolio1.svg",
@@ -249,13 +274,13 @@
           "/projects/firstportfolio/firstportfolio4.svg"
         ],
         "github": "https://github.com/jenniferdsbaumgart/projectJDS2.0",
-        "demo": "https://https://jenniferds.netlify.app/",
+        "demo": "https://jenniferds.netlify.app/",
         "tech": ["Figma", "HTML", "CSS", "JavaScript"],
-        "techUsed": "HTML5, CSS3 (custom styling, media queries), Vanilla JavaScript (for interactivity). No frameworks or libraries were used — everything was coded manually from scratch.",
+        "techUsed": "HTML5, CSS3, Vanilla JavaScript (for interactivity). No frameworks or libraries were used; everything was coded manually from scratch.",
         "challengesAndSolutions": [
           {
             "challenge": "Building a responsive layout without using any frameworks.",
-            "solution": "I learned and applied media queries manually and structured the layout with Flexbox and percentage-based widths."
+            "solution": "I learnt and applied media queries manually and structured the layout with Flexbox and percentage-based widths."
           },
           {
             "challenge": "Creating engaging UI interactions with no libraries.",
@@ -270,14 +295,12 @@
       {
         "title": "Terra Pura",
         "tagline": "Landing page for a sustainable cosmetics brand that blends nature and technology.",
-        "description": "Terra Pura is a fictional natural cosmetics brand focused on sustainability, purity, and transparency. The landing page presents the brand's mission, best-selling products, and eco-friendly philosophy with a soft, modern design. The website invites conscious consumers to explore clean beauty solutions backed by nature and science. I designed and developed the interface prioritizing emotional connection, responsive layout, and clear storytelling.",
+        "description": "Terra Pura is a fictional natural cosmetics brand focussed on sustainability, purity, and transparency. The landing page presents the brand's mission, best-selling products, and eco-friendly philosophy with a soft, modern design. The website invites conscious consumers to explore clean beauty solutions backed by nature and science. I designed and developed the interface, prioritising emotional connection, responsive layout, and clear storytelling.",
         "features": [
           "Hero section with brand mission and immersive background",
           "Highlight of best-selling products with smooth hover effects",
           "Section about the brand’s sustainable values",
           "Customer testimonials with quote cards",
-          "Call-to-action with newsletter sign-up and shop invitation",
-          "Fully responsive layout for mobile and desktop",
           "Lightweight build for fast loading times"
         ],
         "visualIdentity": "A serene and organic look, with earthy tones (sage green, soft beige, off-white) and rounded UI elements. Gentle transitions and nature-inspired textures support a calm and mindful browsing experience. Typography is elegant and minimal, with generous white space.",
@@ -293,22 +316,19 @@
         "tech": [
           "Figma",
           "ReactJS",
-          "Typescript",
+          "TypeScript",
           "TailwindCSS",
           "FramerMotion"
         ],
         "techUsed": "The layout was designed in Figma with a custom design system tailored for wellness brands. ReactJS and Vite were used to build a fast, responsive, and scalable landing page. TailwindCSS provided utility-first styling with full mobile responsiveness. Animations were added using Framer Motion for scroll and hover interactions. Components were designed to be modular and easily reusable in a real e-commerce context.",
         "challengesAndSolutions": [
           {
-            "challenge":
-              "Creating a luxurious feel while remaining minimal and clean.",
-            "solution":
-              "Balanced whitespace, soft gradients, and elegant typography to convey purity and sophistication."
+            "challenge": "Creating a luxurious feel while remaining minimal and clean.",
+            "solution": "Balanced whitespace, soft gradients, and elegant typography to convey purity and sophistication."
           },
           {
             "challenge": "Conveying sustainability and trust visually.",
-            "solution":
-              "Used earth tones, nature-inspired icons, and storytelling-focused layout to strengthen brand values."
+            "solution": "Used earth tones, nature-inspired icons, and a storytelling-focussed layout to strengthen brand values."
           }
         ]
       }
