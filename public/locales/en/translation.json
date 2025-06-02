@@ -81,17 +81,17 @@
         "demo": "https://monicount.vercel.app/",
         "tech": [
           "ReactJS",
-          "Next.js",
+          "NextJS",
           "TailwindCSS",
           "Figma",
-          "TypeScript",
+          "Typescript",
           "Prisma",
           "PostgreSQL",
           "Clerk",
           "Stripe",
           "Full Stack"
         ],
-        "techUsed": "For Monicount’s development, I used modern technologies to ensure performance and an optimised user experience. Next.js and React enabled the creation of a dynamic and high-performance app, while TypeScript ensured code safety. I used Tailwind CSS for fast and responsive styling, and shadcn/ui for accessible and customisable UI components. Prisma was used to efficiently integrate the PostgreSQL database, and authentication was implemented with Clerk. For payment processing, I used Stripe, and data validation was handled with Zod, ensuring data integrity throughout development.",
+        "techUsed": "For Monicount’s development, I used modern technologies to ensure performance and an optimised user experience. Next.js and React enabled the creation of a dynamic and high-performance app, while Typescript ensured code safety. I used Tailwind CSS for fast and responsive styling, and shadcn/ui for accessible and customisable UI components. Prisma was used to efficiently integrate the PostgreSQL database, and authentication was implemented with Clerk. For payment processing, I used Stripe, and data validation was handled with Zod, ensuring data integrity throughout development.",
         "challengesAndSolutions": [
           {
             "challenge": "Creating a user-friendly interface for complex financial data.",
@@ -129,7 +129,7 @@
         "demo": "https://todo-list-svelte-mu.vercel.app/",
         "tech": [
           "Svelte",
-          "JavaScript",
+          "Javascript",
           "TailwindCSS",
           "NodeJS",
           "Express",
@@ -175,8 +175,9 @@
         "github": "https://github.com/jenniferdsbaumgart/compath.ai",
         "demo": "",
         "tech": [
+          "ReactJS",
           "NextJS",
-          "TypeScript",
+          "Typescript",
           "TailwindCSS",
           "NodeJS",
           "Express",
@@ -230,7 +231,7 @@
         "tech": [
           "Figma",
           "ReactJS",
-          "TypeScript",
+          "Typescript",
           "TailwindCSS",
           "NodeJS",
           "Express",
@@ -275,7 +276,7 @@
         ],
         "github": "https://github.com/jenniferdsbaumgart/projectJDS2.0",
         "demo": "https://jenniferds.netlify.app/",
-        "tech": ["Figma", "HTML", "CSS", "JavaScript"],
+        "tech": ["Figma", "HTML", "CSS", "Javascript"],
         "techUsed": "HTML5, CSS3, Vanilla JavaScript (for interactivity). No frameworks or libraries were used; everything was coded manually from scratch.",
         "challengesAndSolutions": [
           {
@@ -316,7 +317,7 @@
         "tech": [
           "Figma",
           "ReactJS",
-          "TypeScript",
+          "Typescript",
           "TailwindCSS",
           "FramerMotion"
         ],
@@ -329,6 +330,37 @@
           {
             "challenge": "Conveying sustainability and trust visually.",
             "solution": "Used earth tones, nature-inspired icons, and a storytelling-focussed layout to strengthen brand values."
+          }
+        ]
+      },
+      {
+        "title": "Gooday",
+        "tagline": "High-fidelity prototype for a holistic health and wellness platform designed in Figma.",
+        "description": "Gooday is a conceptual platform created exclusively in Figma, aimed at people who want to lead a healthy and active lifestyle. It brings together elements like nutritious eating, physical exercise, healthcare professional guidance, and wellness events, all in one cohesive digital experience. The prototype features intuitive navigation, vibrant visuals, and user-friendly flows designed to engage and motivate users towards better wellbeing.",
+        "features": [
+          "Integrated sections for healthy recipes, workouts, and event listings",
+          "Interactive calendar for tracking activities and events",
+          "Community space for user stories and motivational content"
+        ],
+        "visualIdentity": "Bright and energetic with a fresh colour palette inspired by nature with leafy greens. Clean, modern typography paired with smooth rounded corners and soft shadows create an inviting, approachable feel. The UI uses bold icons and subtle animations to enhance engagement without overwhelming the user.",
+        "url": "/projects/gooday.svg",
+        "images": [
+          "/projects/gooday/gooday1.svg",
+          "/projects/gooday/gooday2.svg",
+          "/projects/gooday/gooday3.svg"
+        ],
+        "github": null,
+        "demo": "https://www.figma.com/proto/5VrbzneSbXaxt73mw4oevV/gooday-healthy-app?page-id=103%3A34&node-id=103-146&p=f&viewport=82%2C922%2C0.4&t=O6tGHcTM6s2I3RBL-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=103%3A36&show-proto-sidebar=1",
+        "tech": ["Figma"],
+        "techUsed": "The entire platform was designed as a high-fidelity prototype in Figma, focusing on UX/UI best practices for health and wellness apps. The design system ensures consistency across screens, with reusable components and accessibility considerations baked in.",
+        "challengesAndSolutions": [
+          {
+            "challenge": "Designing an engaging platform that balances motivation without feeling overwhelming.",
+            "solution": "Used a bright but calming colour scheme, minimalistic layouts, and clear visual hierarchies to keep users focused and inspired."
+          },
+          {
+            "challenge": "Creating a seamless flow that integrates diverse content types—recipes, workouts, professionals, and events.",
+            "solution": "Developed intuitive navigation and consistent card designs to unify different content, making discovery and interaction easy."
           }
         ]
       }

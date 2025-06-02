@@ -300,15 +300,44 @@
         "techUsed": "O layout foi desenhado no Figma com um sistema de design customizado para marcas de bem-estar. ReactJS e Vite foram usados para construir uma landing page rápida, responsiva e escalável. TailwindCSS forneceu estilização utilitária com total responsividade mobile. As animações foram adicionadas com Framer Motion para interações de rolagem e hover. Os componentes foram projetados para serem modulares e facilmente reutilizáveis em um contexto real de e-commerce.",
         "challengesAndSolutions": [
           {
-            "challenge":
-              "Criar uma sensação de luxo mantendo o visual minimalista e limpo.",
-            "solution":
-              "Equilibrei espaços em branco, gradientes suaves e tipografia elegante para transmitir pureza e sofisticação."
+            "challenge": "Criar uma sensação de luxo mantendo o visual minimalista e limpo.",
+            "solution": "Equilibrei espaços em branco, gradientes suaves e tipografia elegante para transmitir pureza e sofisticação."
           },
           {
             "challenge": "Transmitir sustentabilidade e confiança visualmente.",
-            "solution":
-              "Usei tons terrosos, ícones inspirados na natureza e layout focado em storytelling para reforçar os valores da marca."
+            "solution": "Usei tons terrosos, ícones inspirados na natureza e layout focado em storytelling para reforçar os valores da marca."
+          }
+        ]
+      },
+      {
+        "title": "Gooday",
+        "tagline": "Protótipo de alta fidelidade no Figma para uma plataforma holística de saúde e estilo de vida ativo.",
+        "description": "Gooday é uma plataforma conceitual criada para pessoas que buscam viver de forma saudável e ativa. Ela integra alimentação saudável, atividade física, acesso a profissionais de saúde e eventos comunitários. O protótipo foca na experiência do usuário fluida e na clareza visual, incentivando hábitos de bem-estar sustentáveis. Desenvolvi toda a interface no Figma, com ênfase em usabilidade, acessibilidade e estética moderna.",
+        "features": [
+          "Painel completo resumindo metas diárias de saúde",
+          "Planejamento de refeições com informações nutricionais e sugestões de receitas",
+          "Controle de exercícios com opções personalizáveis de atividades",
+          "Calendário de eventos com atividades locais de bem-estar"
+        ],
+        "visualIdentity": "Visual limpo, vibrante e acessível, com paleta fresca que combina tons de verdes e neutros suaves. A interface apresenta cantos arredondados, ícones intuitivos e layouts espaçosos para promover calma e motivação. A tipografia é moderna e altamente legível, garantindo uma experiência inclusiva.",
+        "url": "/projects/gooday.svg",
+        "images": [
+          "/projects/gooday/gooday1.svg",
+          "/projects/gooday/gooday2.svg",
+          "/projects/gooday/gooday3.svg"
+        ],
+        "github": null,
+        "demo": "https://www.figma.com/proto/5VrbzneSbXaxt73mw4oevV/gooday-healthy-app?page-id=103%3A34&node-id=103-146&p=f&viewport=82%2C922%2C0.4&t=O6tGHcTM6s2I3RBL-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=103%3A36&show-proto-sidebar=1",
+        "tech": ["Figma"],
+        "techUsed": "Todo o produto foi concebido e desenhado exclusivamente no Figma, criando um protótipo interativo de alta fidelidade. O sistema de design inclui componentes reutilizáveis, estilos consistentes e recursos de acessibilidade, simulando uma experiência real de produto. O foco foi prototipar fluxos de usuários, microinterações e layouts responsivos para validar conceitos de UX antes do desenvolvimento.",
+        "challengesAndSolutions": [
+          {
+            "challenge": "Criar uma experiência envolvente e motivadora sem dados reais de backend.",
+            "solution": "Utilizei microinterações detalhadas e feedback visual dinâmico nas ferramentas de prototipagem do Figma para simular o engajamento real do usuário."
+          },
+          {
+            "challenge": "Equilibrar um conjunto rico de funcionalidades com simplicidade e clareza no design.",
+            "solution": "Priorizei o minimalismo e a hierarquia visual clara, agrupando funcionalidades de forma lógica e reduzindo a carga cognitiva."
           }
         ]
       }
