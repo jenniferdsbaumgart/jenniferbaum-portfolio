@@ -15,7 +15,7 @@ export default function ProjectModal({ projectData, isOpen, onClose }) {
       <DialogContent className="max-w-6xl w-[105vw] bg-white/10 backdrop-blur-lg border border-white/20 shadow-2xl rounded-xl overflow-y-auto max-h-[90vh] p-6 md:p-10 flex flex-col">
         <div className="space-y-6 flex-grow overflow-auto">
           {/* TITLE */}
-          <h2 className="text-3xl font-bold text-white">
+          <h2 className="text-3xl font-bold text-white sm:text-2xl">
             {projectData.title || projectData.name}
           </h2>
 
@@ -24,7 +24,7 @@ export default function ProjectModal({ projectData, isOpen, onClose }) {
             <>
               <Carousel
                 plugins={[Autoplay({ delay: 3000 })]}
-                className="w-full rounded-lg overflow-hidden border border-white/10"
+                className="w-full rounded-lg overflow-hidden border border-white/10 sm:w-[300px]"
               >
                 <CarouselContent>
                   {projectData.images.map((img, index) => (
@@ -138,7 +138,7 @@ export default function ProjectModal({ projectData, isOpen, onClose }) {
               href={projectData.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 bg-violet-600 hover:bg-violet-700 text-white rounded-md font-semibold transition"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-violet-600 hover:bg-violet-700 text-white rounded-md font-semibold transition sm:text-xs sm:px-2"
             >
               <Code className="w-5 h-5" /> See Code
             </a>
@@ -149,9 +149,9 @@ export default function ProjectModal({ projectData, isOpen, onClose }) {
               href={projectData.demo}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 bg-violet-600 hover:bg-violet-700 text-white rounded-md font-semibold transition"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-violet-600 hover:bg-violet-700 text-white rounded-md font-semibold transition sm:text-xs sm:px-2"
             >
-              <ExternalLink className="w-5 h-5" /> See Demo
+              <ExternalLink className="w-5 h-5" /> See Demo 
             </a>
           )}
           <DialogClose>

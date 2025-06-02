@@ -43,11 +43,11 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="min-h-screen grid place-items-center py-10"
+      className="min-h-screen grid place-items-center py-10 "
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
     >
-      <div className="flex flex-row-reverse items-center space-x-8">
+      <div className="flex flex-row-reverse items-center space-x-8 sm:flex sm:flex-col sm:gap-8 sm:space-x-8">
         <motion.div
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
@@ -62,7 +62,7 @@ const Hero = () => {
               transition: "0.1s",
             }}
           >
-            <div className="relative w-[700px] aspect-[3/4]">
+            <div className="relative w-[700px] aspect-[3/4] sm:w-[200px]">
               <Image
                 src={"/jb4.png"}
                 alt="Person Image"
@@ -85,7 +85,7 @@ const Hero = () => {
           </div>
         </motion.div>
         <div className="flex flex-col items-center">
-          <h1 className="font-bebas text-gray-700 dark:text-zinc-300 leading-[6rem] mb-0 text-9xl text-center transition-colors sm:text-2xl">
+          <h1 className="font-bebas text-gray-700 dark:text-zinc-300 leading-[6rem] mb-0 text-9xl text-center transition-colors sm:text-4xl">
             {translations.hero.title}
           </h1>
           <ReactTyped
@@ -93,7 +93,7 @@ const Hero = () => {
             typeSpeed={80}
             backSpeed={50}
             loop
-            className="font-oswald text-center uppercase text-semibold text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#a98df5] to-[#7c1bfc] transition-colors"
+            className="font-oswald text-center uppercase text-semibold text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#a98df5] to-[#7c1bfc] transition-colors sm:text-xl"
           />
           <p className="font-oswald text-center uppercase text-light text-lg text-gray-400">
           {translations.hero.subtitle}
@@ -119,7 +119,7 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.7 }}
             href="#contact"
-            className="mx-auto mt-7 flex flex-row rounded-2xl px-8 py-3 font-light capitalize tracking-wider text-gray-200 bg-violet-500 hover:bg-violet-400 transition-transform duration-300 ease-in-out gap-2"
+            className="mx-auto mt-7 flex flex-row rounded-2xl px-8 py-3 font-light capitalize tracking-wider text-gray-200 bg-violet-500 hover:bg-violet-400 transition-transform duration-300 ease-in-out gap-2 sm:text-sm sm:px-6 sm:py-2"
             onMouseEnter={() => setButtonHover(true)}
             onMouseLeave={() => setButtonHover(false)}
           >

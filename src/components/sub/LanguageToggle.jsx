@@ -11,7 +11,7 @@ export default function LanguageToggle({ children }) {
         aria-checked={language === "en"}
         onClick={toggleLanguage}
         className={`
-          fixed right-20 s:right-10 top-10 z-50
+          fixed right-20 s:right-10 top-10 z-40
           inline-flex items-center h-8 w-8
           rounded-full shadow-lg border-2 border-violet-400
           transition-colors duration-300
