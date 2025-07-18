@@ -274,7 +274,7 @@
           "/projects/firstportfolio/firstportfolio3.svg",
           "/projects/firstportfolio/firstportfolio4.svg"
         ],
-        "github": "https://github.com/jenniferdsbaumgart/projectJDS2.0",
+        "github": "https://github.com/jenniferdsbaumgart/jds-my-portfolio-2.0",
         "demo": "https://jenniferds.netlify.app/",
         "tech": ["Figma", "HTML", "CSS", "Javascript"],
         "techUsed": "HTML5, CSS3, Vanilla JavaScript (for interactivity). No frameworks or libraries were used; everything was coded manually from scratch.",
