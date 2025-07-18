@@ -215,7 +215,7 @@
           "/projects/vidaplus/vidaplus6.svg"
         ],
         "github": "https://github.com/jenniferdsbaumgart/vidaplus-healthcare-platform",
-        "demo": "",
+        "demo": "https://vidaplus.vercel.app",
         "tech": [
           "Figma",
           "ReactJS",
