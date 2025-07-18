@@ -89,6 +89,7 @@
           "PostgreSQL",
           "Clerk",
           "Stripe",
+          "OpenAI API",
           "Full Stack"
         ],
         "techUsed": "For Monicount’s development, I used modern technologies to ensure performance and an optimised user experience. Next.js and React enabled the creation of a dynamic and high-performance app, while Typescript ensured code safety. I used Tailwind CSS for fast and responsive styling, and shadcn/ui for accessible and customisable UI components. Prisma was used to efficiently integrate the PostgreSQL database, and authentication was implemented with Clerk. For payment processing, I used Stripe, and data validation was handled with Zod, ensuring data integrity throughout development.",
