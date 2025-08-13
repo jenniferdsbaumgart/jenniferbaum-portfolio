@@ -3,7 +3,7 @@ import { copyRightIcon, navbarData } from "@/assets"
 
 const Navbar = ({ id }) => {
   return (
-    <div className="w-[85px] sm:w-[68px] h-full fixed left-0 top-0 flex flex-col justify-between border-r borde-gray-200 px-4 py-10 xl:py-6 z-10">
+    <div className="w-[85px] sm:w-[60px] dark:bg-neutral-900 bg-zinc-300 h-full fixed left-0 top-0 flex flex-col justify-between border-r borde-gray-200 px-4 py-10 xl:py-6 z-10">
         <a href="/#home">
             <span className="text-3xl font-semibold text-violet-400">J</span>.<span className="block w-min rotate-90 text-gray-400 origin-bottom text-[12px] font-semibold">Baum</span>
         </a>
@@ -22,4 +22,4 @@ const Navbar = ({ id }) => {
   )
 }
 
-export default Navbar
+export default Navbar;

@@ -11,7 +11,7 @@ const About = () => {
     const { translations } = useContext(LanguageContext);
 
     return (
-        <div id="about" className="min-h-screen flex flex-col items-center justify-center">
+        <div id="about" className="px-10 min-h-screen flex flex-col items-center justify-center">
             <Heading text={translations.about.title} />
             <div className="w-full flex items-end justify-between md:justify-center">
                 <Image src={'/about.png'} alt="About Image" width={300} height={300} className="w-[280px] lg:-[200px] md:hidden"/>
