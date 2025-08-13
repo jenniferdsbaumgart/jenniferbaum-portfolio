@@ -138,6 +138,10 @@ export const skillsData = [
     icon: "/skills/tailwind2.png",
   },
   {
+    name: "Redux",
+    icon: "/skills/Redux.png",
+  },
+  {
     name: "Sass",
     icon: "/skills/sass2.png",
   },
@@ -158,14 +162,6 @@ export const skillsData = [
     icon: "/skills/wordpress2.png",
   },
   {
-    name: "MySQL",
-    icon: "/skills/mysql2.png",
-  },
-  {
-    name: "PostgreSQL",
-    icon: "/skills/postgressql2.png",
-  },
-  {
     name: "Node.js",
     icon: "/skills/nodejs22.png",
   },
@@ -174,12 +170,52 @@ export const skillsData = [
     icon: "/skills/express2.png",
   },
   {
+    name: "MySQL",
+    icon: "/skills/mysql2.png",
+  },
+  {
+    name: "PostgreSQL",
+    icon: "/skills/postgressql2.png",
+  },
+  {
+    name: "MongoDB",
+    icon: "/skills/MongoDB.png",
+  },
+  {
+    name: "Cypress",
+    icon: "/skills/Cypress.png",
+  },
+  {
+    name: "Jest",
+    icon: "/skills/Jest.png",
+  },
+  {
     name: "Selenium",
     icon: "/skills/selenium2.png",
   },
   {
+    name: "Playwright",
+    icon: "/skills/Playwrite.png",
+  },
+  {
     name: "Python",
     icon: "/skills/python2.png",
+  },
+  {
+    name: "Plotly",
+    icon: "/skills/Ploty.png",
+  },
+  {
+    name: "AWS",
+    icon: "/skills/AWS.png",
+  },
+  {
+    name: "Svelte",
+    icon: "/skills/Svelte.png",
+  },
+  {
+    name: "JQuery",
+    icon: "/skills/jQuery.png",
   },
   {
     name: "Git",
