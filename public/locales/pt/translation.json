@@ -7,7 +7,7 @@
   },
   "about": {
     "title": "Sobre Mim",
-    "aboutText": "Olá! Sou Jennifer Baumgart — Desenvolvedora Front-End e Designer UI/UX apaixonada por transformar ideias em experiências digitais envolventes. Com um conjunto de ferramentas que inclui HTML, CSS, JavaScript, React, NextJS, Typescript e Figma, crio interfaces responsivas, acessíveis e visualmente atraentes. Curiosa por natureza e detalhista por hábito, faço a ponte entre design e desenvolvimento para entregar experiências sem atrito. Seja ajustando um layout ou corrigindo um bug, meu foco está sempre na clareza, usabilidade e impacto real. Atualmente, estou me aprofundando em React e sistemas de design — e adoro criar ferramentas que tornam a vida mais fácil, inteligente e bonita."
+    "aboutText": "Olá! Sou Jennifer Baumgart — Desenvolvedora Front-End e Designer UI/UX especializada em React, Next.js e TypeScript, com histórico na entrega de interfaces responsivas, acessíveis e de alta performance. Minha experiência abrange desde dashboards baseados em dados e plataformas SaaS até sites de marketing globais, sempre conectando design e código para criar produtos centrados no usuário. Com formação em Química, trago precisão analítica e empatia para cada projeto. Atuo em equipes multidisciplinares, traduzindo requisitos complexos em experiências visuais claras e intuitivas, com forte foco em acessibilidade (WCAG) e design inclusivo. Seja desenvolvendo sistemas de design, integrando APIs ou otimizando desempenho, meu objetivo é criar soluções que sejam funcionais e visualmente impactantes."
   },
   "experience": {
     "title": "Formação & Experiência",
@@ -17,41 +17,41 @@
       {
         "year": 1,
         "title": "Fundamentos e Primeiros Passos",
-        "education": "Cursos introdutórios de HTML, CSS e JavaScript. Primeiro contato com programação por meio de autoestudo e plataformas online.",
+        "education": "Cursos introdutórios de HTML, CSS e JavaScript, combinados com autoestudo em plataformas online.",
         "experience": [
-          "Criei sites pessoais simples e experimentei design visual.",
-          "Concluí projetos para iniciantes para entender os conceitos básicos de front-end."
+          "Criei sites pessoais totalmente responsivos, aplicando princípios básicos de design e acessibilidade.",
+          "Concluí projetos iniciais para consolidar conceitos essenciais de programação e estruturação de layouts."
         ]
       },
       {
         "year": 2,
         "title": "Aprendizado Avançado e Primeiras Experiências",
-        "education": "Iniciei o curso de Análise e Desenvolvimento de Sistemas (UNINTER). Foquei em desenvolvimento web e UI/UX.",
+        "education": "Iniciei o curso de Foundation Degree (equivalente ao Nível 5 no Reino Unido) em Ciência da Computação e Desenvolvimento de Software na UNINTER, com foco em desenvolvimento web e UI/UX.",
         "experience": [
-          "Conquistei meu primeiro cargo como Webmaster na The Brooklyn Brothers, atuando com marcas da Unilever usando AEM, HTML/CSS e ferramentas ágeis como Jira.",
-          "Aprofundei meus conhecimentos em UX design por meio de cursos e prática no Figma.",
-          "Comecei a unir design e código."
+          "Atuei como Desenvolvedora Front-End Júnior na The Brooklyn Brothers, contribuindo para as marcas da Unilever (AXE & SEDA) com componentes pixel-perfect e responsivos no Adobe Experience Manager.",
+          "Realizei verificações de qualidade (DQM) e colaborei com QA e DevOps via Jira e Wrike, garantindo zero erros críticos nos lançamentos.",
+          "Aprofundei conhecimentos em UX com o Certificado de UX Design do Google, passando do conceito inicial até protótipos de alta fidelidade."
         ]
       },
       {
         "year": 3,
         "title": "Exploração e Independência",
-        "education": "Cursos online e bootcamps focados em áreas especializadas como frameworks front-end (React, Angular) e tecnologias back-end (Node.js).",
+        "education": "Cursos especializados e bootcamps em React, Node.js, TypeScript e práticas de acessibilidade.",
         "experience": [
-          "Atuei como freelancer, criando soluções reais para clientes reais.",
-          "Ampliei meu repertório com JavaScript, React, práticas de acessibilidade e sistemas de design.",
-          "Entrei na Minerva Controls como Desenvolvedora Front-End e UI/UX, evoluindo com trabalho em equipe e feedback constante."
+          "Atuei como freelancer, entregando aplicações responsivas e acessíveis com React, Next.js e TypeScript.",
+          "Liderei processos de UX de ponta a ponta, criando wireframes, protótipos e sistemas de design com 98% de fidelidade design-para-código.",
+          "Implementei melhorias de acessibilidade (WCAG) que aumentaram a satisfação e o engajamento dos usuários."
         ]
       },
       {
         "year": 4,
         "title": "Construindo com Propósito",
-        "education": "Fase final da faculdade, focando na criação de produtos digitais significativos.",
+        "education": "Graduei-me com nota 9,4/10 (equivalente a First Class Honours no Reino Unido) em Ciência da Computação e Desenvolvimento de Software. Concluí formações complementares como o Full-Stack Web Development Programme e The Web Developer Bootcamp.",
         "experience": [
-          "Contribuindo na Minerva Controls, atuando em design de interfaces e desenvolvimento front-end.",
-          "Concluí o Certificado de UX Design do Google (Coursera), criando estudos de caso do zero até protótipos de alta fidelidade.",
-          "Atualmente trabalhando no VidaPlus, um sistema de gestão de saúde focado em usabilidade e acessibilidade — meu projeto de conclusão de curso.",
-          "Cofundando a Compath, uma plataforma que ajuda empreendedores via IA — do design à implementação front-end."
+          "Na Minerva Controls, projetei e implementei dashboards em tempo real com Figma, HTML, CSS, JavaScript e Python (Dash), melhorando a usabilidade para clientes como Petrobrás e Ambev.",
+          "Integrei APIs RESTful, otimizei fluxos complexos e liderei a automação de testes com Selenium e GitHub Actions CI/CD.",
+          "Desenvolvi a Compath, uma plataforma SaaS em React, Next.js e modelo KNN em Python para recomendações de negócio com UX gamificada e visualização de dados.",
+          "Criei o VidaPlus, sistema de gestão hospitalar em React, Node.js, Express e PostgreSQL, priorizando usabilidade, acessibilidade e gestão intuitiva de dados."
         ]
       }
     ]

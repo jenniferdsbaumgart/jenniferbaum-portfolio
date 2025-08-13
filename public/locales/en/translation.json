@@ -7,7 +7,7 @@
   },
   "about": {
     "title": "About Me",
-    "aboutText": "Hi! I'm Jennifer Baumgart — a Front-End Developer and UI/UX Designer passionate about turning ideas into engaging digital experiences. With a toolkit that includes HTML, CSS, JavaScript, React, NextJS, TypeScript, and Figma, I create responsive, accessible, and visually appealing interfaces. Curious by nature and detail-obsessed by habit, I bridge design and development to deliver seamless experiences. Whether tweaking a layout or squashing a bug, my focus is always on clarity, usability, and real impact. Currently, I'm diving deeper into React and design systems, and I love building tools that make life easier, smarter, and more beautiful."
+    "aboutText": "Hi! I'm Jennifer Baumgart — a Front-End Developer specialising in React, Next.js, TypeScript, and UI/UX Design with a track record of delivering responsive, accessible, and performance-driven interfaces. My experience spans data-driven dashboards, SaaS platforms, and global marketing websites, always bridging design and code to create user-centred products. With a background in Chemistry, I bring analytical precision and user empathy to every project. I thrive in cross-functional teams, translating complex requirements into intuitive, visually engaging experiences, and I'm passionate about accessibility (WCAG) and inclusive design. Whether crafting a design system, integrating APIs, or optimising performance, my focus is on creating solutions that are as functional as they are beautiful."
   },
   "experience": {
     "title": "Education & Experience",
@@ -17,41 +17,41 @@
       {
         "year": 1,
         "title": "Fundamentals and First Steps",
-        "education": "Introductory courses in HTML, CSS, and JavaScript. First contact with programming through self-study and online platforms.",
+        "education": "Introductory courses in HTML, CSS, and JavaScript, combined with self-study on online platforms.",
         "experience": [
-          "Built simple personal websites and experimented with visual design.",
-          "Completed beginner projects to grasp core front-end and programming concepts."
+          "Built simple, fully responsive personal websites, experimenting with design principles and accessibility.",
+          "Completed beginner projects to solidify core programming concepts and layout structures."
         ]
       },
       {
         "year": 2,
-        "title": "Advanced Learning and First Experiences",
-        "education": "Started the Systems Analysis and Development course (UNINTER). Focussed on web development and UI/UX.",
+        "title": "Advanced Learning and First Professional Experience",
+        "education": "Started the Foundation Degree (UK Level 5 equivalent) in Computer Science & Software Development at UNINTER, focusing on web development and UX/UI.",
         "experience": [
-          "Gained my first role as a Frontend Developer at The Brooklyn Brothers, working with Unilever brands using AEM, HTML/CSS, and agile tools like Jira.",
-          "Deepened my UX design knowledge through courses and Figma practice.",
-          "Began bridging design and code."
+          "Joined The Brooklyn Brothers as a Junior Front-End Developer, contributing to Unilever brands (AXE & SEDA) by building pixel-perfect, responsive components in Adobe Experience Manager.",
+          "Performed DQM checks, collaborated with QA and DevOps to resolve issues via Jira/Wrike, and ensured zero critical launch errors.",
+          "Enhanced UX skills through Google UX Design Certificate projects, moving from concept to high-fidelity prototypes."
         ]
       },
       {
         "year": 3,
-        "title": "Exploration and Independence",
-        "education": "Online courses and bootcamps focussing on specialised areas like front-end frameworks (React, Angular) and back-end technologies (Node.js).",
+        "title": "Freelance and Skill Expansion",
+        "education": "Completed specialised courses in React, Node.js, TypeScript, and accessibility best practices.",
         "experience": [
-          "Worked as a freelancer, creating real solutions for real clients.",
-          "Expanded my skillset with JavaScript, React, accessibility practices, and design systems.",
-          "Joined Minerva Controls as a Front-End and UI/UX Developer, growing through teamwork and constant feedback."
+          "Worked as a freelance Front-End Developer and UX Designer, delivering responsive, accessible applications using React, Next.js, and TypeScript.",
+          "Led end-to-end UX processes, translating client goals into wireframes, prototypes, and design systems with 98% design-to-code fidelity.",
+          "Implemented inclusive design improvements (WCAG) that increased user satisfaction and engagement."
         ]
       },
       {
         "year": 4,
-        "title": "Building with Purpose",
-        "education": "Final phase of university, focussing on creating meaningful digital products. Joined a JavaScript Specialist course.",
+        "title": "Building Complex, Impact-Driven Solutions",
+        "education": "Graduated with distinction (9.4/10) in Computer Science & Software Development. Completed Full-Stack Web Development Programme (Blusoft / SENAC) and The Web Developer Bootcamp.",
         "experience": [
-          "Contributing at Minerva Controls, working on interface design and front-end development.",
-          "Completed Google's UX Design Certificate (Coursera), building case studies from scratch to high-fidelity prototypes.",
-          "Currently working on VidaPlus, a healthcare management system focussed on usability and accessibility — my capstone project.",
-          "Lead on Compath project, a platform helping entrepreneurs via AI — from design to front-end implementation as part of the JavaScript Specialist course."
+          "At Minerva Controls, designed and implemented real-time, data-intensive dashboards using Figma, HTML, CSS, JavaScript, and Python, improving usability for clients like Petrobrás and Ambev.",
+          "Integrated RESTful APIs, streamlined complex workflows, and led automated testing implementation with Selenium and GitHub Actions CI/CD.",
+          "Developed Compath, a SaaS platform using React, Next.js, and a Python KNN model to deliver AI-powered business recommendations with gamified UX flows.",
+          "Built VidaPlus, a hospital management system with React, Node.js, Express, and PostgreSQL, focusing on usability, accessibility, and intuitive data management."
         ]
       }
     ]
