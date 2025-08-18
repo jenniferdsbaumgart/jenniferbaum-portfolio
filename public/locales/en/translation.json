@@ -51,7 +51,8 @@
           "At Minerva Controls, designed and implemented real-time, data-intensive dashboards using Figma, HTML, CSS, JavaScript, and Python, improving usability for clients like Petrobrás and Ambev.",
           "Integrated RESTful APIs, streamlined complex workflows, and led automated testing implementation with Selenium and GitHub Actions CI/CD.",
           "Developed Compath, a SaaS platform using React, Next.js, and a Python KNN model to deliver AI-powered business recommendations with gamified UX flows.",
-          "Built VidaPlus, a hospital management system with React, Node.js, Express, and PostgreSQL, focusing on usability, accessibility, and intuitive data management."
+          "Built VidaPlus, a hospital management system with React, Node.js, Express, and PostgreSQL, focusing on usability, accessibility, and intuitive data management.",
+          "Won 1st place at the Health Tech Hackathon: Conecta Saúde (2025) with Humanus, a career management platform for nurses and nursing technicians, built in just 3 nights using Next.js, Tailwind, and Node.js."
         ]
       }
     ]
@@ -60,93 +61,47 @@
     "title": "Projects",
     "projectsData": [
       {
-        "title": "Monicount - Finances Application",
-        "tagline": "Minimalist finance management, powered by AI.",
-        "description": "Monicount is a personal finance app built for people with variable income. It focusses on category-based budgeting (Expenses, Deposits, Investments), tracking actual spending, receiving personalised insights and optimisation tips. Designed for clarity and control, Monicount helps you visualise, plan, and grow your wealth — one coin at a time.",
+        "title": "Humanus - 1st Place Health Tech Hackathon (August 2025)",
+        "tagline": "Career management platform for healthcare professionals.",
+        "description": "Humanus was developed during the Health Tech Hackathon: Conecta Saúde, where we achieved 1st place. The platform supports nurses and nursing technicians in their professional development by providing career planning, structured feedback, microlearning and gamified rewards. I was responsible for the frontend in Next.js and Tailwind, as well as the integration with the mocked backend in Node.js/Express.",
         "features": [
-          "Register and categorise expenses for streamlined tracking.",
-          "Visualise financial behaviour with dynamic charts.",
-          "Filter by category, date, and value for detailed analysis.",
-          "Generate AI-driven insights and optimisation tips."
+          "Dashboard with general stats, quick actions and mood tracker.",
+          "Feedbacks (received and given), with filters and history.",
+          "Training and microlearning modules in short lessons.",
+          "Career plan with milestones, OKRs and 1:1 scheduling.",
+          "Rewards store with a gamified points system."
         ],
-        "visualIdentity": "The design embraces minimalism with a smart, approachable feel. Friendly illustrations and structured layouts reduce friction and cognitive load. A modern and dark colour palette keeps users focussed on their finances without stress. The interface is designed to be intuitive, with clear navigation and responsive elements.",
-        "url": "/projects/monicount.svg",
+        "visualIdentity": "Blue and turquoise tones convey trust, innovation and clarity. A clean layout with rounded cards, intuitive icons and simplified navigation ensures accessibility and usability across all profiles.",
+        "url": "/projects/humanusproject.svg",
         "images": [
-          "/projects/monicount/monicount1.svg",
-          "/projects/monicount/monicount2.svg",
-          "/projects/monicount/monicount3.svg",
-          "/projects/monicount/monicount4.svg"
+          "/projects/humanus/humanus1.png",
+          "/projects/humanus/humanus2.png",
+          "/projects/humanus/humanus3.png",
+          "/projects/humanus/humanus4.png",
+          "/projects/humanus/humanus5.png"
         ],
-        "github": "https://github.com/jenniferdsbaumgart/monicount-fullstack-finances-app",
-        "demo": "https://monicount.vercel.app/",
+        "github": "https://github.com/jenniferdsbaumgart/humanus-plataform-mvp",
+        "demo": "",
         "tech": [
-          "ReactJS",
-          "NextJS",
-          "TailwindCSS",
           "Figma",
+          "NextJS",
+          "ReactJS",
           "Typescript",
-          "Prisma",
-          "PostgreSQL",
-          "Clerk",
-          "Stripe",
-          "OpenAI API",
-          "Full Stack"
-        ],
-        "techUsed": "For Monicount’s development, I used modern technologies to ensure performance and an optimised user experience. Next.js and React enabled the creation of a dynamic and high-performance app, while Typescript ensured code safety. I used Tailwind CSS for fast and responsive styling, and shadcn/ui for accessible and customisable UI components. Prisma was used to efficiently integrate the PostgreSQL database, and authentication was implemented with Clerk. For payment processing, I used Stripe, and data validation was handled with Zod, ensuring data integrity throughout development.",
-        "challengesAndSolutions": [
-          {
-            "challenge": "Creating a user-friendly interface for complex financial data.",
-            "solution": "Designed intuitive navigation and clear visualisations to simplify data interpretation."
-          },
-          {
-            "challenge": "Ensuring real-time updates without page reloads.",
-            "solution": "Implemented React's state management and Next.js's server-side rendering for dynamic content."
-          },
-          {
-            "challenge": "Integrating AI insights without overwhelming the user.",
-            "solution": "Used concise, actionable tips and visual cues to present insights clearly."
-          }
-        ]
-      },
-      {
-        "title": "ToDo List",
-        "tagline": "Simple, fast, and accessible.",
-        "description": "This productivity tool allows users to create and manage task lists intuitively. Built with Svelte for snappy performance, it features a clean, responsive interface. Tasks can be created, updated, completed, and deleted with real-time feedback. The app uses a MySQL database for persistent storage, accessed through an Express-based REST API. It’s designed to be accessible and user-friendly, with inline editing and progress tracking.",
-        "features": [
-          "Task CRUD Functionality: Users can create, update, complete, and delete tasks with real-time feedback.",
-          "Editable Interface: Tasks can be edited inline, allowing for a smooth and intuitive editing experience.",
-          "Progress Tracking: The app dynamically displays the number of created and completed tasks.",
-          "Responsive Design: Fully responsive layout ensures usability on desktops, tablets, and mobile devices.",
-          "Data Persistence: Tasks are stored in a MySQL database, enabling persistent data management through an Express-based REST API."
-        ],
-        "visualIdentity": "The visual identity of the ToDo List was crafted to be both modern and simple. A soft, violet and turquoise colour palette combined with a bold typographic hierarchy creates an aesthetically pleasing experience while keeping the user focussed on their tasks.",
-        "url": "/projects/todolist.svg",
-        "images": [
-          "/projects/todolist/todolist1.svg",
-          "/projects/todolist/todolist2.svg",
-          "/projects/todolist/todolist3.svg"
-        ],
-        "github": "https://github.com/jenniferdsbaumgart/todo-list-svelte",
-        "demo": "https://todo-list-svelte-mu.vercel.app/",
-        "tech": [
-          "Svelte",
-          "Javascript",
           "TailwindCSS",
           "NodeJS",
           "Express",
-          "MySQL",
           "REST API",
-          "Full Stack"
+          "Mock Backend"
         ],
-        "techUsed": "This project was developed using Svelte for the front-end framework, with TailwindCSS for utility-first styling. JavaScript handles client-side interactions, while Node.js and Express power the backend. Data is stored and managed using MySQL. The system communicates through a RESTful API, enabling efficient and scalable interaction between front and back end.",
+        "techUsed": "The design was created in Figma, with high-fidelity wireframes and a modern blue & turquoise visual identity. The frontend was developed in Next.js, React and TypeScript, styled with Tailwind CSS and shadcn/ui components. The backend was mocked in Node.js/Express, simulating RESTful APIs for career, feedback and microlearning endpoints. Zustand was used for global state, React Hook Form and Zod for validations. The project was deployed on Vercel.",
         "challengesAndSolutions": [
           {
-            "challenge": "Implement inline editing without affecting the layout.",
-            "solution": "Used local state management in Svelte to isolate the editable task and synchronise updates to the backend only on save."
+            "challenge": "Deliver a functional solution in only three hackathon nights.",
+            "solution": "Used Next.js and Tailwind to speed up development and Node.js mock backend to simulate real APIs."
           },
           {
-            "challenge": "Ensuring real-time updates without page reloads.",
-            "solution": "Implemented Svelte's reactive features to automatically update the UI when tasks are created, updated, or deleted."
+            "challenge": "Represent the professional journey in a clear and engaging way.",
+            "solution": "Designed a Career Timeline with OKRs and 1:1s, plus gamification to increase user engagement."
           }
         ]
       },
@@ -253,6 +208,97 @@
           {
             "challenge": "Making the system easy for all users.",
             "solution": "Designed a responsive and accessible interface."
+          }
+        ]
+      },
+      {
+        "title": "Monicount - Finances Application",
+        "tagline": "Minimalist finance management, powered by AI.",
+        "description": "Monicount is a personal finance app built for people with variable income. It focusses on category-based budgeting (Expenses, Deposits, Investments), tracking actual spending, receiving personalised insights and optimisation tips. Designed for clarity and control, Monicount helps you visualise, plan, and grow your wealth — one coin at a time.",
+        "features": [
+          "Register and categorise expenses for streamlined tracking.",
+          "Visualise financial behaviour with dynamic charts.",
+          "Filter by category, date, and value for detailed analysis.",
+          "Generate AI-driven insights and optimisation tips."
+        ],
+        "visualIdentity": "The design embraces minimalism with a smart, approachable feel. Friendly illustrations and structured layouts reduce friction and cognitive load. A modern and dark colour palette keeps users focussed on their finances without stress. The interface is designed to be intuitive, with clear navigation and responsive elements.",
+        "url": "/projects/monicount.svg",
+        "images": [
+          "/projects/monicount/monicount1.svg",
+          "/projects/monicount/monicount2.svg",
+          "/projects/monicount/monicount3.svg",
+          "/projects/monicount/monicount4.svg"
+        ],
+        "github": "https://github.com/jenniferdsbaumgart/monicount-fullstack-finances-app",
+        "demo": "https://monicount.vercel.app/",
+        "tech": [
+          "ReactJS",
+          "NextJS",
+          "TailwindCSS",
+          "Figma",
+          "Typescript",
+          "Prisma",
+          "PostgreSQL",
+          "Clerk",
+          "Stripe",
+          "OpenAI API",
+          "Full Stack"
+        ],
+        "techUsed": "For Monicount’s development, I used modern technologies to ensure performance and an optimised user experience. Next.js and React enabled the creation of a dynamic and high-performance app, while Typescript ensured code safety. I used Tailwind CSS for fast and responsive styling, and shadcn/ui for accessible and customisable UI components. Prisma was used to efficiently integrate the PostgreSQL database, and authentication was implemented with Clerk. For payment processing, I used Stripe, and data validation was handled with Zod, ensuring data integrity throughout development.",
+        "challengesAndSolutions": [
+          {
+            "challenge": "Creating a user-friendly interface for complex financial data.",
+            "solution": "Designed intuitive navigation and clear visualisations to simplify data interpretation."
+          },
+          {
+            "challenge": "Ensuring real-time updates without page reloads.",
+            "solution": "Implemented React's state management and Next.js's server-side rendering for dynamic content."
+          },
+          {
+            "challenge": "Integrating AI insights without overwhelming the user.",
+            "solution": "Used concise, actionable tips and visual cues to present insights clearly."
+          }
+        ]
+      },
+      {
+        "title": "ToDo List",
+        "tagline": "Simple, fast, and accessible.",
+        "description": "This productivity tool allows users to create and manage task lists intuitively. Built with Svelte for snappy performance, it features a clean, responsive interface. Tasks can be created, updated, completed, and deleted with real-time feedback. The app uses a MySQL database for persistent storage, accessed through an Express-based REST API. It’s designed to be accessible and user-friendly, with inline editing and progress tracking.",
+        "features": [
+          "Task CRUD Functionality: Users can create, update, complete, and delete tasks with real-time feedback.",
+          "Editable Interface: Tasks can be edited inline, allowing for a smooth and intuitive editing experience.",
+          "Progress Tracking: The app dynamically displays the number of created and completed tasks.",
+          "Responsive Design: Fully responsive layout ensures usability on desktops, tablets, and mobile devices.",
+          "Data Persistence: Tasks are stored in a MySQL database, enabling persistent data management through an Express-based REST API."
+        ],
+        "visualIdentity": "The visual identity of the ToDo List was crafted to be both modern and simple. A soft, violet and turquoise colour palette combined with a bold typographic hierarchy creates an aesthetically pleasing experience while keeping the user focussed on their tasks.",
+        "url": "/projects/todolist.svg",
+        "images": [
+          "/projects/todolist/todolist1.svg",
+          "/projects/todolist/todolist2.svg",
+          "/projects/todolist/todolist3.svg"
+        ],
+        "github": "https://github.com/jenniferdsbaumgart/todo-list-svelte",
+        "demo": "https://todo-list-svelte-mu.vercel.app/",
+        "tech": [
+          "Svelte",
+          "Javascript",
+          "TailwindCSS",
+          "NodeJS",
+          "Express",
+          "MySQL",
+          "REST API",
+          "Full Stack"
+        ],
+        "techUsed": "This project was developed using Svelte for the front-end framework, with TailwindCSS for utility-first styling. JavaScript handles client-side interactions, while Node.js and Express power the backend. Data is stored and managed using MySQL. The system communicates through a RESTful API, enabling efficient and scalable interaction between front and back end.",
+        "challengesAndSolutions": [
+          {
+            "challenge": "Implement inline editing without affecting the layout.",
+            "solution": "Used local state management in Svelte to isolate the editable task and synchronise updates to the backend only on save."
+          },
+          {
+            "challenge": "Ensuring real-time updates without page reloads.",
+            "solution": "Implemented Svelte's reactive features to automatically update the UI when tasks are created, updated, or deleted."
           }
         ]
       },
