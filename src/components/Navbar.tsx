@@ -1,7 +1,9 @@
 'use client'
+import React from "react";
 import { copyRightIcon, navbarData } from "@/assets"
+import { NavbarProps } from "@/types"
 
-const Navbar = ({ id }) => {
+const Navbar = ({ id }: NavbarProps): React.ReactElement => {
   return (
     <div className="w-[85px] sm:w-[60px] dark:bg-neutral-900 bg-zinc-300 h-full fixed left-0 top-0 flex flex-col justify-between border-r borde-gray-200 px-4 py-10 xl:py-6 z-10">
         <a href="/#home">

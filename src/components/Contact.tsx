@@ -1,49 +1,73 @@
 "use client";
 
+import React from "react";
 import Heading from "./sub/Heading";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState, useContext } from "react";
+import { useState, useContext, FormEvent, ChangeEvent } from "react";
 import { LanguageContext } from '@/contexts/LanguageContext';
+import { LanguageContextValue, ContactFormData } from "@/types";
 
-const Contact = () => {
-  const { translations } = useContext(LanguageContext);
-  const [formData, setFormData] = useState({
+const Contact = (): React.ReactElement => {
+  const context = useContext(LanguageContext);
+  
+  if (!context) {
+    throw new Error('Contact must be used within a LanguageProvider');
+  }
+  
+  const { translations }: LanguageContextValue = context;
+  
+  const [formData, setFormData] = useState<ContactFormData>({
     name: "",
     email: "",
-    subject: "",
     message: "",
   });
 
-  const [status, setStatus] = useState(null);
+  const [subject, setSubject] = useState<string>("");
+  const [status, setStatus] = useState<string | null>(null);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>): Promise<void> => {
     e.preventDefault();
 
-    const response = await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
+    const submitData = {
+      ...formData,
+      subject,
+    };
 
-    const result = await response.json();
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(submitData),
+      });
 
-    if (response.ok) {
-      setStatus("Message sent successfully!");
-      setFormData({ name: "", email: "", subject: "", message: "" });
-    } else {
-      setStatus(`Error: ${result.message}`);
+      const result = await response.json();
+
+      if (response.ok) {
+        setStatus("Message sent successfully!");
+        setFormData({ name: "", email: "", message: "" });
+        setSubject("");
+      } else {
+        setStatus(`Error: ${result.message}`);
+      }
+    } catch (error) {
+      setStatus("Error: Failed to send message");
     }
   };
 
-  const handleChange = (e) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
+    
+    if (name === "subject") {
+      setSubject(value);
+    } else {
+      setFormData({
+        ...formData,
+        [name]: value,
+      });
+    }
   };
 
   return (
@@ -80,6 +104,7 @@ const Contact = () => {
               onChange={handleChange}
               className="w-full border border-violet-500 rounded-md bg-zinc-100 dark:bg-zinc-800 px-4 py-2 text-sm tracking-wider text-gray-500 dark:text-gray-300 outline-none"
               placeholder={translations.contact.form.name}
+              required
             />
             <input
               name="email"
@@ -88,15 +113,17 @@ const Contact = () => {
               onChange={handleChange}
               className="w-full border border-violet-500 rounded-md bg-zinc-100 dark:bg-zinc-800 px-4 py-2 text-sm tracking-wider text-gray-500 dark:text-gray-300 outline-none"
               placeholder={translations.contact.form.email}
+              required
             />
           </div>
           <input
             name="subject"
             type="text"
-            value={formData.subject}
+            value={subject}
             onChange={handleChange}
             className="w-full border border-violet-500 rounded-md bg-zinc-100 dark:bg-zinc-800 px-4 py-2 text-sm tracking-wider text-gray-500 dark:text-gray-300 outline-none"
             placeholder={translations.contact.form.subject}
+            required
           />
           <textarea
             name="message"
@@ -104,6 +131,7 @@ const Contact = () => {
             onChange={handleChange}
             className="max-h-[250px] min-h-[150px] border border-violet-500 rounded-md bg-zinc-100 dark:bg-zinc-800 px-4 py-2 text-sm tracking-wider text-gray-500 dark:text-gray-300 outline-none"
             placeholder={translations.contact.form.message}
+            required
           ></textarea>
           <button
             type="submit"

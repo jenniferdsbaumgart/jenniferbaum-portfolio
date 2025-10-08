@@ -1,14 +1,21 @@
 "use client"
 
+import React from "react";
 import Heading from "./sub/Heading";
 import Image from "next/image";
-import { aboutData, aboutText, downloadIcon, arrowLeftIcon } from "@/assets";
+import { downloadIcon, arrowLeftIcon } from "@/assets";
 import { useContext } from 'react';
 import { LanguageContext } from '@/contexts/LanguageContext';
+import { LanguageContextValue } from "@/types";
 
-
-const About = () => {
-    const { translations } = useContext(LanguageContext);
+const About = (): React.ReactElement => {
+    const context = useContext(LanguageContext);
+    
+    if (!context) {
+        throw new Error('About must be used within a LanguageProvider');
+    }
+    
+    const { translations }: LanguageContextValue = context;
 
     return (
         <div id="about" className="px-10 min-h-screen flex flex-col items-center justify-center">

@@ -1,33 +1,47 @@
 "use client";
-import { useState, useContext } from "react";
+import React, { useState, useContext } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { LanguageContext } from "@/contexts/LanguageContext";
-import { projectsData } from "./../../assets/index";
+import { projectsData } from "./../../assets";
 import ProjectModal from "./ProjectModal";
+import { Project as ProjectType, LanguageContextValue } from "@/types";
 
-const Project = ({ data, index }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const { translations, language } = useContext(LanguageContext);
+interface ProjectProps {
+  data: ProjectType;
+  index: number;
+}
+
+const Project = ({ data, index }: ProjectProps): React.ReactElement | null => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const context = useContext(LanguageContext);
+  
+  if (!context) {
+    throw new Error('Project must be used within a LanguageProvider');
+  }
+  
+  const { translations, language }: LanguageContextValue = context;
 
   if (!data || (!data.name && !data.title)) {
     console.error("[Project] Prop 'data' inválida:", data);
     return null;
   }
 
-  const normalizeName = (name) => {
+  const normalizeName = (name: string): string => {
     return name.toLowerCase().replace(" - finances application", "").trim();
   };
 
-  const normalizeTranslationData = (translationProject, originalData) => {
+  const normalizeTranslationData = (translationProject: any): ProjectType => {
     const matchingProject = projectsData.find(
-      (proj) => normalizeName(proj.name) === normalizeName(translationProject.title)
+      (proj: any) => normalizeName(proj.name) === normalizeName(translationProject.title)
     );
 
     return {
       name: translationProject.title,
+      title: translationProject.title,
       tagline: translationProject.tagline,
       desc: translationProject.desc,
+      description: translationProject.description,
       visualIdentity: translationProject.visualIdentity || "N/A",
       techUsed: matchingProject?.techUsed || "N/A",
       features: translationProject.features || [],
@@ -36,16 +50,17 @@ const Project = ({ data, index }) => {
       github: matchingProject?.github || "",
       demo: matchingProject?.demo || "",
       tech: matchingProject?.tech || [],
+      images: translationProject.images || [],
     };
   };
 
-  let projectData = data;
+  let projectData: ProjectType = data;
   if (language === "pt" && translations?.projects?.projectsData) {
     const translatedProject = translations.projects.projectsData.find(
-      (proj) => normalizeName(proj.title) === normalizeName(data.name)
+      (proj: any) => normalizeName(proj.title) === normalizeName(data.name || data.title)
     );
     if (translatedProject) {
-      projectData = normalizeTranslationData(translatedProject, data);
+      projectData = normalizeTranslationData(translatedProject);
     }
   }
 
@@ -66,7 +81,7 @@ const Project = ({ data, index }) => {
       >
         <Image
           src={projectData.url}
-          alt={`Imagem do projeto ${projectData.name}`}
+          alt={`Imagem do projeto ${projectData.name || projectData.title}`}
           width={400}
           height={400}
           className="rounded-lg opacity-70"

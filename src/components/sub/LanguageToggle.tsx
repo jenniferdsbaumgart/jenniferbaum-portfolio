@@ -1,8 +1,19 @@
-import { useContext } from "react";
+import React, { useContext, ReactNode } from "react";
 import { LanguageContext } from "@/contexts/LanguageContext";
+import { LanguageContextValue } from "@/types";
 
-export default function LanguageToggle({ children }) {
-  const { language, toggleLanguage } = useContext(LanguageContext);
+interface LanguageToggleProps {
+  children: ReactNode;
+}
+
+export default function LanguageToggle({ children }: LanguageToggleProps): React.ReactElement {
+  const context = useContext(LanguageContext);
+  
+  if (!context) {
+    throw new Error('LanguageToggle must be used within a LanguageProvider');
+  }
+  
+  const { language, toggleLanguage }: LanguageContextValue = context;
 
   return (
     <div>

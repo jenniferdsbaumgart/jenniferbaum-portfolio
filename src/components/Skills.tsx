@@ -1,13 +1,14 @@
 "use client";
 
+import React from "react";
 import Heading from "./sub/Heading";
 import Image from "next/image";
 import { skillsData } from "@/assets";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
-const Skills = () => {
-  const variants = {
-    visible: (i) => ({
+const Skills = (): React.ReactElement => {
+  const variants: Variants = {
+    visible: (i: number) => ({
       opacity: 1,
       y: 0,
       transition: {
@@ -19,6 +20,7 @@ const Skills = () => {
       y: 30,
     },
   };
+  
   return (
     <div id="skills" className="min-h-screen flex flex-column items-center justify-center gap-y-20 py-24">
       <Heading text={"Skills"} />

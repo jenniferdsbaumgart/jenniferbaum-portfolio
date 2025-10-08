@@ -1,31 +1,40 @@
 "use client";
+import React from "react";
 import Image from "next/image";
-import { heroIcons } from "@/assets/index";
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { useState } from "react";
+import { heroIcons } from "@/assets";
+import { motion, useMotionValue, useSpring, useTransform, MotionValue } from "framer-motion";
+import { useState, useContext, MouseEvent } from "react";
 import MailLineIcon from "remixicon-react/MailLineIcon";
 import { ReactTyped } from "react-typed";
-import { useContext } from 'react';
 import { LanguageContext } from '@/contexts/LanguageContext';
+import { WindowOffset, LanguageContextValue } from "@/types";
 
-const Hero = () => {
-  const { translations } = useContext(LanguageContext);
-  const [windowOffset, setWindowOffset] = useState({
+const Hero = (): React.ReactElement => {
+  const context = useContext(LanguageContext);
+  
+  if (!context) {
+    throw new Error('Hero must be used within a LanguageProvider');
+  }
+  
+  const { translations }: LanguageContextValue = context;
+  
+  const [windowOffset, setWindowOffset] = useState<WindowOffset>({
     innerWidth: 0,
     innerHeight: 0,
   });
-  const [mouseMove, setMouseMove] = useState(false);
-  const [buttonHover, setButtonHover] = useState(false);
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
+  const [mouseMove, setMouseMove] = useState<boolean>(false);
+  const [buttonHover, setButtonHover] = useState<boolean>(false);
+  
+  const x: MotionValue<number> = useMotionValue(0);
+  const y: MotionValue<number> = useMotionValue(0);
 
-  const handleMouseMove = (e) => {
+  const handleMouseMove = (e: MouseEvent<HTMLDivElement>): void => {
     const { clientX, clientY } = e;
     x.set(clientX);
     y.set(clientY);
   };
 
-  const handleMouseEnter = () => {
+  const handleMouseEnter = (): void => {
     setWindowOffset({
       innerWidth: window.innerWidth,
       innerHeight: window.innerHeight,
@@ -40,6 +49,7 @@ const Hero = () => {
 
   const rotateY = useTransform(xSpring, [0, innerWidth], [-30, 30]);
   const rotateX = useTransform(ySpring, [0, innerHeight], [10, 3]);
+  
   return (
     <div
       id="home"
@@ -57,8 +67,7 @@ const Hero = () => {
           <div
             className="flex items-center justify-center"
             style={{
-              rotateX: mouseMove ? rotateX : 0,
-              rotateY: mouseMove ? rotateY : 0,
+              transform: mouseMove ? `rotateX(${rotateX}deg) rotateY(${rotateY}deg)` : 'none',
               transition: "0.1s",
             }}
           >

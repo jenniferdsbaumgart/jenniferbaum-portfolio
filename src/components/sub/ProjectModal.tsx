@@ -1,3 +1,4 @@
+import React from "react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import {
   Carousel,
@@ -6,10 +7,17 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
-import { Info, Code, Bug, ExternalLink, BadgeCheck } from "lucide-react";
+import { Info, Code, Bug, ExternalLink } from "lucide-react";
 import { DialogClose } from "@radix-ui/react-dialog";
+import { Project } from "@/types";
 
-export default function ProjectModal({ projectData, isOpen, onClose }) {
+interface ProjectModalProps {
+  projectData: Project;
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+export default function ProjectModal({ projectData, isOpen, onClose }: ProjectModalProps): React.ReactElement {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-6xl w-[105vw] bg-white/10 backdrop-blur-lg border border-white/20 shadow-2xl rounded-xl overflow-y-auto max-h-[90vh] p-6 md:p-10 flex flex-col">
@@ -20,7 +28,7 @@ export default function ProjectModal({ projectData, isOpen, onClose }) {
           </h2>
 
           {/* CAROUSEL */}
-          {projectData.images?.length > 0 && (
+          {projectData.images && projectData.images.length > 0 && (
             <>
               <Carousel
                 plugins={[Autoplay({ delay: 3000 })]}
@@ -33,8 +41,8 @@ export default function ProjectModal({ projectData, isOpen, onClose }) {
                         <Image
                           src={img}
                           alt={`Screenshot ${index + 1}`}
-                          layout="fill"
-                          objectFit="cover"
+                          fill
+                          style={{ objectFit: 'cover' }}
                         />
                       </div>
                     </CarouselItem>
@@ -71,11 +79,13 @@ export default function ProjectModal({ projectData, isOpen, onClose }) {
                 )
               )}
             </ul>
-            <p className="text-white/80 mt-2">{projectData.techUsed}</p>
+            {projectData.techUsed && (
+              <p className="text-white/80 mt-2">{projectData.techUsed}</p>
+            )}
           </section>
 
           {/* FEATURES */}
-          {projectData.features?.length > 0 && (
+          {projectData.features && projectData.features.length > 0 && (
             <section>
               <h3 className="flex items-center text-lg font-semibold text-white">
                 <Info className="w-5 h-5 text-violet-400 mr-4" /> Features
@@ -89,7 +99,7 @@ export default function ProjectModal({ projectData, isOpen, onClose }) {
           )}
 
           {/* CHALLENGES AND SOLUTIONS */}
-          {projectData.challengesAndSolutions?.length > 0 && (
+          {projectData.challengesAndSolutions && projectData.challengesAndSolutions.length > 0 && (
             <section>
               <h3 className="flex items-center text-lg font-semibold text-white">
                 <Bug className="w-5 h-5 text-violet-400 mr-4" /> Challenges and
@@ -113,19 +123,19 @@ export default function ProjectModal({ projectData, isOpen, onClose }) {
           )}
 
           {/* LINK */}
-          {projectData.link && (
+          {projectData.links?.demo && (
             <section>
               <h3 className="flex items-center text-lg font-semibold text-white">
                 <ExternalLink className="w-5 h-5 text-violet-400 mr-4" />{" "}
                 Project Link
               </h3>
               <a
-                href={projectData.link}
+                href={projectData.links.demo}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-violet-300 underline mt-2 inline-block"
               >
-                {projectData.link}
+                {projectData.links.demo}
               </a>
             </section>
           )}
@@ -133,9 +143,9 @@ export default function ProjectModal({ projectData, isOpen, onClose }) {
 
         {/* BUTTONS */}
         <div className="flex justify-end gap-4 mt-6">
-          {projectData.github && (
+          {(projectData.github || projectData.links?.github) && (
             <a
-              href={projectData.github}
+              href={projectData.github || projectData.links?.github}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 bg-violet-600 hover:bg-violet-700 text-white rounded-md font-semibold transition sm:text-xs sm:px-2"
@@ -144,9 +154,9 @@ export default function ProjectModal({ projectData, isOpen, onClose }) {
             </a>
           )}
 
-          {projectData.demo && (
+          {(projectData.demo || projectData.links?.demo) && (
             <a
-              href={projectData.demo}
+              href={projectData.demo || projectData.links?.demo}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 bg-violet-600 hover:bg-violet-700 text-white rounded-md font-semibold transition sm:text-xs sm:px-2"

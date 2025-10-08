@@ -1,28 +1,32 @@
 "use client";
 
+import React from "react";
 import Heading from "./sub/Heading";
-import { motion, useScroll, useSpring } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
+import { useRef, useContext } from "react";
 import Image from "next/image";
-import { useContext } from "react";
 import { LanguageContext } from "@/contexts/LanguageContext";
+import { LanguageContextValue } from "@/types";
 
-const Experience = () => {
-  const { translations } = useContext(LanguageContext);
+const Experience = (): React.ReactElement => {
+  const context = useContext(LanguageContext);
+  
+  if (!context) {
+    throw new Error('Experience must be used within a LanguageProvider');
+  }
+  
+  const { translations }: LanguageContextValue = context;
   const date = new Date().getFullYear();
 
-  const containerRef = useRef(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start 95%", "end end"],
-  });
 
-  const scrollY = useSpring(scrollYProgress, { stiffness: 200, damping: 20 });
+
+
 
   return (
-    <div id="experience" className="relative py-10 w-full">
-      <Heading text={translations.experience.title} className="mb-10" />
+    <div id="experience" className="relative py-10 w-full" ref={containerRef}>
+      <Heading text={translations.experience.title} />
       <Image
         src={"/jenny-seated.png"}
         alt={"Experience Image"}
