@@ -1,4 +1,5 @@
 # Jennifer Baum – Portfolio
+
 ![Status](https://img.shields.io/badge/status-in%20progress-yellow)
 
 This is my personal portfolio project, created to showcase my work as a Front-End Developer and UX/UI Designer. It's currently a work in progress, and will soon be deployed online.
