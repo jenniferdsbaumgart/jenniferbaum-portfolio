@@ -3,9 +3,9 @@ import textStroke from "tailwindcss-text-stroke";
 
 module.exports = {
   content: [
-    './src/app/**/*.{js,ts,jsx,tsx}',
-    './src/pages/**/*.{js,ts,jsx,tsx}',
-    './src/components/**/*.{js,ts,jsx,tsx}',
+    "./src/app/**/*.{js,ts,jsx,tsx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -15,10 +15,10 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        abril: ['var(--font-abril-fatface)'],
-        oswald: ['var(--font-oswald)', 'sans-serif'],
-        bebas: ['var(--font-bebas)'],
-        montserrat: ['var(--font-montserrat)', 'sans-serif'],
+        abril: ["var(--font-abril-fatface)"],
+        oswald: ["var(--font-oswald)", "sans-serif"],
+        bebas: ["var(--font-bebas)"],
+        montserrat: ["var(--font-montserrat)", "sans-serif"],
       },
     },
     screens: {
