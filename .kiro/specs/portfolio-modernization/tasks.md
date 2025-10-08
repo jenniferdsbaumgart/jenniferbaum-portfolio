@@ -33,7 +33,7 @@
   - Add utility types for component variants and sizes
   - _Requirements: 1.1, 1.3_
 
-- [ ]* 1.5 Set up ESLint and Prettier with TypeScript rules
+- [x] 1.5 Set up ESLint and Prettier with TypeScript rules
   - Configure @typescript-eslint/eslint-plugin
   - Add strict linting rules for TypeScript code
   - Set up automatic formatting on save
@@ -95,7 +95,7 @@
   - Add proper component composition with React.forwardRef
   - _Requirements: 3.1, 1.3_
 
-- [ ]* 3.4 Set up Storybook for component documentation
+- [ ]\* 3.4 Set up Storybook for component documentation
   - Install and configure Storybook with TypeScript support
   - Create stories for all UI components
   - Add controls and documentation for component props
@@ -242,7 +242,7 @@
   - Create related posts suggestions
   - _Requirements: 7.1, 7.3_
 
-- [ ]* 8.4 Create blog admin interface
+- [ ]\* 8.4 Create blog admin interface
   - Build simple admin interface for creating/editing posts
   - Add preview functionality for draft posts
   - Implement image upload and management
@@ -344,7 +344,7 @@
   - Add offline indicator and user feedback
   - _Requirements: 10.2, 10.4_
 
-- [ ]* 12.3 Add push notification system
+- [ ]\* 12.3 Add push notification system
   - Set up push notification service
   - Create subscription management interface
   - Implement notification sending for blog updates
@@ -383,7 +383,7 @@
   - Test responsive design across different devices
   - _Requirements: 11.3, 11.4_
 
-- [ ]* 13.5 Add performance testing
+- [ ]\* 13.5 Add performance testing
   - Set up Lighthouse CI for automated performance testing
   - Create performance budgets and monitoring
   - Add visual regression testing
