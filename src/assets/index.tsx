@@ -1,9 +1,9 @@
 // Hero
-import InstagramLineIcon from "remixicon-react/InstagramLineIcon";
 import GithubLineIcon from "remixicon-react/GithubLineIcon";
 import LinkedinBoxLineIcon from "remixicon-react/LinkedinBoxLineIcon";
+import { HeroIconItem, NavbarItem } from "@/types";
 
-export const heroIcons = [
+export const heroIcons: HeroIconItem[] = [
   // {
   //   id: "instagram",
   //   icon: <InstagramLineIcon />,
@@ -57,7 +57,12 @@ export const downloadIcon = <DownloadLineIcon />;
 export const arrowLeftIcon = <ArrowLeftSFillIcon />;
 
 // Skills
-export const skillsData = [
+interface SkillData {
+  name: string;
+  icon: string;
+}
+
+export const skillsData: SkillData[] = [
   {
     name: "HTML",
     icon: "/skills/html52.png",
@@ -176,7 +181,7 @@ export const skillsData = [
   },
 ];
 
-export const projectsButton = [
+export const projectsButton: string[] = [
   "All",
   "Figma",
   "HTML",
@@ -202,7 +207,7 @@ import BriefcaseLineIcon from "remixicon-react/BriefcaseLineIcon";
 import ProjectorLineIcon from "remixicon-react/ProjectorLineIcon";
 import ContactsBook2LineIcon from "remixicon-react/ContactsBook2LineIcon";
 
-export const navbarData = [
+export const navbarData: NavbarItem[] = [
   {
     id: "home",
     name: "Home",
@@ -241,3 +246,9 @@ import SunFoggyFillIcon from "remixicon-react/SunFoggyFillIcon";
 
 export const moonIcon = <MoonFoggyFillIcon />;
 export const sunIcon = <SunFoggyFillIcon />;
+
+// Projects data (this would typically come from a CMS or API)
+export const projectsData: any[] = [
+  // This would be populated with actual project data
+  // For now, keeping it as any[] since the structure varies
+];
