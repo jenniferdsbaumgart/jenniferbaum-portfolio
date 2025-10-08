@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import 'swiper/css';
-@import 'swiper/css/navigation';
-@import 'swiper/css/pagination';
-
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
 
 html {
   scroll-behavior: smooth !important;

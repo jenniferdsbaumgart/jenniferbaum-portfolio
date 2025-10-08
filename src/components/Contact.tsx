@@ -1,22 +1,22 @@
 "use client";
 
-import React from "react";
-import Heading from "./sub/Heading";
+import { LanguageContext } from "@/contexts/LanguageContext";
+import type { ContactFormData, LanguageContextValue } from "@/types";
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
-import { useState, useContext, FormEvent, ChangeEvent } from "react";
-import { LanguageContext } from '@/contexts/LanguageContext';
-import { LanguageContextValue, ContactFormData } from "@/types";
+import type { ChangeEvent, FormEvent } from "react";
+import React, { useContext, useState } from "react";
+import Heading from "./sub/Heading";
 
 const Contact = (): React.ReactElement => {
   const context = useContext(LanguageContext);
-  
+
   if (!context) {
-    throw new Error('Contact must be used within a LanguageProvider');
+    throw new Error("Contact must be used within a LanguageProvider");
   }
-  
+
   const { translations }: LanguageContextValue = context;
-  
+
   const [formData, setFormData] = useState<ContactFormData>({
     name: "",
     email: "",
@@ -57,9 +57,11 @@ const Contact = (): React.ReactElement => {
     }
   };
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ): void => {
     const { name, value } = e.target;
-    
+
     if (name === "subject") {
       setSubject(value);
     } else {
@@ -71,9 +73,9 @@ const Contact = (): React.ReactElement => {
   };
 
   return (
-    <div id="contact" className="h-screen lg:h-auto py-20 lg:py-40 xs:pb-20">
+    <div id="contact" className="h-screen py-20 lg:h-auto lg:py-40 xs:pb-20">
       <Heading text={translations.contact.title} />
-      <div className="w-full h-full my-auto flex lg:flex-col items-center justify-between lg:justify-center gap-x-20 lg:gap-x-0 gap-y-20">
+      <div className="my-auto flex h-full w-full items-center justify-between gap-x-20 gap-y-20 lg:flex-col lg:justify-center lg:gap-x-0">
         <motion.div
           initial={{ opacity: 0, y: 150 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -94,15 +96,15 @@ const Contact = (): React.ReactElement => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.4 }}
           viewport={{ once: true }}
-          className="w-[600px] lg:w-[400px] sm:w-full flex flex-col gap-3"
+          className="flex w-[600px] flex-col gap-3 lg:w-[400px] sm:w-full"
         >
-          <div className="w-full flex lg:flex-col gap-x-3 lg:gap-y-3">
+          <div className="flex w-full gap-x-3 lg:flex-col lg:gap-y-3">
             <input
               name="name"
               type="text"
               value={formData.name}
               onChange={handleChange}
-              className="w-full border border-violet-500 rounded-md bg-zinc-100 dark:bg-zinc-800 px-4 py-2 text-sm tracking-wider text-gray-500 dark:text-gray-300 outline-none"
+              className="w-full rounded-md border border-violet-500 bg-zinc-100 px-4 py-2 text-sm tracking-wider text-gray-500 outline-none dark:bg-zinc-800 dark:text-gray-300"
               placeholder={translations.contact.form.name}
               required
             />
@@ -111,7 +113,7 @@ const Contact = (): React.ReactElement => {
               type="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full border border-violet-500 rounded-md bg-zinc-100 dark:bg-zinc-800 px-4 py-2 text-sm tracking-wider text-gray-500 dark:text-gray-300 outline-none"
+              className="w-full rounded-md border border-violet-500 bg-zinc-100 px-4 py-2 text-sm tracking-wider text-gray-500 outline-none dark:bg-zinc-800 dark:text-gray-300"
               placeholder={translations.contact.form.email}
               required
             />
@@ -121,7 +123,7 @@ const Contact = (): React.ReactElement => {
             type="text"
             value={subject}
             onChange={handleChange}
-            className="w-full border border-violet-500 rounded-md bg-zinc-100 dark:bg-zinc-800 px-4 py-2 text-sm tracking-wider text-gray-500 dark:text-gray-300 outline-none"
+            className="w-full rounded-md border border-violet-500 bg-zinc-100 px-4 py-2 text-sm tracking-wider text-gray-500 outline-none dark:bg-zinc-800 dark:text-gray-300"
             placeholder={translations.contact.form.subject}
             required
           />
@@ -129,13 +131,13 @@ const Contact = (): React.ReactElement => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            className="max-h-[250px] min-h-[150px] border border-violet-500 rounded-md bg-zinc-100 dark:bg-zinc-800 px-4 py-2 text-sm tracking-wider text-gray-500 dark:text-gray-300 outline-none"
+            className="max-h-[250px] min-h-[150px] rounded-md border border-violet-500 bg-zinc-100 px-4 py-2 text-sm tracking-wider text-gray-500 outline-none dark:bg-zinc-800 dark:text-gray-300"
             placeholder={translations.contact.form.message}
             required
           ></textarea>
           <button
             type="submit"
-            className="w-full border border-violet-500 rounded-md bg-violet-600 px-4 py-2 text-sm font-light tracking-wider text-white outline-none hover:bg-violet-500 transition-colors cursor-pointer"
+            className="w-full cursor-pointer rounded-md border border-violet-500 bg-violet-600 px-4 py-2 text-sm font-light tracking-wider text-white outline-none transition-colors hover:bg-violet-500"
           >
             {translations.contact.form.submitButton}
           </button>
@@ -148,7 +150,7 @@ const Contact = (): React.ReactElement => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.3 }}
-                className={`text-sm mt-2 ${
+                className={`mt-2 text-sm ${
                   status.startsWith("Error")
                     ? "text-red-500 dark:text-red-400"
                     : "text-green-500 dark:text-green-300"

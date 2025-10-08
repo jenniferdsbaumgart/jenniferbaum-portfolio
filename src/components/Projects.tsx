@@ -5,15 +5,15 @@ import Project from "./sub/Project";
 import { projectsButton } from "@/assets";
 import { animate, motion } from "framer-motion";
 import { LanguageContext } from "@/contexts/LanguageContext";
-import { LanguageContextValue } from "@/types";
+import type { LanguageContextValue } from "@/types";
 
 const Projects = (): React.ReactElement => {
   const context = useContext(LanguageContext);
-  
+
   if (!context) {
-    throw new Error('Projects must be used within a LanguageProvider');
+    throw new Error("Projects must be used within a LanguageProvider");
   }
-  
+
   const { translations }: LanguageContextValue = context;
   const [tech, setTech] = useState<string>("All");
   const [index, setIndex] = useState<number>(0);
@@ -24,7 +24,7 @@ const Projects = (): React.ReactElement => {
   const handleClick = (): void => {
     const prevButton = buttonsRef.current[prevIndex.current];
     const currentButton = buttonsRef.current[index];
-    
+
     if (prevButton) {
       animate(prevButton, { opacity: 0.5, scale: 1 });
     }
@@ -39,21 +39,21 @@ const Projects = (): React.ReactElement => {
   }, [index]);
 
   return (
-    <div id="projects" className="min-h-screen py-20 px-8">
+    <div id="projects" className="min-h-screen px-8 py-20">
       <Heading text={translations.projects.title} />
-      <div className="flex flex-wrap items-center justify-start gap-4 mb-2">
+      <div className="mb-2 flex flex-wrap items-center justify-start gap-4">
         {projectsButton.map((text, i) => (
           <motion.button
             key={i}
             initial={{ opacity: i === 0 ? 1 : 0.5, scale: i === 0 ? 1.2 : 1 }}
-            ref={(el) => {
+            ref={el => {
               buttonsRef.current[i] = el;
             }}
             onClick={() => {
               setTech(text);
               setIndex(i);
             }}
-            className="border border-violet-500 rounded-xl px-4 py-2 text-sm font-light tracking-wider text-gray-400"
+            className="rounded-xl border border-violet-500 px-4 py-2 text-sm font-light tracking-wider text-gray-400"
           >
             {text}
           </motion.button>
@@ -61,7 +61,7 @@ const Projects = (): React.ReactElement => {
       </div>
       <div className="flex flex-wrap items-center justify-center gap-5 py-4">
         {projects
-          .filter((project) => {
+          .filter(project => {
             return project.tech.some((item: string) =>
               tech === "All" ? true : item === tech
             );

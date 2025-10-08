@@ -1,4 +1,4 @@
-declare module 'reactjs-localstorage' {
+declare module "reactjs-localstorage" {
   export const reactLocalStorage: {
     get: (key: string) => string | undefined;
     set: (key: string, value: any) => void;

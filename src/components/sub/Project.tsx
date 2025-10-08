@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { LanguageContext } from "@/contexts/LanguageContext";
 import { projectsData } from "./../../assets";
 import ProjectModal from "./ProjectModal";
-import { Project as ProjectType, LanguageContextValue } from "@/types";
+import type { Project as ProjectType, LanguageContextValue } from "@/types";
 
 interface ProjectProps {
   data: ProjectType;
@@ -15,11 +15,11 @@ interface ProjectProps {
 const Project = ({ data, index }: ProjectProps): React.ReactElement | null => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const context = useContext(LanguageContext);
-  
+
   if (!context) {
-    throw new Error('Project must be used within a LanguageProvider');
+    throw new Error("Project must be used within a LanguageProvider");
   }
-  
+
   const { translations, language }: LanguageContextValue = context;
 
   if (!data || (!data.name && !data.title)) {
@@ -33,7 +33,8 @@ const Project = ({ data, index }: ProjectProps): React.ReactElement | null => {
 
   const normalizeTranslationData = (translationProject: any): ProjectType => {
     const matchingProject = projectsData.find(
-      (proj: any) => normalizeName(proj.name) === normalizeName(translationProject.title)
+      (proj: any) =>
+        normalizeName(proj.name) === normalizeName(translationProject.title)
     );
 
     return {
@@ -57,7 +58,8 @@ const Project = ({ data, index }: ProjectProps): React.ReactElement | null => {
   let projectData: ProjectType = data;
   if (language === "pt" && translations?.projects?.projectsData) {
     const translatedProject = translations.projects.projectsData.find(
-      (proj: any) => normalizeName(proj.title) === normalizeName(data.name || data.title)
+      (proj: any) =>
+        normalizeName(proj.title) === normalizeName(data.name || data.title)
     );
     if (translatedProject) {
       projectData = normalizeTranslationData(translatedProject);
@@ -77,7 +79,7 @@ const Project = ({ data, index }: ProjectProps): React.ReactElement | null => {
         viewport={{ once: true }}
         transition={{ duration: 1, type: "spring", stiffness: 100 }}
         onClick={() => setIsOpen(true)}
-        className="relative w-[350px] sm:w-full h-max border border-violet-400 rounded-lg cursor-pointer"
+        className="relative h-max w-[350px] cursor-pointer rounded-lg border border-violet-400 sm:w-full"
       >
         <Image
           src={projectData.url}

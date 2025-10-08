@@ -23,7 +23,7 @@ export interface Project {
   techUsed?: string;
   challenges?: Challenge[];
   challengesAndSolutions?: Challenge[];
-  status?: 'completed' | 'in-progress' | 'planned';
+  status?: "completed" | "in-progress" | "planned";
   featured?: boolean;
   createdAt?: Date;
   updatedAt?: Date;
@@ -46,7 +46,7 @@ export interface Technology {
   id: string;
   name: string;
   icon: React.ReactNode;
-  category: 'frontend' | 'backend' | 'database' | 'tool' | 'design';
+  category: "frontend" | "backend" | "database" | "tool" | "design";
 }
 
 export interface Experience {
@@ -63,7 +63,7 @@ export interface Skill {
   id: string;
   name: string;
   icon: React.ReactNode;
-  proficiency: 'beginner' | 'intermediate' | 'advanced' | 'expert';
+  proficiency: "beginner" | "intermediate" | "advanced" | "expert";
   category: string;
 }
 
@@ -90,16 +90,16 @@ export interface Translation {
     title: string;
     educationTitle: string;
     experienceTitle: string;
-    experienceData: Array<{
+    experienceData: {
       year: number;
       title: string;
       education: string;
       experience: string[];
-    }>;
+    }[];
   };
   projects: {
     title: string;
-    projectsData: Array<{
+    projectsData: {
       title: string;
       tagline: string;
       description: string;
@@ -110,11 +110,11 @@ export interface Translation {
       demo?: string;
       tech: string[];
       techUsed: string;
-      challengesAndSolutions?: Array<{
+      challengesAndSolutions?: {
         challenge: string;
         solution: string;
-      }>;
-    }>;
+      }[];
+    }[];
   };
   contact: {
     title: string;
@@ -130,8 +130,8 @@ export interface Translation {
 }
 
 // Theme types
-export type Theme = 'light' | 'dark' | 'system';
-export type Language = 'en' | 'pt';
+export type Theme = "light" | "dark" | "system";
+export type Language = "en" | "pt";
 
 // Component prop types
 export interface NavbarProps {
@@ -160,14 +160,14 @@ export interface LanguageContextValue {
 export interface ThemeContextValue {
   theme: Theme;
   setTheme: (theme: Theme) => void;
-  systemTheme: 'light' | 'dark';
+  systemTheme: "light" | "dark";
 }
 
 // Utility types for component variants
-export type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'link';
-export type ButtonSize = 'sm' | 'md' | 'lg';
-export type CardVariant = 'default' | 'elevated' | 'outlined';
-export type ContainerSize = 'sm' | 'md' | 'lg' | 'xl' | 'full';
+export type ButtonVariant = "primary" | "secondary" | "ghost" | "link";
+export type ButtonSize = "sm" | "md" | "lg";
+export type CardVariant = "default" | "elevated" | "outlined";
+export type ContainerSize = "sm" | "md" | "lg" | "xl" | "full";
 
 // Animation types
 export interface MotionProps {
@@ -200,10 +200,10 @@ export interface SEOMetadata {
     title: string;
     description: string;
     image: string;
-    type: 'website' | 'article';
+    type: "website" | "article";
   };
   twitter: {
-    card: 'summary_large_image';
+    card: "summary_large_image";
     title: string;
     description: string;
     image: string;

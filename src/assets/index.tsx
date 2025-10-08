@@ -1,7 +1,7 @@
 // Hero
 import GithubLineIcon from "remixicon-react/GithubLineIcon";
 import LinkedinBoxLineIcon from "remixicon-react/LinkedinBoxLineIcon";
-import { HeroIconItem, NavbarItem } from "@/types";
+import type { HeroIconItem, NavbarItem } from "@/types";
 
 export const heroIcons: HeroIconItem[] = [
   // {

@@ -6,8 +6,8 @@ import {
   Montserrat,
 } from "next/font/google";
 import "./globals.css";
-import { Metadata } from "next";
-import { LayoutProps } from "@/types";
+import type { Metadata } from "next";
+import type { LayoutProps } from "@/types";
 
 const inter = Inter({
   subsets: ["latin"],

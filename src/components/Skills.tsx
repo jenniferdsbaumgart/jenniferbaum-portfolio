@@ -4,7 +4,8 @@ import React from "react";
 import Heading from "./sub/Heading";
 import Image from "next/image";
 import { skillsData } from "@/assets";
-import { motion, Variants } from "framer-motion";
+import type { Variants } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Skills = (): React.ReactElement => {
   const variants: Variants = {
@@ -20,11 +21,14 @@ const Skills = (): React.ReactElement => {
       y: 30,
     },
   };
-  
+
   return (
-    <div id="skills" className="min-h-screen flex flex-column items-center justify-center gap-y-20 py-24">
+    <div
+      id="skills"
+      className="flex-column flex min-h-screen items-center justify-center gap-y-20 py-24"
+    >
       <Heading text={"Skills"} />
-      <div className="w-full py-10 px-10 flex justify-center flex-wrap gap-x-8 gap-y-8 lg:gap-y-6">
+      <div className="flex w-full flex-wrap justify-center gap-x-8 gap-y-8 px-10 py-10 lg:gap-y-6">
         {skillsData.map((item, i) => (
           <motion.div
             custom={i}
@@ -34,7 +38,7 @@ const Skills = (): React.ReactElement => {
             whileHover={{ scale: 1.2 }}
             viewport={{ margin: "50px", once: true }}
             key={item.name}
-            className="flex items-center justify-center gap-x-3 rounded-xl border border-violet-300 dark:border-violet-900 bg-zinc-200 dark:bg-zinc-800 px-5 py-3 lg:px-2"
+            className="flex items-center justify-center gap-x-3 rounded-xl border border-violet-300 bg-zinc-200 px-5 py-3 dark:border-violet-900 dark:bg-zinc-800 lg:px-2"
           >
             <Image
               src={item.icon}

@@ -1,7 +1,9 @@
-import { Resend } from 'resend';
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse, type NextRequest } from "next/server";
+import { Resend } from "resend";
 
-const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
+const resend = process.env.RESEND_API_KEY
+  ? new Resend(process.env.RESEND_API_KEY)
+  : null;
 
 interface ContactFormData {
   name: string;
@@ -18,21 +20,21 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     // Basic validation
     if (!name || !email || !subject || !message) {
       return NextResponse.json(
-        { message: 'All fields are required' },
+        { message: "All fields are required" },
         { status: 400 }
       );
     }
 
     if (!resend) {
       return NextResponse.json(
-        { message: 'Email service not configured' },
+        { message: "Email service not configured" },
         { status: 500 }
       );
     }
 
     await resend.emails.send({
-      from: 'jenniferds1994@gmail.com',
-      to: 'jenniferdsbaumgart@gmail.com',
+      from: "jenniferds1994@gmail.com",
+      to: "jenniferdsbaumgart@gmail.com",
       replyTo: email,
       subject: `Mensagem de ${name} - ${subject}`,
       html: `
@@ -46,16 +48,16 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     });
 
     return NextResponse.json(
-      { message: 'Message sent successfully!' },
+      { message: "Message sent successfully!" },
       { status: 200 }
     );
   } catch (error) {
-    console.error('Contact form error:', error);
-    
+    console.error("Contact form error:", error);
+
     return NextResponse.json(
       {
-        message: 'Error sending message',
-        error: error instanceof Error ? error.message : 'Unknown error',
+        message: "Error sending message",
+        error: error instanceof Error ? error.message : "Unknown error",
       },
       { status: 500 }
     );
