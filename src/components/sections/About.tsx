@@ -5,7 +5,7 @@ import { LanguageContext } from "@/contexts/LanguageContext";
 import type { LanguageContextValue } from "@/types";
 import Image from "next/image";
 import React, { useContext } from "react";
-import Heading from "./sub/Heading";
+import { Heading } from "../sub";
 
 const About = (): React.ReactElement => {
   const context = useContext(LanguageContext);

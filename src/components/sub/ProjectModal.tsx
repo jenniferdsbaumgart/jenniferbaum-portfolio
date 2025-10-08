@@ -1,15 +1,16 @@
-import React from "react";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
 import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
-import Image from "next/image";
-import { Info, Code, Bug, ExternalLink } from "lucide-react";
-import { DialogClose } from "@radix-ui/react-dialog";
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    Dialog,
+    DialogContent
+} from "@/components/ui";
 import type { Project } from "@/types";
+import { DialogClose } from "@radix-ui/react-dialog";
+import Autoplay from "embla-carousel-autoplay";
+import { Bug, Code, ExternalLink, Info } from "lucide-react";
+import Image from "next/image";
+import React from "react";
 
 interface ProjectModalProps {
   projectData: Project;

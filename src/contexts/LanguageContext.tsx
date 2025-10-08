@@ -1,8 +1,8 @@
+import type { Language, LanguageContextValue, Translation } from "@/types";
 import type { ReactNode } from "react";
 import React, { createContext, useState } from "react";
-import type { LanguageContextValue, Language, Translation } from "@/types";
-import pt from "./../../public/locales/pt/translation.json";
-import en from "./../../public/locales/en/translation.json";
+import en from "../../public/locales/en/translation.json";
+import pt from "../../public/locales/pt/translation.json";
 
 export const LanguageContext = createContext<LanguageContextValue | undefined>(
   undefined

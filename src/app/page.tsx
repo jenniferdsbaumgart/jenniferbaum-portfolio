@@ -1,16 +1,17 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Experience from "@/components/Experience";
-import Skills from "@/components/Skills";
-import Projects from "@/components/Projects";
-import Contact from "@/components/Contact";
-import Navbar from "@/components/Navbar";
-import Toggle from "@/components/sub/Toggle";
-import Load from "@/components/sub/Load";
+import { Navbar } from "@/components/layout";
+import {
+    About,
+    Contact,
+    Experience,
+    Hero,
+    Projects,
+    Skills
+} from "@/components/sections";
+import { Load } from "@/components/sub";
+import { LanguageToggle, Toggle } from "@/components/ui";
 import { LanguageProvider } from "@/contexts/LanguageContext";
-import LanguageToggle from "@/components/sub/LanguageToggle";
+import React, { useEffect, useRef, useState } from "react";
 
 export default function Home(): React.ReactElement {
   const [id, setId] = useState<string>("home");

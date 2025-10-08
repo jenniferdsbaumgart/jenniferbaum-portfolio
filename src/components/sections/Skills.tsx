@@ -1,11 +1,11 @@
 "use client";
 
-import React from "react";
-import Heading from "./sub/Heading";
-import Image from "next/image";
 import { skillsData } from "@/assets";
 import type { Variants } from "framer-motion";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import React from "react";
+import { Heading } from "../sub";
 
 const Skills = (): React.ReactElement => {
   const variants: Variants = {

@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import type { ChangeEvent, FormEvent } from "react";
 import React, { useContext, useState } from "react";
-import Heading from "./sub/Heading";
+import { Heading } from "../sub";
 
 const Contact = (): React.ReactElement => {
   const context = useContext(LanguageContext);

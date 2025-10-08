@@ -1,11 +1,10 @@
 "use client";
-import React, { useEffect, useRef, useState, useContext } from "react";
-import Heading from "./sub/Heading";
-import Project from "./sub/Project";
 import { projectsButton } from "@/assets";
-import { animate, motion } from "framer-motion";
 import { LanguageContext } from "@/contexts/LanguageContext";
 import type { LanguageContextValue } from "@/types";
+import { animate, motion } from "framer-motion";
+import React, { useContext, useEffect, useRef, useState } from "react";
+import { Heading, Project } from "../sub";
 
 const Projects = (): React.ReactElement => {
   const context = useContext(LanguageContext);

@@ -1,11 +1,11 @@
 "use client";
-import React, { useState, useContext } from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
+import { projectsData } from "@/assets";
 import { LanguageContext } from "@/contexts/LanguageContext";
-import { projectsData } from "./../../assets";
+import type { LanguageContextValue, Project as ProjectType } from "@/types";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import React, { useContext, useState } from "react";
 import ProjectModal from "./ProjectModal";
-import type { Project as ProjectType, LanguageContextValue } from "@/types";
 
 interface ProjectProps {
   data: ProjectType;

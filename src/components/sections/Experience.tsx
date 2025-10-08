@@ -1,12 +1,11 @@
 "use client";
 
-import React from "react";
-import Heading from "./sub/Heading";
-import { motion } from "framer-motion";
-import { useRef, useContext } from "react";
-import Image from "next/image";
 import { LanguageContext } from "@/contexts/LanguageContext";
 import type { LanguageContextValue } from "@/types";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import React, { useContext, useRef } from "react";
+import { Heading } from "../sub";
 
 const Experience = (): React.ReactElement => {
   const context = useContext(LanguageContext);

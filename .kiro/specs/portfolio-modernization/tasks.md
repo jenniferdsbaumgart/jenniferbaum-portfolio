@@ -39,28 +39,28 @@
   - Set up automatic formatting on save
   - _Requirements: 12.2, 12.3_
 
-- [ ] 2. Project Structure Reorganization
+- [x] 2. Project Structure Reorganization
   - Restructure components into logical directories (layout, sections, ui, features)
   - Create proper barrel exports for cleaner imports
   - Organize utilities, hooks, and types into dedicated folders
   - Update all import paths to use the new structure
   - _Requirements: 1.2, 1.5_
 
-- [ ] 2.1 Create new directory structure
+- [x] 2.1 Create new directory structure
   - Create src/components/layout/ for Navbar and layout components
   - Create src/components/sections/ for Hero, About, Projects, etc.
   - Create src/components/ui/ for reusable UI components
   - Create src/hooks/, src/utils/, and src/types/ directories
   - _Requirements: 1.2, 1.5_
 
-- [ ] 2.2 Move components to appropriate directories
+- [x] 2.2 Move components to appropriate directories
   - Move Navbar to components/layout/
   - Move Hero, About, Projects, etc. to components/sections/
   - Move Toggle, Button, etc. to components/ui/
   - Update all import statements across the codebase
   - _Requirements: 1.2, 1.5_
 
-- [ ] 2.3 Create barrel exports for clean imports
+- [x] 2.3 Create barrel exports for clean imports
   - Add index.ts files in each component directory
   - Export all components from their respective barrels
   - Update imports to use barrel exports
