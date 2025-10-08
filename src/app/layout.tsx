@@ -6,6 +6,8 @@ import {
   Montserrat,
 } from "next/font/google";
 import "./globals.css";
+import { Metadata } from "next";
+import { LayoutProps } from "@/types";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -20,23 +22,23 @@ const abrilFatface = Abril_Fatface({
 
 const oswald = Oswald({
   subsets: ["latin"],
-  weight: ["200", "400", "500", "600", "700"], // você pode escolher os pesos que quiser
+  weight: ["200", "400", "500", "600", "700"],
   variable: "--font-oswald",
 });
 
 const bebas = Bebas_Neue({
   subsets: ["latin"],
-  weight: ["400"], // Bebas Neue só tem um peso
+  weight: ["400"],
   variable: "--font-bebas",
 });
 
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"], // você escolhe os pesos que quer usar
+  weight: ["400", "500", "600", "700"],
   variable: "--font-montserrat",
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Jennifer Baum",
   description: "Portfolio website",
   icons: {
@@ -45,7 +47,7 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: LayoutProps) {
   return (
     <html
       lang="en"

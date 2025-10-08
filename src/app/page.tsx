@@ -1,4 +1,5 @@
 "use client";
+import React, { useState, useRef, useEffect } from "react";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
@@ -8,20 +9,19 @@ import Contact from "@/components/Contact";
 import Navbar from "@/components/Navbar";
 import Toggle from "@/components/sub/Toggle";
 import Load from "@/components/sub/Load";
-import { useState, useRef, useEffect } from "react";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import LanguageToggle from "@/components/sub/LanguageToggle";
 
-export default function Home() {
-  const [id, setId] = useState(0);
-  const compsRef = useRef(null);
+export default function Home(): React.ReactElement {
+  const [id, setId] = useState<string>("home");
+  const compsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
+      (entries: IntersectionObserverEntry[]) => {
+        entries.forEach((entry: IntersectionObserverEntry) => {
           const intersecting = entry.isIntersecting;
-          if (intersecting) {
+          if (intersecting && entry.target.id) {
             setId(entry.target.id);
           }
         });
@@ -29,11 +29,18 @@ export default function Home() {
       { threshold: 0.3 }
     );
 
-    const compsArr = Array.from(compsRef.current.children);
-    compsArr.forEach((comp) => {
-      observer.observe(comp);
-    });
+    if (compsRef.current) {
+      const compsArr = Array.from(compsRef.current.children) as HTMLElement[];
+      compsArr.forEach((comp: HTMLElement) => {
+        observer.observe(comp);
+      });
+    }
+
+    return () => {
+      observer.disconnect();
+    };
   }, []);
+
   return (
     <>
       <Load />
