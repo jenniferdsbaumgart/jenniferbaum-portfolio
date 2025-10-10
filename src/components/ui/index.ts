@@ -29,6 +29,8 @@ export * from "./skeleton";
 export * from "./interactions";
 
 // Legacy Components (to be updated)
-export { default as LanguageToggle } from './LanguageToggle';
-export { default as Toggle } from './Toggle';
-
+export { default as FocusIndicator } from "./FocusIndicator";
+export { default as LanguageToggle } from "./LanguageToggle";
+export { default as LiveRegion } from "./LiveRegion";
+export { default as ScreenReaderAnnouncement } from "./ScreenReaderAnnouncement";
+export { default as Toggle } from "./Toggle";
