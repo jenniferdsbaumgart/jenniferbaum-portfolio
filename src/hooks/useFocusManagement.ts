@@ -13,7 +13,7 @@ export const useFocusManagement = (options: UseFocusManagementOptions = {}) => {
     restoreFocus = false,
     trapFocus = false,
   } = options;
-  const containerRef = useRef<HTMLElement>(null);
+  const containerRef = useRef<HTMLElement | null>(null);
   const previousActiveElement = useRef<Element | null>(null);
 
   // Store the previously focused element
@@ -35,10 +35,14 @@ export const useFocusManagement = (options: UseFocusManagementOptions = {}) => {
 
   // Focus trap implementation
   useEffect(() => {
-    if (!trapFocus || !containerRef.current) return;
+    if (!trapFocus || !containerRef.current) {
+      return;
+    }
 
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key !== "Tab" || !containerRef.current) return;
+      if (event.key !== "Tab" || !containerRef.current) {
+        return;
+      }
 
       const focusableElements = getFocusableElements(containerRef.current);
       const firstElement = focusableElements[0];

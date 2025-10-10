@@ -7,7 +7,7 @@ interface HeadingProps {
 }
 
 const Heading = ({ text, level = 2, id }: HeadingProps): React.ReactElement => {
-  const Tag = `h${level}` as keyof JSX.IntrinsicElements;
+  const Tag = `h${level}` as keyof React.JSX.IntrinsicElements;
 
   // Generate ID from text if not provided
   const headingId = id || `${text.toLowerCase().replace(/\s+/g, "-")}-heading`;

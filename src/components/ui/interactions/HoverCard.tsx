@@ -24,18 +24,25 @@ export const HoverCard = ({
   const prefersReducedMotion = useReducedMotion();
 
   if (disabled || prefersReducedMotion) {
+    const filteredProps = Object.fromEntries(
+      Object.entries(props).filter(([_, value]) => value !== undefined)
+    );
     return (
-      <div className={className} {...props}>
+      <div className={className} {...filteredProps}>
         {children}
       </div>
     );
   }
 
+  const filteredProps = Object.fromEntries(
+    Object.entries(props).filter(([_, value]) => value !== undefined)
+  );
+
   return (
     <motion.div
       className={cn("cursor-pointer", className)}
       {...hoverVariants[variant]}
-      {...props}
+      {...filteredProps}
     >
       {children}
     </motion.div>

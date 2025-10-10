@@ -18,12 +18,12 @@ export interface DataFetcherProps<T> {
   immediate?: boolean;
 }
 
-function DataFetcher<T>({ 
-  fetcher, 
-  children, 
-  onSuccess, 
-  onError, 
-  immediate = true 
+function DataFetcher<T>({
+  fetcher,
+  children,
+  onSuccess,
+  onError,
+  immediate = true,
 }: DataFetcherProps<T>) {
   const [data, setData] = React.useState<T | null>(null);
   const [loading, setLoading] = React.useState(false);
@@ -37,7 +37,7 @@ function DataFetcher<T>({
       setData(result);
       onSuccess?.(result);
     } catch (err) {
-      const error = err instanceof Error ? err : new Error('An error occurred');
+      const error = err instanceof Error ? err : new Error("An error occurred");
       setError(error);
       onError?.(error);
     } finally {
@@ -76,22 +76,28 @@ export function withDataFetcher<T, P extends WithDataFetcherProps<T>>(
   }
 ) {
   const WrappedComponent = (props: Omit<P, keyof WithDataFetcherProps<T>>) => {
-    return (
-      <DataFetcher
-        fetcher={fetcher}
-        onSuccess={options?.onSuccess}
-        onError={options?.onError}
-        immediate={options?.immediate}
-      >
-        {(dataState) => (
-          <Component {...(props as P)} dataState={dataState} />
-        )}
-      </DataFetcher>
-    );
+    const dataFetcherProps: DataFetcherProps<T> = {
+      fetcher,
+      children: dataState => (
+        <Component {...(props as P)} dataState={dataState} />
+      ),
+    };
+
+    if (options?.onSuccess) {
+      dataFetcherProps.onSuccess = options.onSuccess;
+    }
+    if (options?.onError) {
+      dataFetcherProps.onError = options.onError;
+    }
+    if (options?.immediate !== undefined) {
+      dataFetcherProps.immediate = options.immediate;
+    }
+
+    return <DataFetcher {...dataFetcherProps} />;
   };
 
   WrappedComponent.displayName = `withDataFetcher(${Component.displayName || Component.name})`;
-  
+
   return WrappedComponent;
 }
 

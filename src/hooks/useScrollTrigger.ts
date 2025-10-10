@@ -30,10 +30,13 @@ export const useScrollTrigger = (options: UseScrollTriggerOptions = {}) => {
     if (hasTriggered && triggerOnce) return;
 
     const observer = new IntersectionObserver(
-      ([entry]) => {
+      entries => {
+        const entry = entries[0];
+        if (!entry) return;
+
         const inView = entry.isIntersecting;
         setIsInView(inView);
-        
+
         if (inView && !hasTriggered) {
           setHasTriggered(true);
         }

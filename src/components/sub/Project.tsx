@@ -5,6 +5,7 @@ import type { LanguageContextValue, Project as ProjectType } from "@/types";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React, { useContext, useState } from "react";
+import DynamicProjectModal from "./DynamicProjectModal";
 
 interface ProjectProps {
   data: ProjectType;

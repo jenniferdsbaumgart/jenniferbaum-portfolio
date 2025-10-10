@@ -28,11 +28,13 @@ export const AnimatedButton = ({
 }: AnimatedButtonProps) => {
   const prefersReducedMotion = useReducedMotion();
 
-  const baseClasses = "inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50";
+  const baseClasses =
+    "inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50";
 
   const variantClasses = {
     primary: "bg-violet-500 text-white hover:bg-violet-600 shadow-md",
-    secondary: "bg-gray-200 text-gray-900 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600",
+    secondary:
+      "bg-gray-200 text-gray-900 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600",
     ghost: "hover:bg-gray-100 dark:hover:bg-gray-800",
     link: "text-violet-500 underline-offset-4 hover:underline",
   };
@@ -66,12 +68,16 @@ export const AnimatedButton = ({
         },
       };
 
+  const filteredProps = Object.fromEntries(
+    Object.entries(props).filter(([_, value]) => value !== undefined)
+  );
+
   return (
     <motion.button
       className={buttonClasses}
       disabled={disabled || loading}
       {...motionProps}
-      {...props}
+      {...filteredProps}
     >
       {loading && (
         <motion.div
@@ -80,7 +86,7 @@ export const AnimatedButton = ({
           animate={{ opacity: 1 }}
           transition={{ duration: DURATIONS.fast }}
         >
-          <svg className="w-full h-full" viewBox="0 0 24 24" fill="none">
+          <svg className="h-full w-full" viewBox="0 0 24 24" fill="none">
             <circle
               cx="12"
               cy="12"
@@ -94,13 +100,13 @@ export const AnimatedButton = ({
           </svg>
         </motion.div>
       )}
-      
+
       {!loading && icon && iconPosition === "left" && (
         <span className={iconClasses}>{icon}</span>
       )}
-      
+
       {children}
-      
+
       {!loading && icon && iconPosition === "right" && (
         <span className={iconClasses}>{icon}</span>
       )}

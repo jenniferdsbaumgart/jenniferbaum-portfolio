@@ -38,6 +38,7 @@ const ScreenReaderAnnouncement = ({
         clearTimeout(clearTimer);
       };
     }
+    return undefined;
   }, [message, clearAfter]);
 
   return (

@@ -1,5 +1,6 @@
 "use client";
 
+import { ScreenReaderAnnouncement } from "@/components/ui";
 import { LanguageContext } from "@/contexts/LanguageContext";
 import type { ContactFormData, LanguageContextValue } from "@/types";
 import { AnimatePresence, motion } from "framer-motion";

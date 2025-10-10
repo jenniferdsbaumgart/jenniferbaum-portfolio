@@ -1,1 +1,37 @@
-{}
+{
+  "components/sections/lazy.tsx -> ./About": {
+    "id": 2738,
+    "files": [
+      "static/chunks/738.539f21da595bc253.js"
+    ]
+  },
+  "components/sections/lazy.tsx -> ./Contact": {
+    "id": 4111,
+    "files": [
+      "static/chunks/111.1e9efd46f552d3a7.js"
+    ]
+  },
+  "components/sections/lazy.tsx -> ./Experience": {
+    "id": 1203,
+    "files": [
+      "static/chunks/203.8525209e497abaf9.js"
+    ]
+  },
+  "components/sections/lazy.tsx -> ./Projects": {
+    "id": 4093,
+    "files": [
+      "static/chunks/animations-b11f9fb98ea9eaf4.js",
+      "static/chunks/93.9c66e2e5a7a8fd76.js"
+    ]
+  },
+  "components/sections/lazy.tsx -> ./Skills": {
+    "id": 2354,
+    "files": [
+      "static/chunks/354.05c3efcb1df45788.js"
+    ]
+  },
+  "components/sub/DynamicProjectModal.tsx -> ./ProjectModal": {
+    "id": 6321,
+    "files": []
+  }
+}

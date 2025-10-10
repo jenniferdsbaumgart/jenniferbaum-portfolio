@@ -211,9 +211,7 @@ export const hoverVariants = {
 // Loading animations
 export const loadingVariants: Variants = {
   spin: {
-    animate: {
-      rotate: 360,
-    },
+    rotate: 360,
     transition: {
       duration: 1,
       repeat: Infinity,
@@ -221,10 +219,8 @@ export const loadingVariants: Variants = {
     },
   },
   pulse: {
-    animate: {
-      scale: [1, 1.1, 1],
-      opacity: [0.7, 1, 0.7],
-    },
+    scale: [1, 1.1, 1],
+    opacity: [0.7, 1, 0.7],
     transition: {
       duration: 1.5,
       repeat: Infinity,
@@ -232,9 +228,7 @@ export const loadingVariants: Variants = {
     },
   },
   bounce: {
-    animate: {
-      y: [0, -10, 0],
-    },
+    y: [0, -10, 0],
     transition: {
       duration: 0.6,
       repeat: Infinity,
@@ -249,31 +243,32 @@ export const createSlideVariant = (
   distance: number = 50
 ): Variants => {
   const axis = direction === "up" || direction === "down" ? "y" : "x";
-  const value = direction === "up" || direction === "left" ? distance : -distance;
+  const value =
+    direction === "up" || direction === "left" ? distance : -distance;
 
   return {
     hidden: {
       opacity: 0,
       [axis]: value,
-    },
+    } as any,
     visible: {
       opacity: 1,
       [axis]: 0,
       transition: transitions.spring,
-    },
+    } as any,
     exit: {
       opacity: 0,
       [axis]: -value,
       transition: { duration: DURATIONS.fast },
-    },
+    } as any,
   };
 };
 
 // Utility function for reduced motion
 export const getReducedMotionVariants = (variants: Variants): Variants => {
   const reducedVariants: Variants = {};
-  
-  Object.keys(variants).forEach((key) => {
+
+  Object.keys(variants).forEach(key => {
     const variant = variants[key];
     if (typeof variant === "object" && variant !== null) {
       reducedVariants[key] = {
@@ -282,7 +277,7 @@ export const getReducedMotionVariants = (variants: Variants): Variants => {
       };
     }
   });
-  
+
   return reducedVariants;
 };
 

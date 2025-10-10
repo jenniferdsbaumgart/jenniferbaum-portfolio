@@ -1,6 +1,7 @@
 "use client";
 import { projectsButton } from "@/assets";
 import { LanguageContext } from "@/contexts/LanguageContext";
+import { useKeyboardNavigation } from "@/hooks";
 import type { LanguageContextValue } from "@/types";
 import { animate, motion } from "framer-motion";
 import React, { useContext, useEffect, useRef, useState } from "react";
@@ -38,7 +39,7 @@ const Projects = (): React.ReactElement => {
         ? Math.max(0, index - 1)
         : Math.min(projectsButton.length - 1, index + 1);
 
-    if (newIndex !== index) {
+    if (newIndex !== index && projectsButton[newIndex]) {
       setTech(projectsButton[newIndex]);
       setIndex(newIndex);
       buttonsRef.current[newIndex]?.focus();

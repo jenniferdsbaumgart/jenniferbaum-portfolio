@@ -1,7 +1,8 @@
 "use client";
 import { copyRightIcon, navbarData } from "@/assets";
+import { useKeyboardNavigation } from "@/hooks";
 import type { NavbarProps } from "@/types";
-import React from "react";
+import React, { useRef, useState } from "react";
 
 const Navbar = ({ id }: NavbarProps): React.ReactElement => {
   const [focusedIndex, setFocusedIndex] = useState<number>(-1);

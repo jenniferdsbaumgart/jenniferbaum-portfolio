@@ -8,7 +8,6 @@ export * from "./textarea";
 
 // Layout Components
 export * from "./container";
-export * from "./polymorphic";
 
 // Interactive Components
 export * from "./carousel";

@@ -40,7 +40,8 @@ export const FloatingAction = ({
 
   const variantClasses = {
     primary: "bg-violet-500 text-white shadow-lg hover:bg-violet-600",
-    secondary: "bg-white text-gray-700 shadow-lg hover:bg-gray-50 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700",
+    secondary:
+      "bg-white text-gray-700 shadow-lg hover:bg-gray-50 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700",
   };
 
   const buttonClasses = cn(
@@ -78,13 +79,17 @@ export const FloatingAction = ({
         },
       };
 
+  const filteredProps = Object.fromEntries(
+    Object.entries(props).filter(([_, value]) => value !== undefined)
+  );
+
   return (
     <motion.button
       className={buttonClasses}
       title={tooltip}
       aria-label={tooltip}
       {...motionProps}
-      {...props}
+      {...filteredProps}
     >
       {children}
     </motion.button>

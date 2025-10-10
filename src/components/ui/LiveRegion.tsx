@@ -28,6 +28,7 @@ const LiveRegion = ({
         return () => clearTimeout(timer);
       }
     }
+    return undefined;
   }, [message, clearAfter]);
 
   return (

@@ -5,6 +5,7 @@ import {
   Dialog,
   DialogContent,
 } from "@/components/ui";
+import { useKeyboardNavigation } from "@/hooks";
 import type { Project } from "@/types";
 import { DialogClose } from "@radix-ui/react-dialog";
 import Autoplay from "embla-carousel-autoplay";
@@ -23,12 +24,6 @@ export default function ProjectModal({
   isOpen,
   onClose,
 }: ProjectModalProps): React.ReactElement {
-  const { containerRef } = useFocusManagement({
-    autoFocus: true,
-    restoreFocus: true,
-    trapFocus: true,
-  });
-
   useKeyboardNavigation({
     onEscape: onClose,
     enabled: isOpen,
@@ -36,10 +31,7 @@ export default function ProjectModal({
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent
-        ref={containerRef}
-        className="border-white/20 bg-white/10 flex max-h-[90vh] w-[105vw] max-w-6xl flex-col overflow-y-auto rounded-xl border p-6 shadow-2xl backdrop-blur-lg md:p-10"
-      >
+      <DialogContent className="border-white/20 bg-white/10 flex max-h-[90vh] w-[105vw] max-w-6xl flex-col overflow-y-auto rounded-xl border p-6 shadow-2xl backdrop-blur-lg md:p-10">
         <div className="flex-grow space-y-6 overflow-auto">
           {/* TITLE */}
           <h2
