@@ -18,6 +18,16 @@ export * from "./tabs";
 // Utility Components
 export * from "./data-fetcher";
 
+// Animation Components
+export * from "./animations";
+
+// Loading Components
+export * from "./loading";
+export * from "./skeleton";
+
+// Interaction Components
+export * from "./interactions";
+
 // Legacy Components (to be updated)
 export { default as LanguageToggle } from './LanguageToggle';
 export { default as Toggle } from './Toggle';
