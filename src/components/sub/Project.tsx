@@ -5,7 +5,6 @@ import type { LanguageContextValue, Project as ProjectType } from "@/types";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React, { useContext, useState } from "react";
-import ProjectModal from "./ProjectModal";
 
 interface ProjectProps {
   data: ProjectType;
@@ -79,7 +78,7 @@ const Project = ({ data, index }: ProjectProps): React.ReactElement | null => {
         viewport={{ once: true }}
         transition={{ duration: 1, type: "spring", stiffness: 100 }}
         onClick={() => setIsOpen(true)}
-        className="relative h-max w-[350px] cursor-pointer rounded-lg border border-violet-400 sm:w-full"
+        className="border-violet-400 relative h-max w-[350px] cursor-pointer rounded-lg border sm:w-full"
       >
         <Image
           src={projectData.url}
@@ -90,7 +89,7 @@ const Project = ({ data, index }: ProjectProps): React.ReactElement | null => {
         />
       </motion.div>
 
-      <ProjectModal
+      <DynamicProjectModal
         isOpen={isOpen}
         onClose={() => setIsOpen(false)}
         projectData={projectData}
