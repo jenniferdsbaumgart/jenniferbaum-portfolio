@@ -1,9 +1,9 @@
 import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    Dialog,
-    DialogContent
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  Dialog,
+  DialogContent,
 } from "@/components/ui";
 import type { Project } from "@/types";
 import { DialogClose } from "@radix-ui/react-dialog";
@@ -23,12 +23,29 @@ export default function ProjectModal({
   isOpen,
   onClose,
 }: ProjectModalProps): React.ReactElement {
+  const { containerRef } = useFocusManagement({
+    autoFocus: true,
+    restoreFocus: true,
+    trapFocus: true,
+  });
+
+  useKeyboardNavigation({
+    onEscape: onClose,
+    enabled: isOpen,
+  });
+
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="flex max-h-[90vh] w-[105vw] max-w-6xl flex-col overflow-y-auto rounded-xl border border-white/20 bg-white/10 p-6 shadow-2xl backdrop-blur-lg md:p-10">
+      <DialogContent
+        ref={containerRef}
+        className="border-white/20 bg-white/10 flex max-h-[90vh] w-[105vw] max-w-6xl flex-col overflow-y-auto rounded-xl border p-6 shadow-2xl backdrop-blur-lg md:p-10"
+      >
         <div className="flex-grow space-y-6 overflow-auto">
           {/* TITLE */}
-          <h2 className="text-3xl font-bold text-white sm:text-2xl">
+          <h2
+            id="project-modal-title"
+            className="text-white text-3xl font-bold sm:text-2xl"
+          >
             {projectData.title || projectData.name}
           </h2>
 
@@ -37,7 +54,7 @@ export default function ProjectModal({
             <>
               <Carousel
                 plugins={[Autoplay({ delay: 3000 })]}
-                className="w-full overflow-hidden rounded-lg border border-white/10 sm:w-[300px]"
+                className="border-white/10 w-full overflow-hidden rounded-lg border sm:w-[300px]"
               >
                 <CarouselContent>
                   {projectData.images.map((img, index) => (
@@ -45,7 +62,7 @@ export default function ProjectModal({
                       <div className="relative h-96 w-full overflow-hidden rounded-lg">
                         <Image
                           src={img}
-                          alt={`Screenshot ${index + 1}`}
+                          alt={`${projectData.title || projectData.name} screenshot ${index + 1} showing project interface and features`}
                           fill
                           style={{ objectFit: "cover" }}
                         />
@@ -59,25 +76,30 @@ export default function ProjectModal({
 
           {/* DESCRIPTION */}
           <section>
-            <h3 className="flex items-center text-lg font-semibold text-white">
-              <Info className="mr-4 h-5 w-5 text-violet-400" /> Description
+            <h3 className="text-white flex items-center text-lg font-semibold">
+              <Info className="text-violet-400 mr-4 h-5 w-5" /> Description
             </h3>
-            <p className="mt-2 text-white/80">
+            <p className="text-white/80 mt-2">
               {projectData.description || projectData.desc}
             </p>
           </section>
 
           {/* TECH STACK */}
           <section>
-            <h3 className="flex items-center text-lg font-semibold text-white">
-              <Code className="mr-4 h-5 w-5 text-violet-400" /> Tech Stack
+            <h3 className="text-white flex items-center text-lg font-semibold">
+              <Code className="text-violet-400 mr-4 h-5 w-5" /> Tech Stack
             </h3>
-            <ul className="mt-2 flex flex-wrap gap-2">
+            <ul
+              className="mt-2 flex flex-wrap gap-2"
+              role="list"
+              aria-label="Technologies used in this project"
+            >
               {(projectData.techStack || projectData.tech || []).map(
                 (tech, i) => (
                   <li
                     key={i}
-                    className="rounded-full border border-violet-400/40 bg-violet-600/20 px-3 py-1 text-sm text-white"
+                    className="border-violet-400/40 bg-violet-600/20 text-white rounded-full border px-3 py-1 text-sm"
+                    role="listitem"
                   >
                     {tech}
                   </li>
@@ -85,19 +107,25 @@ export default function ProjectModal({
               )}
             </ul>
             {projectData.techUsed && (
-              <p className="mt-2 text-white/80">{projectData.techUsed}</p>
+              <p className="text-white/80 mt-2">{projectData.techUsed}</p>
             )}
           </section>
 
           {/* FEATURES */}
           {projectData.features && projectData.features.length > 0 && (
             <section>
-              <h3 className="flex items-center text-lg font-semibold text-white">
-                <Info className="mr-4 h-5 w-5 text-violet-400" /> Features
+              <h3 className="text-white flex items-center text-lg font-semibold">
+                <Info className="text-violet-400 mr-4 h-5 w-5" /> Features
               </h3>
-              <ul className="mt-2 list-disc pl-6 text-white/80">
+              <ul
+                className="text-white/80 mt-2 list-disc pl-6"
+                role="list"
+                aria-label="Project features"
+              >
                 {projectData.features.map((feature, i) => (
-                  <li key={i}>{feature}</li>
+                  <li key={i} role="listitem">
+                    {feature}
+                  </li>
                 ))}
               </ul>
             </section>
@@ -107,14 +135,14 @@ export default function ProjectModal({
           {projectData.challengesAndSolutions &&
             projectData.challengesAndSolutions.length > 0 && (
               <section>
-                <h3 className="flex items-center text-lg font-semibold text-white">
-                  <Bug className="mr-4 h-5 w-5 text-violet-400" /> Challenges
+                <h3 className="text-white flex items-center text-lg font-semibold">
+                  <Bug className="text-violet-400 mr-4 h-5 w-5" /> Challenges
                   and Solutions
                 </h3>
-                <ul className="mt-2 space-y-4 text-white/80">
+                <ul className="text-white/80 mt-2 space-y-4">
                   {projectData.challengesAndSolutions.map(
                     ({ challenge, solution }, i) => (
-                      <li key={i} className="border-l-4 border-violet-400 pl-4">
+                      <li key={i} className="border-violet-400 border-l-4 pl-4">
                         <p>
                           <strong>Challenge:</strong> {challenge}
                         </p>
@@ -131,15 +159,15 @@ export default function ProjectModal({
           {/* LINK */}
           {projectData.links?.demo && (
             <section>
-              <h3 className="flex items-center text-lg font-semibold text-white">
-                <ExternalLink className="mr-4 h-5 w-5 text-violet-400" />{" "}
+              <h3 className="text-white flex items-center text-lg font-semibold">
+                <ExternalLink className="text-violet-400 mr-4 h-5 w-5" />{" "}
                 Project Link
               </h3>
               <a
                 href={projectData.links.demo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-2 inline-block text-violet-300 underline"
+                className="text-violet-300 mt-2 inline-block underline"
               >
                 {projectData.links.demo}
               </a>
@@ -154,9 +182,10 @@ export default function ProjectModal({
               href={projectData.github || projectData.links?.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-md bg-violet-600 px-4 py-2 font-semibold text-white transition hover:bg-violet-700 sm:px-2 sm:text-xs"
+              className="bg-violet-600 text-white hover:bg-violet-700 focus:ring-violet-400 inline-flex items-center gap-2 rounded-md px-4 py-2 font-semibold transition focus:outline-none focus:ring-2 sm:px-2 sm:text-xs"
+              aria-label={`View source code for ${projectData.title || projectData.name} on GitHub`}
             >
-              <Code className="h-5 w-5" /> See Code
+              <Code className="h-5 w-5" aria-hidden="true" /> See Code
             </a>
           )}
 
@@ -165,15 +194,17 @@ export default function ProjectModal({
               href={projectData.demo || projectData.links?.demo}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-md bg-violet-600 px-4 py-2 font-semibold text-white transition hover:bg-violet-700 sm:px-2 sm:text-xs"
+              className="bg-violet-600 text-white hover:bg-violet-700 focus:ring-violet-400 inline-flex items-center gap-2 rounded-md px-4 py-2 font-semibold transition focus:outline-none focus:ring-2 sm:px-2 sm:text-xs"
+              aria-label={`View live demo of ${projectData.title || projectData.name}`}
             >
-              <ExternalLink className="h-5 w-5" /> See Demo
+              <ExternalLink className="h-5 w-5" aria-hidden="true" /> See Demo
             </a>
           )}
           <DialogClose>
             <button
               onClick={onClose}
-              className="inline-flex items-center gap-2 rounded-md bg-red-700/50 px-4 py-2 font-semibold text-white transition hover:bg-red-800"
+              className="bg-red-700/50 text-white hover:bg-red-800 focus:ring-red-400 inline-flex items-center gap-2 rounded-md px-4 py-2 font-semibold transition focus:outline-none focus:ring-2"
+              aria-label="Close project details modal"
             >
               Close
             </button>

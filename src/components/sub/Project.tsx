@@ -72,22 +72,27 @@ const Project = ({ data, index }: ProjectProps): React.ReactElement | null => {
 
   return (
     <>
-      <motion.div
+      <motion.button
         initial={{ opacity: 0, y: index % 2 === 0 ? 100 : -100 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1, type: "spring", stiffness: 100 }}
         onClick={() => setIsOpen(true)}
-        className="border-violet-400 relative h-max w-[350px] cursor-pointer rounded-lg border sm:w-full"
+        className="border-violet-400 focus:ring-violet-400 relative h-max w-[350px] cursor-pointer rounded-lg border focus:outline-none focus:ring-2 sm:w-full"
+        aria-label={`View details for ${projectData.name || projectData.title} project`}
+        aria-describedby={`project-${index}-description`}
       >
         <Image
           src={projectData.url}
-          alt={`Imagem do projeto ${projectData.name || projectData.title}`}
+          alt={`${projectData.name || projectData.title} project preview - Click to view details`}
           width={400}
           height={400}
           className="rounded-lg opacity-70"
         />
-      </motion.div>
+        <div id={`project-${index}-description`} className="sr-only">
+          {projectData.tagline || projectData.description || projectData.desc}
+        </div>
+      </motion.button>
 
       <DynamicProjectModal
         isOpen={isOpen}

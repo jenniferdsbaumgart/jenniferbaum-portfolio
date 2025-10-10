@@ -29,5 +29,9 @@ export default function DynamicProjectModal(props: DynamicProjectModalProps) {
     return null;
   }
 
-  return <ProjectModal {...props} />;
+  return (
+    <div role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+      <ProjectModal {...props} />
+    </div>
+  );
 }

@@ -32,15 +32,41 @@ const Projects = (): React.ReactElement => {
     }
   };
 
+  const handleKeyboardNavigation = (direction: "left" | "right") => {
+    const newIndex =
+      direction === "left"
+        ? Math.max(0, index - 1)
+        : Math.min(projectsButton.length - 1, index + 1);
+
+    if (newIndex !== index) {
+      setTech(projectsButton[newIndex]);
+      setIndex(newIndex);
+      buttonsRef.current[newIndex]?.focus();
+    }
+  };
+
+  useKeyboardNavigation({
+    onArrowLeft: () => handleKeyboardNavigation("left"),
+    onArrowRight: () => handleKeyboardNavigation("right"),
+  });
+
   useEffect(() => {
     handleClick();
     prevIndex.current = index;
   }, [index]);
 
   return (
-    <div id="projects" className="min-h-screen px-8 py-20">
-      <Heading text={translations.projects.title} />
-      <div className="mb-2 flex flex-wrap items-center justify-start gap-4">
+    <section
+      id="projects"
+      className="min-h-screen px-8 py-20"
+      aria-labelledby="projects-heading"
+    >
+      <Heading text={translations.projects.title} level={2} />
+      <div
+        className="mb-2 flex flex-wrap items-center justify-start gap-4"
+        role="tablist"
+        aria-label="Filter projects by technology"
+      >
         {projectsButton.map((text, i) => (
           <motion.button
             key={i}
@@ -52,13 +78,22 @@ const Projects = (): React.ReactElement => {
               setTech(text);
               setIndex(i);
             }}
-            className="rounded-xl border border-violet-500 px-4 py-2 text-sm font-light tracking-wider text-gray-400"
+            className="border-violet-500 text-gray-400 focus:ring-violet-400 rounded-xl border px-4 py-2 text-sm font-light tracking-wider focus:outline-none focus:ring-2"
+            role="tab"
+            aria-selected={tech === text}
+            aria-controls="projects-grid"
+            aria-label={`Filter projects by ${text}`}
           >
             {text}
           </motion.button>
         ))}
       </div>
-      <div className="flex flex-wrap items-center justify-center gap-5 py-4">
+      <div
+        id="projects-grid"
+        className="flex flex-wrap items-center justify-center gap-5 py-4"
+        role="tabpanel"
+        aria-label={`Projects filtered by ${tech}`}
+      >
         {projects
           .filter(project => {
             return project.tech.some((item: string) =>
@@ -71,7 +106,7 @@ const Projects = (): React.ReactElement => {
             </motion.div>
           ))}
       </div>
-    </div>
+    </section>
   );
 };
 
