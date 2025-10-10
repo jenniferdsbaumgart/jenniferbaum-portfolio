@@ -1,15 +1,18 @@
 "use client";
 import { Navbar } from "@/components/layout";
 import {
-    About,
-    Contact,
-    Experience,
-    Hero,
-    Projects,
-    Skills
-} from "@/components/sections";
+  Hero,
+  LazyAbout,
+  LazyContact,
+  LazyExperience,
+  LazyProjects,
+  LazySkills,
+} from "@/components/sections/lazy";
 import { Load } from "@/components/sub";
 import { LanguageToggle, Toggle } from "@/components/ui";
+import { PWAInstallPrompt } from "@/components/ui/interactions";
+import { IntersectionLazySection } from "@/components/ui/loading";
+import { SectionSkeleton } from "@/components/ui/skeleton";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -51,14 +54,40 @@ export default function Home(): React.ReactElement {
             <Navbar id={id} />
             <div className="" ref={compsRef}>
               <Hero />
-              <About />
-              <Experience />
-              <Skills />
-              <Projects />
-              <Contact />
+              <IntersectionLazySection
+                id="about"
+                fallback={<SectionSkeleton lines={2} />}
+              >
+                <LazyAbout />
+              </IntersectionLazySection>
+              <IntersectionLazySection
+                id="experience"
+                fallback={<SectionSkeleton lines={3} />}
+              >
+                <LazyExperience />
+              </IntersectionLazySection>
+              <IntersectionLazySection
+                id="skills"
+                fallback={<SectionSkeleton lines={2} />}
+              >
+                <LazySkills />
+              </IntersectionLazySection>
+              <IntersectionLazySection
+                id="projects"
+                fallback={<SectionSkeleton lines={4} />}
+              >
+                <LazyProjects />
+              </IntersectionLazySection>
+              <IntersectionLazySection
+                id="contact"
+                fallback={<SectionSkeleton lines={1} />}
+              >
+                <LazyContact />
+              </IntersectionLazySection>
             </div>
           </LanguageToggle>
         </Toggle>
+        <PWAInstallPrompt />
       </LanguageProvider>
     </>
   );
