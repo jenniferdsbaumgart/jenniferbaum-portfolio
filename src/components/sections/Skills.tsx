@@ -23,12 +23,17 @@ const Skills = (): React.ReactElement => {
   };
 
   return (
-    <div
+    <section
       id="skills"
       className="flex-column flex min-h-screen items-center justify-center gap-y-20 py-24"
+      aria-labelledby="skills-heading"
     >
-      <Heading text={"Skills"} />
-      <div className="flex w-full flex-wrap justify-center gap-x-8 gap-y-8 px-10 py-10 lg:gap-y-6">
+      <Heading text={"Skills"} level={2} />
+      <div
+        className="flex w-full flex-wrap justify-center gap-x-8 gap-y-8 px-10 py-10 lg:gap-y-6"
+        role="list"
+        aria-label="Technical skills and technologies"
+      >
         {skillsData.map((item, i) => (
           <motion.div
             custom={i}
@@ -38,20 +43,21 @@ const Skills = (): React.ReactElement => {
             whileHover={{ scale: 1.2 }}
             viewport={{ margin: "50px", once: true }}
             key={item.name}
-            className="flex items-center justify-center gap-x-3 rounded-xl border border-violet-300 bg-zinc-200 px-5 py-3 dark:border-violet-900 dark:bg-zinc-800 lg:px-2"
+            className="border-violet-300 bg-zinc-200 dark:border-violet-900 dark:bg-zinc-800 flex items-center justify-center gap-x-3 rounded-xl border px-5 py-3 lg:px-2"
+            role="listitem"
           >
             <Image
               src={item.icon}
-              alt="Skills Image"
+              alt={`${item.name} technology logo`}
               width={100}
               height={100}
               className="h-auto w-[50px]"
             />
-            <p className="text-sm dark:text-gray-300">{item.name}</p>
+            <p className="dark:text-gray-300 text-sm">{item.name}</p>
           </motion.div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

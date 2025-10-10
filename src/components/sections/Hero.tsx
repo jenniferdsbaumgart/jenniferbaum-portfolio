@@ -1,15 +1,14 @@
 "use client";
-import React from "react";
-import Image from "next/image";
 import { heroIcons } from "@/assets";
+import { LanguageContext } from "@/contexts/LanguageContext";
+import type { LanguageContextValue, WindowOffset } from "@/types";
 import type { MotionValue } from "framer-motion";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import Image from "next/image";
 import type { MouseEvent } from "react";
-import { useState, useContext } from "react";
-import MailLineIcon from "remixicon-react/MailLineIcon";
+import React, { useContext, useState } from "react";
 import { ReactTyped } from "react-typed";
-import { LanguageContext } from "@/contexts/LanguageContext";
-import type { WindowOffset, LanguageContextValue } from "@/types";
+import MailLineIcon from "remixicon-react/MailLineIcon";
 
 const Hero = (): React.ReactElement => {
   const context = useContext(LanguageContext);
@@ -53,11 +52,12 @@ const Hero = (): React.ReactElement => {
   const rotateX = useTransform(ySpring, [0, innerHeight], [10, 3]);
 
   return (
-    <div
+    <section
       id="home"
       className="grid min-h-screen place-items-center py-10"
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
+      aria-label="Hero section"
     >
       <div className="flex flex-row-reverse items-center space-x-8 sm:flex sm:flex-col sm:gap-8 sm:space-x-8">
         <motion.div
@@ -78,69 +78,80 @@ const Hero = (): React.ReactElement => {
             <div className="relative aspect-[3/4] w-[700px] sm:w-[200px]">
               <Image
                 src={"/jb4.png"}
-                alt="Person Image"
+                alt="Jennifer Baum - Professional portrait showing a confident frontend developer and UI/UX designer"
                 fill
                 priority={true}
                 className="object-contain"
               />
             </div>
             <motion.span
-              className="absolute text-3xl font-semibold text-white"
+              className="text-white absolute text-3xl font-semibold"
               initial={{ scale: 0 }}
               animate={{
                 opacity: buttonHover ? 1 : 0,
                 scale: buttonHover ? 2 : 0,
                 y: buttonHover ? -40 : 0,
               }}
+              aria-live="polite"
             >
               {translations.hero.saudation}
             </motion.span>
           </div>
         </motion.div>
-        <div className="flex flex-col items-center">
-          <h1 className="mb-0 text-center font-bebas text-9xl leading-[6rem] text-gray-700 transition-colors dark:text-zinc-300 sm:text-4xl">
+        <header className="flex flex-col items-center">
+          <h1 className="font-bebas text-gray-700 dark:text-zinc-300 mb-0 text-center text-9xl leading-[6rem] transition-colors sm:text-4xl">
             {translations.hero.title}
           </h1>
-          <ReactTyped
-            strings={["Frontend Developer", "UI/UX Designer"]}
-            typeSpeed={80}
-            backSpeed={50}
-            loop
-            className="text-semibold bg-gradient-to-r from-[#a98df5] to-[#7c1bfc] bg-clip-text text-center font-oswald text-5xl uppercase text-transparent transition-colors sm:text-xl"
-          />
-          <p className="text-light text-center font-oswald text-lg uppercase text-gray-400">
+          <div
+            className="text-semibold font-oswald text-transparent bg-gradient-to-r from-[#a98df5] to-[#7c1bfc] bg-clip-text text-center text-5xl uppercase transition-colors sm:text-xl"
+            aria-label="Professional roles"
+          >
+            <ReactTyped
+              strings={["Frontend Developer", "UI/UX Designer"]}
+              typeSpeed={80}
+              backSpeed={50}
+              loop
+            />
+          </div>
+          <p className="text-light font-oswald text-gray-400 text-center text-lg uppercase">
             {translations.hero.subtitle}
           </p>
-          <motion.div
+          <motion.nav
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="mt-8 flex justify-center gap-x-10 text-3xl text-violet-400 sm:text-2xl"
+            className="text-violet-400 mt-8 flex justify-center gap-x-10 text-3xl sm:text-2xl"
+            aria-label="Social media links"
           >
             {heroIcons.map(item => (
               <a
                 href={item.url}
                 key={item.id}
-                className="rounded-lg transition-colors hover:bg-violet-400 hover:text-white"
+                className="hover:bg-violet-400 hover:text-white focus:ring-violet-400 rounded-lg transition-colors focus:outline-none focus:ring-2"
+                aria-label={`Visit Jennifer's ${item.id} profile`}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                {item.icon}
+                <span aria-hidden="true">{item.icon}</span>
               </a>
             ))}
-          </motion.div>
+          </motion.nav>
           <motion.a
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.7 }}
             href="#contact"
-            className="mx-auto mt-7 flex flex-row gap-2 rounded-2xl bg-violet-500 px-8 py-3 font-light capitalize tracking-wider text-gray-200 transition-transform duration-300 ease-in-out hover:bg-violet-400 sm:px-6 sm:py-2 sm:text-sm"
+            className="bg-violet-500 text-gray-200 hover:bg-violet-400 focus:ring-violet-400 mx-auto mt-7 flex flex-row gap-2 rounded-2xl px-8 py-3 font-light capitalize tracking-wider transition-transform duration-300 ease-in-out focus:outline-none focus:ring-2 sm:px-6 sm:py-2 sm:text-sm"
             onMouseEnter={() => setButtonHover(true)}
             onMouseLeave={() => setButtonHover(false)}
+            aria-label="Go to contact section"
           >
-            <MailLineIcon /> {translations.hero.contactButton}
+            <MailLineIcon aria-hidden="true" />{" "}
+            {translations.hero.contactButton}
           </motion.a>
-        </div>
+        </header>
       </div>
-    </div>
+    </section>
   );
 };
 

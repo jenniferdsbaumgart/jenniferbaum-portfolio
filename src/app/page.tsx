@@ -47,12 +47,19 @@ export default function Home(): React.ReactElement {
 
   return (
     <>
+      {/* Skip to main content link for keyboard navigation */}
+      <a
+        href="#main-content"
+        className="focus:bg-violet-600 focus:text-white focus:ring-violet-400 sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:px-4 focus:py-2 focus:outline-none focus:ring-2"
+      >
+        Skip to main content
+      </a>
       <Load />
       <LanguageProvider>
         <Toggle>
           <LanguageToggle>
             <Navbar id={id} />
-            <div className="" ref={compsRef}>
+            <main id="main-content" className="" ref={compsRef} role="main">
               <Hero />
               <IntersectionLazySection
                 id="about"
@@ -84,7 +91,7 @@ export default function Home(): React.ReactElement {
               >
                 <LazyContact />
               </IntersectionLazySection>
-            </div>
+            </main>
           </LanguageToggle>
         </Toggle>
         <PWAInstallPrompt />

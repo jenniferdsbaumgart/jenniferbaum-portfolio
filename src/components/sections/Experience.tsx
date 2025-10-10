@@ -20,19 +20,26 @@ const Experience = (): React.ReactElement => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div id="experience" className="relative w-full py-10" ref={containerRef}>
-      <Heading text={translations.experience.title} />
+    <section
+      id="experience"
+      className="relative w-full py-10"
+      ref={containerRef}
+      aria-labelledby="experience-heading"
+    >
+      <Heading text={translations.experience.title} level={2} />
       <Image
         src={"/jenny-seated.png"}
-        alt={"Experience Image"}
+        alt={
+          "Jennifer Baum in a professional setting - showcasing years of experience in frontend development"
+        }
         width={350}
         height={380}
-        className="absolute -right-2 -top-8 lg:opacity-70 sm:opacity-0"
+        className="absolute -right-2 -top-8 sm:opacity-0 lg:opacity-70"
       />
       {/* CARDS STACKED, RESPONSIVE */}
       <div className="mt-8 flex w-full flex-col items-center gap-8 px-2">
         {translations.experience.experienceData.map((data, i) => (
-          <motion.div
+          <motion.article
             key={`exp-card-${i}`}
             initial={{ opacity: 0, y: 40, scale: 0.95 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
@@ -43,48 +50,62 @@ const Experience = (): React.ReactElement => {
               type: "spring",
               stiffness: 60,
             }}
-            className="flex w-full flex-col rounded-2xl border-l-4 border-violet-400 bg-gradient-to-br from-violet-50 via-white to-violet-100 p-5 shadow-lg dark:border-violet-700 dark:from-zinc-900 dark:via-zinc-800 dark:to-violet-950 lg:max-w-3xl md:max-w-2xl md:p-8"
+            className="border-violet-400 from-violet-50 via-white to-violet-100 dark:border-violet-700 dark:from-zinc-900 dark:via-zinc-800 dark:to-violet-950 flex w-full flex-col rounded-2xl border-l-4 bg-gradient-to-br p-5 shadow-lg md:max-w-2xl md:p-8 lg:max-w-3xl"
+            aria-labelledby={`experience-year-${i}`}
           >
             {/* Ano no topo esquerdo */}
-            <div className="mb-2 flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-white bg-gradient-to-br from-violet-500 to-violet-700 text-sm font-bold text-white shadow dark:border-zinc-900 md:h-12 md:w-12 md:text-base">
+            <header className="mb-2 flex items-center gap-3">
+              <div
+                className="border-white from-violet-500 to-violet-700 text-white dark:border-zinc-900 flex h-10 w-10 items-center justify-center rounded-full border-2 bg-gradient-to-br text-sm font-bold shadow md:h-12 md:w-12 md:text-base"
+                aria-label={`Year ${date - translations.experience.experienceData.length + i + 1}`}
+              >
                 {date - translations.experience.experienceData.length + i + 1}
               </div>
-              <h2 className="font-oswald text-lg font-bold text-violet-900 drop-shadow-sm dark:text-violet-300 md:text-2xl">
+              <h2
+                id={`experience-year-${i}`}
+                className="font-oswald text-violet-900 dark:text-violet-300 text-lg font-bold drop-shadow-sm md:text-2xl"
+              >
                 {data.title}
               </h2>
-            </div>
+            </header>
             {/* Educação */}
             <div className="mb-2">
-              <h3 className="mb-1 font-semibold tracking-wide text-violet-600 dark:text-violet-300">
+              <h3 className="text-violet-600 dark:text-violet-300 mb-1 font-semibold tracking-wide">
                 {translations.experience.educationTitle}:
               </h3>
-              <p className="leading-relaxed text-gray-700 dark:text-gray-200">
+              <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
                 {data.education}
               </p>
             </div>
             {/* Experiência */}
             <div>
-              <h3 className="mb-1 font-semibold tracking-wide text-violet-600 dark:text-violet-300">
+              <h3 className="text-violet-600 dark:text-violet-300 mb-1 font-semibold tracking-wide">
                 {translations.experience.experienceTitle}:
               </h3>
-              <ul className="space-y-1 text-gray-700 dark:text-gray-200">
+              <ul
+                className="text-gray-700 dark:text-gray-200 space-y-1"
+                role="list"
+              >
                 {data.experience &&
                   data.experience.map((exp, j) => (
                     <li
                       key={j}
                       className="flex items-start gap-2 leading-relaxed"
+                      role="listitem"
                     >
-                      <span className="mt-2 h-2 w-2 flex-shrink-0 rounded-full bg-violet-400"></span>
+                      <span
+                        className="bg-violet-400 mt-2 h-2 w-2 flex-shrink-0 rounded-full"
+                        aria-hidden="true"
+                      ></span>
                       {exp}
                     </li>
                   ))}
               </ul>
             </div>
-          </motion.div>
+          </motion.article>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

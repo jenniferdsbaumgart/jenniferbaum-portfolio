@@ -2,13 +2,23 @@ import React from "react";
 
 interface HeadingProps {
   text: string;
+  level?: 1 | 2 | 3 | 4 | 5 | 6;
+  id?: string;
 }
 
-const Heading = ({ text }: HeadingProps): React.ReactElement => {
+const Heading = ({ text, level = 2, id }: HeadingProps): React.ReactElement => {
+  const Tag = `h${level}` as keyof JSX.IntrinsicElements;
+
+  // Generate ID from text if not provided
+  const headingId = id || `${text.toLowerCase().replace(/\s+/g, "-")}-heading`;
+
   return (
-    <h1 className="mb-14 self-start font-bebas text-5xl font-bold text-gray-600 transition-colors dark:text-zinc-300 sm:text-2xl">
+    <Tag
+      id={headingId}
+      className="font-bebas text-gray-600 dark:text-zinc-300 mb-14 self-start text-5xl font-bold transition-colors sm:text-2xl"
+    >
       {text}
-    </h1>
+    </Tag>
   );
 };
 
