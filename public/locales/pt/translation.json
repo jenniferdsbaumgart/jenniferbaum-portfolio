@@ -26,7 +26,7 @@
       {
         "year": 2,
         "title": "Aprendizado Avançado e Primeiras Experiências",
-        "education": "Iniciei o curso de Foundation Degree (equivalente ao Nível 5 no Reino Unido) em Ciência da Computação e Desenvolvimento de Software na UNINTER, com foco em desenvolvimento web e UI/UX.",
+        "education": "Iniciei o curso Análise e Desenvolvimento de Sistemas na UNINTER, com foco em desenvolvimento web e UI/UX.",
         "experience": [
           "Atuei como Desenvolvedora Front-End Júnior na The Brooklyn Brothers, contribuindo para as marcas da Unilever (AXE & SEDA) com componentes pixel-perfect e responsivos no Adobe Experience Manager.",
           "Realizei verificações de qualidade (DQM) e colaborei com QA e DevOps via Jira e Wrike, garantindo zero erros críticos nos lançamentos.",
@@ -45,14 +45,14 @@
       },
       {
         "year": 4,
-        "title": "Construindo com Propósito",
-        "education": "Graduei-me com nota 9,4/10 (equivalente a First Class Honours no Reino Unido) em Ciência da Computação e Desenvolvimento de Software. Concluí formações complementares como o Full-Stack Web Development Programme e The Web Developer Bootcamp.",
+        "title": "Construindo Soluções Complexas Orientadas a Impacto",
+        "education": "Graduei-me com nota 9,4/10 em Análise e Desenvolvimento de Sistemas. Concluí o Programa ENTRA 21 - Javascript (Blusoft / SENAC) e The Web Developer Bootcamp.",
         "experience": [
-          "Na Minerva Controls, projetei e implementei dashboards em tempo real com Figma, HTML, CSS, JavaScript e Python (Dash), melhorando a usabilidade para clientes como Petrobrás e Ambev.",
-          "Integrei APIs RESTful, otimizei fluxos complexos e liderei a automação de testes com Selenium e GitHub Actions CI/CD.",
-          "Desenvolvi a Compath, uma plataforma SaaS em React, Next.js e modelo KNN em Python para recomendações de negócio com UX gamificada e visualização de dados.",
-          "Criei o VidaPlus, sistema de gestão hospitalar em React, Node.js, Express e PostgreSQL, priorizando usabilidade, acessibilidade e gestão intuitiva de dados.",
-          "Conquistei o 1º lugar no Hackathon Health Tech: Conecta Saúde (2025) com o Humanus, uma plataforma de gestão de carreiras para enfermeiros e técnicos de enfermagem, desenvolvida em 3 noites com Next.js, Tailwind e Node.js."
+          "Na Minerva Controls, projetei e implementei dashboards em tempo real e intensivos em dados usando Figma, HTML, CSS, JavaScript e Python, melhorando a usabilidade para clientes como Petrobrás e Ambev.",
+          "Integrei APIs RESTful, simplifiquei fluxos de trabalho complexos e liderei a implementação de testes automatizados com Selenium e GitHub Actions CI/CD.",
+          "Desenvolvi o Compath, uma plataforma SaaS usando React, Next.js e um modelo KNN em Python para entregar recomendações de negócios impulsionadas por IA com fluxos de UX gamificados.",
+          "Construí o VidaPlus, um sistema de gestão hospitalar com React, Node.js, Express e PostgreSQL, com foco em usabilidade, acessibilidade e gestão intuitiva de dados.",
+          "Conquistei o 1º lugar no Hackathon Health Tech: Conecta Saúde (2025) com o Humanus, uma plataforma de gestão de carreiras para enfermeiros e técnicos de enfermagem, construída em apenas 3 noites com Next.js, Tailwind e Node.js — consolidando meu foco em ferramentas centradas em pessoas e orientadas por dados para profissionais de saúde e de cuidado."
         ]
       }
     ]
@@ -62,16 +62,16 @@
     "projectsData": [
       {
         "title": "Humanus - 1º Lugar Hackathon Health Tech (Agosto de 2025)",
-        "tagline": "Plataforma de gestão de carreiras para profissionais da saúde.",
-        "description": "Humanus é uma plataforma criada durante o Hackathon Health Tech: Conecta Saúde, onde conquistamos o 1º lugar. O objetivo é apoiar enfermeiros e técnicos de enfermagem em seu desenvolvimento profissional, oferecendo planejamento de carreira, feedback estruturado, microlearning e recompensas gamificadas. Fui responsável pelo front-end em Next.js e Tailwind, além da integração com o backend mockado em Node.js/Express.",
+        "tagline": "Plataforma de gestão de carreiras para profissionais da saúde, orientada por dados e bem-estar.",
+        "description": "Humanus foi criada durante o Hackathon Health Tech: Conecta Saúde, onde conquistamos o 1º lugar. A plataforma apoia enfermeiros e técnicos de enfermagem no seu desenvolvimento profissional, oferecendo planejamento de carreira, feedback estruturado, microlearning e recompensas gamificadas. Fui responsável pelo front-end em Next.js e Tailwind, além da integração com o backend mockado em Node.js/Express. Embora o MVP de hackathon use dados simulados, a arquitetura e a UX foram pensadas desde o início para futuras análises e insights impulsionados por IA, ajudando gestores a entender melhor carga de trabalho, padrões de feedback e progressão ao longo do tempo.",
         "features": [
-          "Dashboard com dados gerais, atalhos e mood tracker.",
-          "Feedbacks recebidos e feitos, com filtros e histórico.",
-          "Treinamento e microlearning em módulos rápidos.",
+          "Dashboard com visão geral, atalhos rápidos e um mood tracker leve para o bem-estar da equipe.",
+          "Feedbacks recebidos e realizados, com filtros e histórico para apoiar prática reflexiva.",
+          "Treinamento e microlearning em módulos curtos, adaptáveis à rotina puxada de plantões.",
           "Plano de carreira com marcos, OKRs e agendamentos de 1:1.",
-          "Recompensas e lojinha com sistema de pontos."
+          "Recompensas e lojinha com sistema de pontos para reconhecer esforço e evolução."
         ],
-        "visualIdentity": "Tons de azul e turquesa transmitem confiança, inovação e clareza. Layout limpo com cards arredondados, ícones intuitivos e navegação simplificada garantem acessibilidade e usabilidade para todos os perfis.",
+        "visualIdentity": "Tons de azul e turquesa transmitem confiança, inovação e clareza. O layout limpo com cards arredondados, ícones intuitivos e navegação simplificada garante acessibilidade e usabilidade para diferentes perfis — incluindo profissionais cansados ou sobrecarregados após longos turnos.",
         "url": "/projects/humanusproject.svg",
         "images": [
           "/projects/humanus/humanus1.png",
@@ -107,15 +107,15 @@
       },
       {
         "title": "Compath",
-        "tagline": "Sua bússola empreendedora movida por IA.",
-        "description": "Compath é uma plataforma que ajuda empreendedores a descobrir nichos, analisar concorrência e identificar oportunidades com base em sua região. Possui sistema de moedas, onde buscas consomem créditos, que podem ser conquistados por convites ou compras. Também inclui um hub de aprendizado com cursos. Lidero o desenvolvimento front-end, do design no Figma à interface responsiva em React.",
+        "tagline": "Sua bússola empreendedora movida por IA e acesso mais justo a oportunidades.",
+        "description": "Compath é uma plataforma que ajuda empreendedores a descobrir nichos, analisar concorrência e identificar oportunidades com base na sua região. Possui um sistema de moedas, em que buscas consomem créditos que podem ser conquistados por convites ou compras, e inclui também um hub de aprendizado com cursos. Lidero o projeto de ponta a ponta — do design no Figma e pesquisa de UX ao desenvolvimento front-end, integração com o back-end, modelagem de banco de dados, APIs e implementação de IA. Um objetivo central é tornar inteligência de mercado e visão estratégica acessíveis a pequenos negócios que, normalmente, não conseguem pagar consultorias ou ferramentas complexas.",
         "features": [
-          "Busque oportunidades de negócio por região.",
-          "Sistema gamificado de moedas.",
-          "Recomendações e análises impulsionadas por IA.",
-          "Dashboard interativo com design amigável."
+          "Busque oportunidades de negócio por região, setor e perfil.",
+          "Sistema gamificado de moedas para manter a exploração focada e sustentável.",
+          "Recomendações e análises narrativas impulsionadas por IA, traduzindo dados em insights em linguagem clara.",
+          "Dashboard interativo e amigável, resumindo concorrência, sinais de demanda e riscos potenciais."
         ],
-        "visualIdentity": "Moderna, vibrante e orientada a objetivos. A interface usa azul profundo e verdes suaves para transmitir confiança e inovação. Ícones e cards reforçam clareza e tomada de decisão. O layout é limpo, modular e projetado para navegar informações complexas com clareza e confiança.",
+        "visualIdentity": "Identidade moderna, vibrante e orientada a objetivos. A interface usa uma combinação de azul profundo e verdes suaves para transmitir confiança e inovação. Ícones e cards reforçam clareza e tomada de decisão, e o layout limpo e modular permite que o usuário navegue por informações complexas sem se sentir sobrecarregado.",
         "url": "/projects/compath.svg",
         "images": [
           "/projects/compath/compath1.svg",
@@ -162,17 +162,17 @@
       },
       {
         "title": "VidaPlus",
-        "tagline": "Plataforma moderna de gestão em saúde.",
-        "description": "VidaPlus é meu projeto de conclusão de curso, desenvolvido em equipe. É um sistema de gestão hospitalar e de serviços de saúde focado em acessibilidade, usabilidade e dashboards intuitivos. Suporta acesso por perfil (paciente, médico, admin). Cuido do front-end e contribuo no back-end com Node.js, Express, PostgreSQL e Prisma.",
+        "tagline": "Plataforma moderna de gestão em saúde, desenhada para cuidado centrado em pessoas e decisões orientadas por dados.",
+        "description": "VidaPlus é meu projeto de conclusão de curso, desenvolvido por mim. É um sistema de gestão hospitalar e de serviços de saúde focado em acessibilidade, usabilidade e dashboards intuitivos. Suporta acesso por perfil (paciente, médico, admin). Cuido do front-end e estou desenvolvendo o back-end com Node.js, Express, PostgreSQL e Prisma. Para além do CRUD e dos fluxos de agendamento, o VidaPlus foi pensado como fundação para futuros recursos de apoio à decisão clínica e analytics — com modelos de dados claros, separação de perfis e interfaces prontas para hospedar, no futuro, triagem assistida por IA, alertas de risco ou insights sobre sobrecarga de agenda.",
         "features": [
-          "Cadastro de pacientes e agendamento de consultas.",
-          "Agendamento, cancelamento e notificações de consultas",
-          "Login seguro para médicos, administradores e pacientes.",
-          "Gestão de profissionais de saúde (agendas, prescrições, prontuários)",
-          "Dashboard com histórico de atendimentos e gráficos.",
-          "Telemedicina com videochamadas seguras"
+          "Cadastro de pacientes e agendamento de consultas com fluxos claros e de baixa fricção.",
+          "Agendamento, cancelamento e notificações de consultas entre múltiplos profissionais e unidades.",
+          "Login seguro para médicos, administradores e pacientes, com acesso a dados baseado em perfil.",
+          "Gestão de profissionais de saúde (agendas, prescrições, prontuários) com foco em clareza e rastreabilidade.",
+          "Dashboard com histórico de atendimentos e gráficos pensados para insights rápidos.",
+          "Telemedicina com videochamadas seguras (funcionalidade em conceito/desenvolvimento)."
         ],
-        "visualIdentity": "Tons suaves de verde transmitem calma e confiança, criando uma experiência acolhedora para profissionais de saúde e pacientes. Elementos arredondados e seções bem estruturadas reduzem a carga cognitiva, garantindo acessibilidade e performance em todos os dispositivos.",
+        "visualIdentity": "Tons suaves de verde e teal transmitem calma e confiança, criando uma experiência acolhedora para profissionais de saúde e pacientes. Elementos arredondados e seções bem estruturadas reduzem a carga cognitiva, garantindo acessibilidade e bom desempenho em todos os dispositivos — algo essencial para pessoas acessando o sistema enquanto estão doentes, cansadas ou sob estresse.",
         "url": "/projects/vida-plus.svg",
         "images": [
           "/projects/vidaplus/vidaplus1.svg",
@@ -381,15 +381,15 @@
       },
       {
         "title": "Gooday",
-        "tagline": "Protótipo de alta fidelidade no Figma para uma plataforma holística de saúde e estilo de vida ativo.",
-        "description": "Gooday é uma plataforma conceitual criada para pessoas que buscam viver de forma saudável e ativa. Ela integra alimentação saudável, atividade física, acesso a profissionais de saúde e eventos comunitários. O protótipo foca na experiência do usuário fluida e na clareza visual, incentivando hábitos de bem-estar sustentáveis. Desenvolvi toda a interface no Figma, com ênfase em usabilidade, acessibilidade e estética moderna.",
+        "tagline": "Protótipo de alta fidelidade para uma plataforma holística de saúde e bem-estar focada em mudança de comportamento.",
+        "description": "Gooday é uma plataforma conceptual criada exclusivamente no Figma para pessoas que desejam viver de forma saudável e ativa. Ela integra alimentação saudável, actividade física, acesso a profissionais de saúde e eventos comunitários em uma experiência digital coesa. O protótipo foca em fluxos de usuário fluidos, feedback claro e padrões de mudança de comportamento em longo prazo — estruturados de forma que, em uma iteração futura, dados e IA possam ser usados para personalizar recomendações, sinalizar precocemente quedas de actividade (por exemplo, redução de exercícios) e apoiar a construção de hábitos sustentáveis, em vez de soluções rápidas.",
         "features": [
-          "Painel completo resumindo metas diárias de saúde",
-          "Planejamento de refeições com informações nutricionais e sugestões de receitas",
-          "Controle de exercícios com opções personalizáveis de atividades",
-          "Calendário de eventos com atividades locais de bem-estar"
+          "Secções integradas para receitas saudáveis, treinos e eventos, organizadas em torno de metas do usuário.",
+          "Calendário interactivo para acompanhar actividades e eventos ao longo do tempo.",
+          "Espaço de comunidade para histórias de usuários e conteúdo motivacional, apoiando conexão entre pares.",
+          "Fluxos e layouts desenhados explicitamente para apoiar mudanças graduais e sustentáveis, não planos \"tudo ou nada\"."
         ],
-        "visualIdentity": "Visual limpo, vibrante e acessível, com paleta fresca que combina tons de verdes e neutros suaves. A interface apresenta cantos arredondados, ícones intuitivos e layouts espaçosos para promover calma e motivação. A tipografia é moderna e altamente legível, garantindo uma experiência inclusiva.",
+        "visualIdentity": "Visual limpo, vibrante e acessível, com paleta fresca inspirada na natureza, combinando verdes folhosos e neutros suaves. Tipografia moderna e legível, cantos arredondados e sombras suaves criam uma experiência convidativa. A interface usa ícones marcantes e microinterações discretas para aumentar o engajamento sem sobrecarregar o usuário, equilibrando motivação e clareza.",
         "url": "/projects/gooday.svg",
         "images": [
           "/projects/gooday/gooday1.svg",
