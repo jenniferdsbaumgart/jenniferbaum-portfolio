@@ -52,7 +52,7 @@
           "Integrated RESTful APIs, streamlined complex workflows, and led automated testing implementation with Selenium and GitHub Actions CI/CD.",
           "Developed Compath, a SaaS platform using React, Next.js, and a Python KNN model to deliver AI-powered business recommendations with gamified UX flows.",
           "Built VidaPlus, a hospital management system with React, Node.js, Express, and PostgreSQL, focusing on usability, accessibility, and intuitive data management.",
-          "Won 1st place at the Health Tech Hackathon: Conecta Saúde (2025) with Humanus, a career management platform for nurses and nursing technicians, built in just 3 nights using Next.js, Tailwind, and Node.js."
+          "Won 1st place at the Health Tech Hackathon: Conecta Saúde (2025) with Humanus, a career management platform for nurses and nursing technicians, built in just 3 nights using Next.js, Tailwind, and Node.js — consolidating my focus on human-centred, data-informed tools for health and care professionals."
         ]
       }
     ]
@@ -62,16 +62,16 @@
     "projectsData": [
       {
         "title": "Humanus - 1st Place Health Tech Hackathon (August 2025)",
-        "tagline": "Career management platform for healthcare professionals.",
-        "description": "Humanus was developed during the Health Tech Hackathon: Conecta Saúde, where we achieved 1st place. The platform supports nurses and nursing technicians in their professional development by providing career planning, structured feedback, microlearning and gamified rewards. I was responsible for the frontend in Next.js and Tailwind, as well as the integration with the mocked backend in Node.js/Express.",
+        "tagline": "Career management platform for healthcare professionals, designed for data-informed development and wellbeing.",
+        "description": "Humanus was developed during the Health Tech Hackathon: Conecta Saúde, where we achieved 1st place. The platform supports nurses and nursing technicians in their professional development by providing career planning, structured feedback, microlearning and gamified rewards. I was responsible for the frontend in Next.js and Tailwind, as well as the integration with the mocked backend in Node.js/Express. Although the hackathon MVP used mocked data, the architecture and UX were designed with future analytics and AI-driven insights in mind, so that managers can better understand workloads, feedback patterns and progression over time.",
         "features": [
-          "Dashboard with general stats, quick actions and mood tracker.",
-          "Feedbacks (received and given), with filters and history.",
-          "Training and microlearning modules in short lessons.",
+          "Dashboard with general stats, quick actions and a lightweight mood tracker for staff wellbeing.",
+          "Feedbacks (received and given), with filters and history to support reflective practice.",
+          "Training and microlearning modules in short lessons, designed for busy clinical shifts.",
           "Career plan with milestones, OKRs and 1:1 scheduling.",
-          "Rewards store with a gamified points system."
+          "Rewards store with a gamified points system to recognise effort and growth."
         ],
-        "visualIdentity": "Blue and turquoise tones convey trust, innovation and clarity. A clean layout with rounded cards, intuitive icons and simplified navigation ensures accessibility and usability across all profiles.",
+        "visualIdentity": "Blue and turquoise tones convey trust, innovation and clarity. A clean layout with rounded cards, intuitive icons and simplified navigation ensures accessibility and usability across all profiles, including tired or overstretched staff.",
         "url": "/projects/humanusproject.svg",
         "images": [
           "/projects/humanus/humanus1.png",
@@ -106,16 +106,16 @@
         ]
       },
       {
-        "title": "Compath",
-        "tagline": "Your AI-powered entrepreneurial compass.",
-        "description": "Compath is a platform that helps entrepreneurs discover niches, analyse competition, and identify opportunities based on their region. It features a coin-based system where searches consume credits, which can be earned through invites or purchases. It also includes a learning hub with courses. I'm leading the project, working not only on the front-end development, from Figma designs to a responsive React interface, but also on the back-end integration, database management, API development, and AI implementation.",
-        "features": [
-          "Search for business opportunities by region.",
-          "Gamified coin-based system.",
-          "AI-driven recommendations and analysis.",
-          "Interactive dashboard with a user-friendly design."
-        ],
-        "visualIdentity": "Modern, vibrant, and goal-oriented. The interface uses a mix of deep blue and soft greens to convey trust and innovation. Icons and cards reinforce clarity and decision-making. The interface is clean, modular, and designed to navigate complex information with clarity and confidence.",
+          "title": "Compath",
+          "tagline": "Your AI-powered entrepreneurial compass for fairer access to opportunities.",
+          "description": "Compath is a platform that helps entrepreneurs discover niches, analyse competition, and identify opportunities based on their region. It features a coin-based system where searches consume credits, which can be earned through invites or purchases, and includes a learning hub with courses. I'm leading the project end to end – from Figma designs and UX research to front-end development, back-end integration, database modelling, API design and AI implementation. A core goal is to make market intelligence and strategic insight accessible to small businesses that typically cannot afford consultancy or complex tools.",
+          "features": [
+            "Search for business opportunities by region, sector and profile.",
+            "Gamified coin-based system to keep exploration focused and sustainable.",
+            "AI-driven recommendations and narrative analysis that translate data into plain-language insights.",
+            "Interactive dashboard with a user-friendly design, summarising competition, demand signals and potential risks."
+          ],
+          "visualIdentity": "Modern, vibrant, and goal-oriented. The interface uses a mix of deep blue and soft greens to convey trust and innovation. Icons and cards reinforce clarity and decision-making, and the layout is clean and modular so users can explore complex information without feeling overwhelmed.",
         "url": "/projects/compath.svg",
         "images": [
           "/projects/compath/compath1.svg",
@@ -162,17 +162,17 @@
       },
       {
         "title": "VidaPlus",
-        "tagline": "Modern healthcare management platform.",
-        "description": "VidaPlus is my capstone project, developed by myself. It's a hospital and healthcare service management system focussed on accessibility, usability, and intuitive dashboards. It supports role-based access (patient, doctor, admin). I handled the front-end and am currently working on the back-end with Node.js, Express, PostgreSQL, and Prisma.",
+        "tagline": "Modern healthcare management platform designed for human-centred, data-informed care.",
+        "description": "VidaPlus is my capstone project, developed by myself. It's a hospital and healthcare service management system focussed on accessibility, usability and intuitive dashboards. It supports role-based access (patient, doctor, admin). I handled the front-end and am currently working on the back-end with Node.js, Express, PostgreSQL and Prisma. Beyond the core CRUD and scheduling flows, VidaPlus was designed as a foundation for future clinical decision support and analytics, with clear data models, role separation and interfaces that could later host AI-powered triage, risk flags or workload insights.",
         "features": [
-          "Patient registration and appointment scheduling.",
-          "Appointment scheduling, cancellation, and notifications",
-          "Secure login for doctors, admins, and patients.",
-          "Healthcare professional management (schedules, prescriptions, records)",
-          "Dashboard with service history and charts.",
-          "Telemedicine with secure video consultations"
+          "Patient registration and appointment scheduling with clear, low-friction flows.",
+          "Appointment scheduling, cancellation and notifications across multiple professionals and units.",
+          "Secure login for doctors, admins and patients, with role-based access to data.",
+          "Healthcare professional management (schedules, prescriptions, records) with an emphasis on clarity and traceability.",
+          "Dashboard with service history and charts designed to support at-a-glance insights.",
+          "Telemedicine with secure video consultations (concept feature in progress)."
         ],
-        "visualIdentity": "Soft teal and greens convey calm and trust, creating a soothing experience for healthcare professionals and patients. Rounded elements and well-structured sections reduce cognitive load, ensuring accessibility and performance across devices.",
+        "visualIdentity": "Soft teal and greens convey calm and trust, creating a soothing experience for healthcare professionals and patients. Rounded elements and well-structured sections reduce cognitive load, ensuring accessibility and performance across devices — particularly important for people accessing care while unwell or stressed.",
         "url": "/projects/vida-plus.svg",
         "images": [
           "/projects/vidaplus/vidaplus1.svg",
@@ -383,14 +383,15 @@
       },
       {
         "title": "Gooday",
-        "tagline": "High-fidelity prototype for a holistic health and wellness platform designed in Figma.",
-        "description": "Gooday is a conceptual platform created exclusively in Figma, aimed at people who want to lead a healthy and active lifestyle. It brings together elements like nutritious eating, physical exercise, healthcare professional guidance, and wellness events, all in one cohesive digital experience. The prototype features intuitive navigation, vibrant visuals, and user-friendly flows designed to engage and motivate users towards better wellbeing.",
+        "tagline": "High-fidelity prototype for a holistic, behaviour-aware health and wellness platform.",
+        "description": "Gooday is a conceptual platform created exclusively in Figma, aimed at people who want to lead a healthy and active lifestyle. It brings together nutritious eating, physical exercise, healthcare professional guidance and wellness events into one cohesive experience. The prototype focuses on smooth user flows, clear feedback and long-term behaviour change patterns – designed so that, in a future iteration, data and AI could be used to personalise recommendations, surface early warning signals (e.g. drop in activity) and support sustainable habit-building rather than quick fixes.",
         "features": [
-          "Integrated sections for healthy recipes, workouts, and event listings",
-          "Interactive calendar for tracking activities and events",
-          "Community space for user stories and motivational content"
+          "Integrated sections for healthy recipes, workouts and event listings, grouped around user goals.",
+          "Interactive calendar for tracking activities and events over time.",
+          "Community space for user stories and motivational content, designed to support peer connection.",
+          "Flows and layouts explicitly designed to support gradual, sustainable changes rather than all-or-nothing plans."
         ],
-        "visualIdentity": "Bright and energetic with a fresh colour palette inspired by nature with leafy greens. Clean, modern typography paired with smooth rounded corners and soft shadows create an inviting, approachable feel. The UI uses bold icons and subtle animations to enhance engagement without overwhelming the user.",
+        "visualIdentity": "Bright and energetic with a fresh palette inspired by nature, using leafy greens and neutral tones. Clean, modern typography paired with smooth rounded corners and soft shadows creates an inviting, approachable feel. The UI uses bold icons and subtle animations to enhance engagement without overwhelming the user, supporting both motivation and clarity.",
         "url": "/projects/gooday.svg",
         "images": [
           "/projects/gooday/gooday1.svg",
