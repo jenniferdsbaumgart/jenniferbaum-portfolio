@@ -213,15 +213,16 @@
       },
       {
         "title": "Monicount - Finances Application",
-        "tagline": "Minimalist finance management, powered by AI.",
-        "description": "Monicount is a personal finance app built for people with variable income. It focusses on category-based budgeting (Expenses, Deposits, Investments), tracking actual spending, receiving personalised insights and optimisation tips. Designed for clarity and control, Monicount helps you visualise, plan, and grow your wealth — one coin at a time.",
+        "tagline": "Minimalist finance management for variable income and low cognitive load.",
+        "description": "Monicount is a personal finance app designed for people with variable income, especially neurodivergent and chronically ill users who live with fatigue and executive dysfunction. It focuses on category-based budgeting (Essentials, Lifestyle, Investments/Goals), tracking planned vs actual spending, managing credit cards and setting personalised targets. Designed for clarity and calm, Monicount helps you visualise, plan and grow your finances without shame or overwhelm — one coin at a time.",
         "features": [
-          "Register and categorise expenses for streamlined tracking.",
-          "Visualise financial behaviour with dynamic charts.",
-          "Filter by category, date, and value for detailed analysis.",
-          "Generate AI-driven insights and optimisation tips."
+          "Register income and expenses and organise them into intuitive categories.",
+          "Compare planned vs actual spending to understand patterns over time.",
+          "Visualise financial behaviour with low-stimulation, dynamic charts.",
+          "Filter by category, date and value for focused, detailed analysis.",
+          "Generate AI-driven summaries and gentle optimisation tips in natural language."
         ],
-        "visualIdentity": "The design embraces minimalism with a smart, approachable feel. Friendly illustrations and structured layouts reduce friction and cognitive load. A modern and dark colour palette keeps users focussed on their finances without stress. The interface is designed to be intuitive, with clear navigation and responsive elements.",
+        "visualIdentity": "The design embraces minimalism with a calm, accessible feel. Low-stimulation layouts, high-contrast typography and clear hierarchy reduce cognitive load for users who may be tired, distracted or overwhelmed. A modern dark palette and considered spacing keep the focus on what matters without stress. The interface is intentionally predictable and forgiving, with clear navigation, responsive feedback and microcopy that avoids guilt or alarmist language.",
         "url": "/projects/monicount.svg",
         "images": [
           "/projects/monicount/monicount1.svg",
@@ -244,19 +245,19 @@
           "OpenAI API",
           "Full Stack"
         ],
-        "techUsed": "For Monicount’s development, I used modern technologies to ensure performance and an optimised user experience. Next.js and React enabled the creation of a dynamic and high-performance app, while Typescript ensured code safety. I used Tailwind CSS for fast and responsive styling, and shadcn/ui for accessible and customisable UI components. Prisma was used to efficiently integrate the PostgreSQL database, and authentication was implemented with Clerk. For payment processing, I used Stripe, and data validation was handled with Zod, ensuring data integrity throughout development.",
+        "techUsed": "For Monicount’s development, I used modern technologies to ensure performance and an accessible user experience. Next.js and React enable a dynamic, high-performance app, while TypeScript improves safety and maintainability. Tailwind CSS and shadcn/ui power fast, responsive styling with accessible UI components. Prisma integrates efficiently with a PostgreSQL database, Clerk handles secure authentication, and Stripe powers payments. Zod is used for schema validation and data integrity across the stack. AI-powered insights are implemented via the OpenAI API, with careful attention to concise, non-overwhelming messaging.",
         "challengesAndSolutions": [
           {
-            "challenge": "Creating a user-friendly interface for complex financial data.",
-            "solution": "Designed intuitive navigation and clear visualisations to simplify data interpretation."
+            "challenge": "Designing a finance interface that works for users with fatigue and executive dysfunction.",
+            "solution": "Simplified the information architecture, reduced visual noise and used clear categories, progressive disclosure and calm microcopy to lower cognitive load."
           },
           {
-            "challenge": "Ensuring real-time updates without page reloads.",
-            "solution": "Implemented React's state management and Next.js's server-side rendering for dynamic content."
+            "challenge": "Providing AI insights without overwhelming or shaming the user.",
+            "solution": "Framed AI outputs as short, supportive suggestions and neutral observations, avoiding judgemental language and highlighting small, actionable steps."
           },
           {
-            "challenge": "Integrating AI insights without overwhelming the user.",
-            "solution": "Used concise, actionable tips and visual cues to present insights clearly."
+            "challenge": "Ensuring real-time feedback without page reloads.",
+            "solution": "Used React state management and Next.js server-side capabilities to deliver dynamic updates and smooth transitions across charts and tables."
           }
         ]
       },
