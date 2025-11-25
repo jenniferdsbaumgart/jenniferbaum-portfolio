@@ -209,15 +209,16 @@
       },
       {
         "title": "Monicount - Aplicativo de Finanças",
-        "tagline": "Gestão financeira minimalista, impulsionada por IA.",
-        "description": "Monicount é um app de finanças pessoais criado para pessoas com renda variável. Foca em orçamento por categorias (Essenciais, Estilo de Vida, Investimentos), acompanhamento de gastos planejados vs. realizados, gestão de cartões de crédito e definição de metas personalizadas. Projetado para clareza e controle, o Monicount ajuda você a visualizar, planejar e crescer seu patrimônio — uma moeda de cada vez. Lidero o desenvolvimento front-end com React, Tailwind CSS e Next.js.",
+        "tagline": "Gestão financeira minimalista para renda variável e baixa carga cognitiva.",
+        "description": "Monicount é um app de finanças pessoais pensado para pessoas com renda variável — especialmente pessoas neurodivergentes e/ou com doenças crónicas, que lidam com fadiga, ansiedade financeira e dificuldades de função executiva. O app foca em orçamento por categorias (Essenciais, Estilo de Vida, Investimentos/Metas), acompanhamento de gastos planeado vs. realizado, gestão de cartões de crédito e definição de metas personalizadas. Projetado para clareza e calma, o Monicount ajuda você a visualizar, planear e cuidar das suas finanças sem culpa nem sobrecarga — uma moeda de cada vez.",
         "features": [
-          "Registre e categorize despesas para acompanhamento simplificado.",
-          "Visualize o comportamento financeiro com gráficos dinâmicos.",
-          "Filtre por categoria, data e valor para análise detalhada.",
-          "Gere insights e dicas de otimização impulsionadas por IA."
+          "Registre receitas e despesas e organize-as em categorias intuitivas.",
+          "Compare gastos planeados vs. realizados para entender padrões ao longo do tempo.",
+          "Visualize o comportamento financeiro com gráficos dinâmicos de baixa estimulação.",
+          "Filtre por categoria, data e valor para uma análise focada e detalhada.",
+          "Gere resumos e dicas de optimização impulsionados por IA, em linguagem clara e gentil."
         ],
-        "visualIdentity": "O design adota o minimalismo com um toque inteligente e acessível. Ilustrações amigáveis e layouts estruturados reduzem o atrito e a carga cognitiva. Uma paleta de cores suave mantém o foco do usuário nas finanças sem estresse. Cada elemento é pensado para acessibilidade e praticidade.",
+        "visualIdentity": "O design adopta o minimalismo com um toque calmo e acessível. Layouts limpos, tipografia legível e hierarquia visual clara reduzem a carga cognitiva de quem está cansado, distraído ou sobrecarregado. Uma paleta escura moderna, com contrastes bem definidos e respiros generosos, mantém o foco no essencial sem poluição visual. A interface é previsível e tolerante a erros, com navegação clara, feedback consistente e microcopy que evita linguagem agressiva ou alarmista.",
         "url": "/projects/monicount.svg",
         "images": [
           "/projects/monicount/monicount1.svg",
@@ -240,8 +241,21 @@
           "OpenAI API",
           "Full Stack"
         ],
-        "techUsed": "Para o desenvolvimento do Monicount, utilizei tecnologias modernas para garantir desempenho e uma experiência otimizada. Next.js e React permitiram criar um app dinâmico e de alta performance, enquanto TypeScript garantiu segurança no código. Usei Tailwind CSS para estilização rápida e responsiva, e shadcn/ui para componentes de UI acessíveis e customizáveis. Prisma foi utilizado para integrar eficientemente o banco de dados PostgreSQL, e a autenticação foi implementada com Clerk. Para pagamentos, utilizei Stripe, e a validação de dados foi feita com Zod, garantindo integridade dos dados durante todo o desenvolvimento.",
-        "challengesAndSolutions": []
+        "techUsed": "Para o desenvolvimento do Monicount, utilizei tecnologias modernas para garantir desempenho e uma experiência acessível. Next.js e React permitem um app dinâmico e de alta performance, enquanto TypeScript aumenta a segurança e a manutenibilidade do código. Tailwind CSS e shadcn/ui foram usados para uma estilização rápida e responsiva, com componentes de UI acessíveis. Prisma integra de forma eficiente o banco de dados PostgreSQL, Clerk cuida da autenticação segura e Stripe é responsável pelo processamento de pagamentos. A validação de dados é feita com Zod, garantindo integridade em todas as etapas. Os insights com IA são implementados via API da OpenAI, com atenção a mensagens curtas, gentis e não sobrecarregantes.",
+        "challengesAndSolutions": [
+          {
+            "challenge": "Criar uma interface financeira que funcione bem para pessoas com fadiga e dificuldades de função executiva.",
+            "solution": "Simplifiquei a arquitetura de informação, reduzi ruídos visuais e usei categorias claras, revelação progressiva e microcopy calma para diminuir a carga cognitiva."
+          },
+          {
+            "challenge": "Oferecer insights gerados por IA sem sobrecarregar ou envergonhar o usuário.",
+            "solution": "Estruturei as saídas da IA como sugestões curtas e de apoio, em tom neutro, focando em pequenos passos accionáveis em vez de julgamentos."
+          },
+          {
+            "challenge": "Garantir feedback em tempo real sem recarregar a página.",
+            "solution": "Utilizei gestão de estado com React e recursos do Next.js para actualizações dinâmicas e transições suaves entre gráficos e tabelas."
+          }
+        ]
       },
       {
         "title": "ToDo List",
