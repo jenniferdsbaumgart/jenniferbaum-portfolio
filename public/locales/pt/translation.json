@@ -161,6 +161,54 @@
         ]
       },
       {
+        "title": "Moodz",
+        "tagline": "Plataforma de saúde mental centrada na pessoa, focada em pessoas neurodivergentes e com doenças crónicas.",
+        "description": "O Moodz é uma plataforma digital de saúde mental em fase de conceito que estou a co-criar para apoiar pessoas neurodivergentes e com doenças crónicas através de comunidade, grupos estruturados e tecnologia. O projecto encontra-se em fase pré-MVP e foi selecionado para uma pré-incubadora / programa de inovação em startups, onde validámos o problema central, refinámos o ICP e estruturámos o roadmap de produto. A proposta é oferecer uma camada ética complementar a serviços sobrecarregados: ciclos de grupos moderados, espaços de apoio entre pares e ferramentas assistidas por IA que ajudam a acompanhar padrões, preparar consultas e reduzir a sensação de solidão. Eu lidero produto e UX, desenho as jornadas no Figma e prototipo a experiência web com Next.js, TypeScript e Tailwind, com um plano claro para introduzir, de forma gradual, funcionalidades de reflexão e insights apoiadas por IA.",
+        "features": [
+          "Mapeamento de problema e oportunidade a partir da vivência de pessoas autistas, com TDAH e doenças crónicas a navegar sistemas de saúde fragmentados.",
+          "Validação, na pré-incubadora, do perfil de cliente ideal (ICP), proposta de valor e posicionamento no ecossistema de saúde mental digital.",
+          "Protótipos de UX em alta fidelidade para onboarding, hubs de comunidade, jornadas de grupos temáticos e fluxos de diário que poderão ser implementados na aplicação web.",
+          "Padrões de interação mais amigáveis para pessoas neurodivergentes: menos ruído visual, layouts previsíveis, linguagem direta e consentimento explícito sobre dados e uso de IA.",
+          "Estratégia de conteúdo centrada em comunidade, auto-advocacia e ferramentas práticas, em vez de mensagens genéricas de bem-estar.",
+          "Exploração inicial de conceitos com IA generativa, desenhando como modelos de linguagem podem apoiar reflexão e preparação de consultas sem substituir acompanhamento profissional."
+        ],
+        "visualIdentity": "O Moodz utiliza uma paleta suave, com roxos, azuis e toques quentes para transmitir segurança, profundidade e pertença. Cartões arredondados, espaçamento generoso e hierarquia visual clara ajudam a reduzir a sobrecarga cognitiva, enquanto as animações são discretas e intencionais, para não gerar estímulos em excesso. A voz da marca é humana e honesta, dialogando com a realidade de neurodivergência e doenças crónicas em vez de recorrer a clichés de positividade tóxica.",
+        "url": "",
+        "images": [
+          "/projects/moodz/moodz1.svg",
+          "/projects/moodz/moodz2.svg",
+          "/projects/moodz/moodz3.svg",
+          "/projects/moodz/moodz4.svg",
+          "/projects/moodz/moodz5.svg"
+        ],
+        "github": "",
+        "demo": "",
+        "tech": [
+          "Figma",
+          "ReactJS",
+          "NextJS",
+          "Typescript",
+          "TailwindCSS",
+          "NodeJS",
+          "REST API"
+        ],
+        "techUsed": "Até agora, o Moodz tem sido desenvolvido como um projecto guiado por pesquisa e design dentro de um programa de pré-incubação de startups. Utilizo o Figma para manter um design system, fluxos em alta fidelidade e protótipos interativos que cobrem onboarding, espaços de comunidade e jornadas de grupos. Notion e documentos estruturados de discovery registam pesquisas com utilizadores, enquadramento do problema e hipóteses de roadmap. Do lado técnico, venho a prototipar a futura implementação com Next.js, TypeScript e Tailwind CSS, além de experimentar a API da OpenAI para desenhar prompts de reflexão seguros e bem delimitados, que no futuro poderão ser integrados como ferramentas de journaling e preparação dentro da plataforma.",
+        "challengesAndSolutions": [
+          {
+            "challenge": "Desenhar uma plataforma de saúde mental para pessoas neurodivergentes e com doenças crónicas sem reproduzir padrões capacitistas ou sobrecarregantes.",
+            "solution": "Baseei o conceito em vivências reais, diretrizes de acessibilidade e padrões mais amigáveis para pessoas neurodivergentes: menos campos obrigatórios, layouts mais calmos, linguagem direta e comunicação transparente sobre limites da plataforma e de qualquer funcionalidade com IA."
+          },
+          {
+            "challenge": "Definir o recorte do primeiro MVP estando ainda numa fase de pré-incubação fortemente orientada a pesquisa.",
+            "solution": "Usei o programa de inovação para conduzir entrevistas de problema e solução, convergir para um ICP inicial mais focado e priorizar um MVP realista, centrado em jornadas de grupo e ferramentas de reflexão, deixando análises avançadas e automações para fases posteriores."
+          },
+          {
+            "challenge": "Alinhar funcionalidades assistidas por IA com ética, limites clínicos e confiança das pessoas utilizadoras desde o início.",
+            "solution": "Documentei princípios iniciais de proteção de dados, explicabilidade e separação clara entre reflexão assistida por IA e decisões clínicas, e desenhei fluxos em que a IA ajuda a pessoa a organizar e descrever a própria experiência, sem emitir diagnósticos ou recomendações de tratamento."
+          }
+        ]
+      },
+      {
         "title": "VidaPlus",
         "tagline": "Plataforma moderna de gestão em saúde, desenhada para cuidado centrado em pessoas e decisões orientadas por dados.",
         "description": "VidaPlus é meu projeto de conclusão de curso, desenvolvido por mim. É um sistema de gestão hospitalar e de serviços de saúde focado em acessibilidade, usabilidade e dashboards intuitivos. Suporta acesso por perfil (paciente, médico, admin). Cuido do front-end e estou desenvolvendo o back-end com Node.js, Express, PostgreSQL e Prisma. Para além do CRUD e dos fluxos de agendamento, o VidaPlus foi pensado como fundação para futuros recursos de apoio à decisão clínica e analytics — com modelos de dados claros, separação de perfis e interfaces prontas para hospedar, no futuro, triagem assistida por IA, alertas de risco ou insights sobre sobrecarga de agenda.",

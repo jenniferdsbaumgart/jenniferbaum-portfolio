@@ -161,6 +161,54 @@
         ]
       },
       {
+        "title": "Moodz",
+        "tagline": "Human-centred mental health platform for neurodivergent and chronically ill people.",
+        "description": "Moodz is a concept-stage digital mental health platform that I am co-creating to support neurodivergent and chronically ill people through community, structured groups and technology. It is currently in a pre-MVP phase and was selected for a startup pre-incubation innovation programme, where we validated the core problem, refined the ICP and shaped the product roadmap. The goal is to offer an ethical complement to overstretched services: moderated group cycles, peer support spaces and AI-assisted tools that help users track patterns, prepare for appointments and feel less alone. I lead product and UX, design end-to-end journeys in Figma, and prototype the web experience with Next.js, TypeScript and Tailwind, with a clear plan for gradually introducing AI-powered reflection and insight features.",
+        "features": [
+          "Problem and opportunity mapping focussed on the lived experience of autistic, ADHD and chronically ill adults navigating fragmented care.",
+          "Pre-incubation validation of the ideal customer profile (ICP), value proposition and positioning within the digital mental health ecosystem.",
+          "High-fidelity UX prototypes for onboarding, community hubs, themed group journeys and journalling flows that can later be implemented as a web app.",
+          "Neurodivergent-friendly interaction patterns: reduced visual noise, predictable layouts, direct language and explicit consent around data and AI usage.",
+          "Content strategy centred on community, self-advocacy and practical tools, rather than generic wellness messaging.",
+          "Early AI-assisted concept work, exploring how large language models can support reflection and preparation for medical or therapy appointments without replacing professional care."
+        ],
+        "visualIdentity": "Moodz uses a soft yet confident palette of purples, blues and warm accents to communicate safety, depth and belonging. Rounded cards, generous spacing and clear hierarchy reduce cognitive load, while motion is subtle and purposeful to avoid sensory overwhelm. The brand voice is deliberately honest and human, speaking to the realities of neurodivergence and chronic illness instead of generic 'positivity'.",
+        "url": "",
+        "images": [
+          "/projects/moodz/moodz1.svg",
+          "/projects/moodz/moodz2.svg",
+          "/projects/moodz/moodz3.svg",
+          "/projects/moodz/moodz4.svg",
+          "/projects/moodz/moodz5.svg"
+        ],
+        "github": "",
+        "demo": "",
+        "tech": [
+          "Figma",
+          "ReactJS",
+          "NextJS",
+          "Typescript",
+          "TailwindCSS",
+          "NodeJS",
+          "REST API"
+        ],
+        "techUsed": "So far, Moodz has been developed as a research- and design-led project inside a startup pre-incubation programme. I use Figma to maintain a design system, high-fidelity flows and interactive prototypes that cover onboarding, community spaces and group journeys. Notion and structured discovery documents capture user research, problem framing and roadmap hypotheses. On the technical side, I have been prototyping the future implementation with Next.js, TypeScript and Tailwind CSS, and experimenting with the OpenAI API to design safe, clearly scoped reflection prompts that could later be integrated into the product as AI-assisted journalling and preparation tools.",
+        "challengesAndSolutions": [
+          {
+            "challenge": "Designing a mental health platform for neurodivergent and chronically ill users without reproducing overwhelming or ableist patterns.",
+            "solution": "Grounded the concept in lived experience, accessibility guidelines and neurodivergent-friendly patterns: fewer mandatory fields, calmer layouts, direct language and explicit communication about boundaries of the platform and of any AI assistance."
+          },
+          {
+            "challenge": "Defining the scope of the first MVP while still in a pre-incubation, research-heavy phase.",
+            "solution": "Used the startup innovation programme to run problem and solution interviews, converge on a narrow initial ICP, and prioritise a realistic MVP centred on group journeys and reflective tools, leaving more advanced analytics and automation for later phases."
+          },
+          {
+            "challenge": "Aligning AI-assisted features with ethics, clinical boundaries and user trust from the very beginning.",
+            "solution": "Documented early principles for data protection, explainability and clear separation between AI reflections and clinical decision-making, and designed flows where AI supports users in articulating their experience rather than giving diagnoses or treatment recommendations."
+          }
+        ]
+      },
+      {
         "title": "VidaPlus",
         "tagline": "Modern healthcare management platform designed for human-centred, data-informed care.",
         "description": "VidaPlus is my capstone project, developed by myself. It's a hospital and healthcare service management system focussed on accessibility, usability and intuitive dashboards. It supports role-based access (patient, doctor, admin). I handled the front-end and am currently working on the back-end with Node.js, Express, PostgreSQL and Prisma. Beyond the core CRUD and scheduling flows, VidaPlus was designed as a foundation for future clinical decision support and analytics, with clear data models, role separation and interfaces that could later host AI-powered triage, risk flags or workload insights.",
