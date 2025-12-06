@@ -2,7 +2,7 @@
 
 import Heading from "./sub/Heading";
 import Image from "next/image";
-import { skillsData } from "@/assets";
+import { skillsData } from "@/assets/index.js";
 import { motion } from "framer-motion";
 
 const Skills = () => {

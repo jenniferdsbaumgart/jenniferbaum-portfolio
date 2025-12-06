@@ -2,7 +2,7 @@
 
 import Heading from "./sub/Heading";
 import Image from "next/image";
-import { aboutData, aboutText, DownloadIcon, ArrowLeftIcon } from "@/assets";
+import { aboutData, aboutText, DownloadIcon, ArrowLeftIcon } from "@/assets/index.js";
 import { useContext } from 'react';
 import { LanguageContext } from '@/contexts/LanguageContext';
 

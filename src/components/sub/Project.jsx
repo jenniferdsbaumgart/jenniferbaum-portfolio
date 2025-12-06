@@ -3,7 +3,7 @@ import { useState, useContext } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { LanguageContext } from "@/contexts/LanguageContext";
-import { projectsData } from "./../../assets/index";
+import { projectsData } from "../../assets/index.js";
 import ProjectModal from "./ProjectModal";
 
 const Project = ({ data, index }) => {

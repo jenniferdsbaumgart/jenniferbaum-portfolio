@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import Heading from "./sub/Heading";
 import Project from "./sub/Project";
-import { projectsData, projectsButton } from "@/assets";
+import { projectsData, projectsButton } from "@/assets/index.js";
 import { animate, motion } from "framer-motion";
 import { useContext } from "react";
 import { LanguageContext } from "@/contexts/LanguageContext";

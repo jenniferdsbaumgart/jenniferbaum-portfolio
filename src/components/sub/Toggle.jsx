@@ -1,5 +1,5 @@
 'use client'
-import { MoonIcon, SunIcon } from "@/assets"
+import { MoonIcon, SunIcon } from "@/assets/index.js"
 import { useEffect, useState, useRef } from "react"
 import { reactLocalStorage } from "reactjs-localstorage"
 import { motion } from "framer-motion"

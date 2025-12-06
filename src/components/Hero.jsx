@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { heroIcons } from "@/assets/index";
+import { heroIcons } from "@/assets/index.js";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useState } from "react";
 import MailLineIcon from "remixicon-react/MailLineIcon";

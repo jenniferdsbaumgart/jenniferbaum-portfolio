@@ -1,5 +1,5 @@
 'use client'
-import { CopyRightIcon, navbarData } from "@/assets"
+import { CopyRightIcon, navbarData } from "@/assets/index.js"
 
 const Navbar = ({ id }) => {
   return (
