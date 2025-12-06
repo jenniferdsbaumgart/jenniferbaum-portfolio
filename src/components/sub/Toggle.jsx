@@ -1,5 +1,5 @@
 'use client'
-import { moonIcon, sunIcon } from "@/assets"
+import { MoonIcon, SunIcon } from "@/assets"
 import { useEffect, useState, useRef } from "react"
 import { reactLocalStorage } from "reactjs-localstorage"
 import { motion } from "framer-motion"
@@ -46,10 +46,10 @@ const Toggle = ({children}) => {
                     }
                 }} className="fixed right-14 s:right-10 top-10 text-yellow-600 hover:text-yellow hover:text-yellow-500 z-40">
                     <motion.span animate={{scale: darkTheme ? 0 : 1}}className="absolute block rounded-full bg-zinc-50 p-1 text-4xl dark:bg-zinc-800">
-                        {moonIcon}
+                        <MoonIcon />
                     </motion.span>
                     <motion.span animate={{scale: darkTheme ? 1 : 0}}className="absolute block rounded-full bg-zinc-50 p-1 text-3xl dark:bg-zinc-800">
-                        {sunIcon}
+                        <SunIcon />
                     </motion.span>
                 </button>
                 {children}
