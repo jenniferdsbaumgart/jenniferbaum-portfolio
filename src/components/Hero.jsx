@@ -43,7 +43,7 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="min-h-screen grid place-items-center py-10 "
+      className="min-h-screen grid place-items-center py-10"
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
     >
@@ -64,7 +64,7 @@ const Hero = () => {
           >
             <div className="relative w-[700px] aspect-[3/4] sm:w-[200px]">
               <Image
-                src={"/jb4.png"}
+                src={"/jennybaumhero.png"}
                 alt="Person Image"
                 fill
                 priority={true}
@@ -89,7 +89,7 @@ const Hero = () => {
             {translations.hero.title}
           </h1>
           <ReactTyped
-            strings={["Frontend Developer", "UI/UX Designer"]}
+            strings={["Software Engineer", "Frontend Specialist", "Human-centered AI", "UI/UX Designer"]}
             typeSpeed={80}
             backSpeed={50}
             loop

@@ -31,7 +31,7 @@ const Experience = () => {
         className="-right-2 -top-8 absolute sm:opacity-0 lg:opacity-70"
       />
       {/* CARDS STACKED, RESPONSIVE */}
-      <div className="w-full flex flex-col items-center gap-8 mt-8 px-2">
+      <div ref={containerRef} className="w-full flex flex-col items-center gap-8 mt-8 px-2">
         {translations.experience.experienceData.map((data, i) => (
           <motion.div
             key={`exp-card-${i}`}

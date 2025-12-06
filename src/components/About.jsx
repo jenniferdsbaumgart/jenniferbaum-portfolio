@@ -14,14 +14,14 @@ const About = () => {
         <div id="about" className="px-10 min-h-screen flex flex-col items-center justify-center">
             <Heading text={translations.about.title} />
             <div className="w-full flex items-end justify-between md:justify-center">
-                <Image src={'/about.png'} alt="About Image" width={300} height={300} className="w-[280px] lg:-[200px] md:hidden"/>
+                <Image src={'/jennybaum-about.png'} alt="About Image" width={300} height={300} className="w-[500px] lg:-[200px] md:hidden"/>
                 <div className="max-w-[800px] rounded-xl bg-zinc-100 p-5 text-justify flex flex-col items-center dark:bg-zinc-800 transition-colors">
                     <span className="absolute -left-5 top-20 scale-[2.5] text-zinc-100 md:hidden dark:text-zinc-700 transition-colors">{arrowLeftIcon}</span>
                     <p className="text-lg font-light text-gray-700 first-letter;pl-3 lg:text-[16px] sm:text[14px] dark:text-white">{translations.about.aboutText}</p>
-                    <a href="/jenniferbaum-frontend-cv.pdf" download="" className="w-max px-7 py-3 flex items-center gap-x-2 mt-6 rounded-2xl border-gay-300 bg-violet-600 font-light text-white hover:bg-violet-400 transition-colors">
+                    {/*<a href="/jenniferbaum-frontend-cv.pdf" download="" className="w-max px-7 py-3 flex items-center gap-x-2 mt-6 rounded-2xl border-gay-300 bg-violet-600 font-light text-white hover:bg-violet-400 transition-colors">
                         <span>Download CV</span>
                         <span className="text-xl">{downloadIcon}</span>
-                    </a>
+                    </a>*/}
                 </div>
             </div>
             {/* <div className="mt-20 w-full flex flex-wrap items-center justify-between gap-x-7 gap-y-10">
