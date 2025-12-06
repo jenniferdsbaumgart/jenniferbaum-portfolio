@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 import textStroke from "tailwindcss-text-stroke";
 
-module.exports = {
+export default {
   content: [
     './src/app/**/*.{js,ts,jsx,tsx}',
     './src/pages/**/*.{js,ts,jsx,tsx}',
