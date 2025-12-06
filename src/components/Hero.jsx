@@ -89,7 +89,7 @@ const Hero = () => {
             {translations.hero.title}
           </h1>
           <ReactTyped
-            strings={["Software Engineer", "Frontend Specialist", "Human-centered AI", "UI/UX Designer"]}
+            strings={["Software Engineer", "Frontend Specialist", "Human-centred AI", "UI/UX Designer"]}
             typeSpeed={80}
             backSpeed={50}
             loop
