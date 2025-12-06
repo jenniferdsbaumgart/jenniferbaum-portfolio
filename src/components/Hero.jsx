@@ -110,7 +110,7 @@ const Hero = () => {
                 key={item.id}
                 className="rounded-lg hover:bg-violet-400 hover:text-white transition-colors"
               >
-                {item.icon}
+                <item.icon />
               </a>
             ))}
           </motion.div>

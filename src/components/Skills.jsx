@@ -22,7 +22,7 @@ const Skills = () => {
   return (
     <div id="skills" className="min-h-screen flex flex-column items-center justify-center gap-y-20 py-24">
       <Heading text={"Skills"} />
-      <div className="w-full py-10 px-10 flex justify-center flex-wrap gap-x-8 gap-y-8 lg:gap-y-6">
+      <div className="w-full py-8 px-8 flex justify-center flex-wrap gap-x-8 gap-y-8 lg:gap-y-6">
         {skillsData.map((item, i) => (
           <motion.div
             custom={i}
@@ -37,8 +37,8 @@ const Skills = () => {
             <Image
               src={item.icon}
               alt="Skills Image"
-              width={100}
-              height={100}
+              width={80}
+              height={80}
               className="h-auto w-[50px]"
             />
             <p className="text-sm dark:text-gray-300">{item.name}</p>
