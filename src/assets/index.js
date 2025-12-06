@@ -11,12 +11,12 @@ export const heroIcons = [
   // },
   {
     id: "linkedin",
-    icon: <LinkedinBoxLineIcon />,
-    url: "https://www.instagram.com/codingjenny/",
+    icon: LinkedinBoxLineIcon,
+    url: "https://www.linkedin.com/in/devjenniferds/",
   },
   {
     id: "github",
-    icon: <GithubLineIcon />,
+    icon: GithubLineIcon,
     url: "https://github.com/jenniferdsbaumgart",
   },
 ];
@@ -53,8 +53,8 @@ export const heroIcons = [
 import DownloadLineIcon from "remixicon-react/DownloadLineIcon";
 import ArrowLeftSFillIcon from "remixicon-react/ArrowLeftSFillIcon";
 
-export const downloadIcon = <DownloadLineIcon />;
-export const arrowLeftIcon = <ArrowLeftSFillIcon />;
+export const DownloadIcon = DownloadLineIcon;
+export const ArrowLeftIcon = ArrowLeftSFillIcon;
 
 // Skills
 export const skillsData = [
@@ -71,10 +71,6 @@ export const skillsData = [
     icon: "/skills/react22.png",
   },
   {
-    name: "Next.js",
-    icon: "/skills/nextjs2.png",
-  },
-  {
     name: "Javascript",
     icon: "/skills/javascript2.png",
   },
@@ -83,12 +79,20 @@ export const skillsData = [
     icon: "/skills/typescript2.png",
   },
   {
-    name: "Tailwind CSS",
-    icon: "/skills/tailwind2.png",
+    name: "Next.js",
+    icon: "/skills/nextjs2.png",
   },
   {
     name: "Redux",
     icon: "/skills/Redux.png",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: "/skills/tailwind2.png",
+  },
+  {
+    name: "Styled Components",
+    icon: "/skills/StyledComponents.png",
   },
   {
     name: "Sass",
@@ -138,6 +142,18 @@ export const skillsData = [
     name: "Jest",
     icon: "/skills/Jest.png",
   },
+    {
+    name: "Python",
+    icon: "/skills/python2.png",
+  },
+  {
+    name: "Plotly",
+    icon: "/skills/Ploty.png",
+  },
+    {
+    name: "Pytest",
+    icon: "/skills/pytest.png",
+  },
   {
     name: "Selenium",
     icon: "/skills/selenium2.png",
@@ -147,16 +163,20 @@ export const skillsData = [
     icon: "/skills/Playwrite.png",
   },
   {
-    name: "Python",
-    icon: "/skills/python2.png",
+    name: "OpenAI API",
+    icon: "/skills/openai.png",
   },
   {
-    name: "Plotly",
-    icon: "/skills/Ploty.png",
+    name: "scikit-learn",
+    icon: "/skills/scikit-learn.png",
   },
   {
     name: "AWS",
     icon: "/skills/AWS.png",
+  },
+    {
+    name: "Postman",
+    icon: "/skills/Postman.png",
   },
   {
     name: "Svelte",
@@ -193,7 +213,7 @@ export const projectsButton = [
 // Navbar
 import CopyrightLineIcon from "remixicon-react/CopyrightLineIcon";
 
-export const copyRightIcon = <CopyrightLineIcon />;
+export const CopyRightIcon = CopyrightLineIcon;
 
 import Home5LineIcon from "remixicon-react/Home5LineIcon";
 import UserLineIcon from "remixicon-react/UserLineIcon";
@@ -206,32 +226,32 @@ export const navbarData = [
   {
     id: "home",
     name: "Home",
-    icon: <Home5LineIcon />,
+    icon: Home5LineIcon,
   },
   {
     id: "about",
     name: "About",
-    icon: <UserLineIcon />,
+    icon: UserLineIcon,
   },
   {
     id: "experience",
     name: "MyRoad",
-    icon: <HistoryLineIcon />,
+    icon: HistoryLineIcon,
   },
   {
     id: "skills",
     name: "Skills",
-    icon: <BriefcaseLineIcon />,
+    icon: BriefcaseLineIcon,
   },
   {
     id: "projects",
     name: "Projects",
-    icon: <ProjectorLineIcon />,
+    icon: ProjectorLineIcon,
   },
   {
     id: "contact",
     name: "ContactMe",
-    icon: <ContactsBook2LineIcon />,
+    icon: ContactsBook2LineIcon,
   },
 ];
 
@@ -239,8 +259,8 @@ export const navbarData = [
 import MoonFoggyFillIcon from "remixicon-react/MoonFoggyFillIcon";
 import SunFoggyFillIcon from "remixicon-react/SunFoggyFillIcon";
 
-export const moonIcon = <MoonFoggyFillIcon />;
-export const sunIcon = <SunFoggyFillIcon />;
+export const MoonIcon = MoonFoggyFillIcon;
+export const SunIcon = SunFoggyFillIcon;
 
 // Projects data fallback (used for translations matching). Keep as an array
 // so components that import `projectsData` won't break if translations are
