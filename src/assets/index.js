@@ -241,3 +241,8 @@ import SunFoggyFillIcon from "remixicon-react/SunFoggyFillIcon";
 
 export const moonIcon = <MoonFoggyFillIcon />;
 export const sunIcon = <SunFoggyFillIcon />;
+
+// Projects data fallback (used for translations matching). Keep as an array
+// so components that import `projectsData` won't break if translations are
+// provided from `public/locales` instead.
+export const projectsData = [];
