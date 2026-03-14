@@ -15,7 +15,7 @@
     "experienceTitle": "Experience",
     "experienceData": [
       {
-        "year": 1,
+        "year": 2022,
         "title": "Fundamentals and First Steps",
         "education": "Introductory courses in HTML, CSS, and JavaScript, combined with self-study on online platforms.",
         "experience": [
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "year": 2,
+        "year": 2023,
         "title": "Advanced Learning and First Professional Experience",
         "education": "Started the Foundation Degree (UK Level 5 equivalent) in Computer Science & Software Development at UNINTER, focusing on web development and UX/UI.",
         "experience": [
@@ -34,7 +34,7 @@
         ]
       },
       {
-        "year": 3,
+        "year": 2024,
         "title": "Freelance and Skill Expansion",
         "education": "Completed specialised courses in React, Node.js, TypeScript, and accessibility best practices.",
         "experience": [
@@ -44,7 +44,7 @@
         ]
       },
       {
-        "year": 4,
+        "year": 2025,
         "title": "Building Complex, Impact-Driven Solutions",
         "education": "Graduated with distinction (9.4/10) in Computer Science & Software Development. Completed Full-Stack Web Development Programme (Blusoft / SENAC) and The Web Developer Bootcamp.",
         "experience": [
@@ -53,6 +53,16 @@
           "Developed Compath, a SaaS platform using React, Next.js, and a Python KNN model to deliver AI-powered business recommendations with gamified UX flows.",
           "Built VidaPlus, a hospital management system with React, Node.js, Express, and PostgreSQL, focusing on usability, accessibility, and intuitive data management.",
           "Won 1st place at the Health Tech Hackathon: Conecta Saúde (2025) with Humanus, a career management platform for nurses and nursing technicians, built in just 3 nights using Next.js, Tailwind, and Node.js — consolidating my focus on human-centred, data-informed tools for health and care professionals."
+        ]
+      },
+      {
+        "year": 2026,
+        "title": "AI Engineering and International Growth",
+        "education": "Deepening expertise in Machine Learning, AI in healthcare and accessibility. Accepted onto a Master's Degree programme in Artificial Intelligence in the UK.",
+        "experience": [
+          "Working as AI Engineer at Straas Tech, focused on Agentic AI and LLM application engineering, including RAG pipelines, tool calling, evaluations, guardrails and prompt engineering.",
+          "Contributing to Texlink as product, UX and frontend lead, helping digitise and structure B2B supplier management for the textile industry.",
+          "Continuing to deepen applied AI research at the intersection of healthcare, accessibility and human-centred design."
         ]
       }
     ]

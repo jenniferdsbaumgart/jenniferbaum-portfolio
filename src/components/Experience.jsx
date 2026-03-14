@@ -9,7 +9,6 @@ import { LanguageContext } from "@/contexts/LanguageContext";
 
 const Experience = () => {
   const { translations } = useContext(LanguageContext);
-  const date = new Date().getFullYear();
 
   const containerRef = useRef(null);
 
@@ -44,7 +43,7 @@ const Experience = () => {
             {/* Ano no topo esquerdo */}
             <div className="flex items-center gap-3 mb-2">
               <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-violet-500 to-violet-700 text-white rounded-full flex items-center justify-center font-bold text-sm md:text-base shadow border-2 border-white dark:border-zinc-900">
-                {date - translations.experience.experienceData.length + i + 1}
+                {data.year}
               </div>
               <h2 className="font-oswald text-lg md:text-2xl font-bold text-violet-900 dark:text-violet-300 drop-shadow-sm">
                 {data.title}

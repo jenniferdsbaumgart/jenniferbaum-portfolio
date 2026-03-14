@@ -15,7 +15,7 @@
     "experienceTitle": "Experiência",
     "experienceData": [
       {
-        "year": 1,
+        "year": 2022,
         "title": "Fundamentos e Primeiros Passos",
         "education": "Cursos introdutórios de HTML, CSS e JavaScript, combinados com autoestudo em plataformas online.",
         "experience": [
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "year": 2,
+        "year": 2023,
         "title": "Aprendizado Avançado e Primeiras Experiências",
         "education": "Iniciei o curso Análise e Desenvolvimento de Sistemas na UNINTER, com foco em desenvolvimento web e UI/UX.",
         "experience": [
@@ -34,7 +34,7 @@
         ]
       },
       {
-        "year": 3,
+        "year": 2024,
         "title": "Exploração e Independência",
         "education": "Cursos especializados e bootcamps em React, Node.js, TypeScript e práticas de acessibilidade.",
         "experience": [
@@ -44,7 +44,7 @@
         ]
       },
       {
-        "year": 4,
+        "year": 2025,
         "title": "Construindo Soluções Complexas Orientadas a Impacto",
         "education": "Graduei-me com nota 9,4/10 em Análise e Desenvolvimento de Sistemas. Concluí o Programa ENTRA 21 - Javascript (Blusoft / SENAC) e The Web Developer Bootcamp.",
         "experience": [
@@ -53,6 +53,16 @@
           "Desenvolvi o Compath, uma plataforma SaaS usando React, Next.js e um modelo KNN em Python para entregar recomendações de negócios impulsionadas por IA com fluxos de UX gamificados.",
           "Construí o VidaPlus, um sistema de gestão hospitalar com React, Node.js, Express e PostgreSQL, com foco em usabilidade, acessibilidade e gestão intuitiva de dados.",
           "Conquistei o 1º lugar no Hackathon Health Tech: Conecta Saúde (2025) com o Humanus, uma plataforma de gestão de carreiras para enfermeiros e técnicos de enfermagem, construída em apenas 3 noites com Next.js, Tailwind e Node.js — consolidando meu foco em ferramentas centradas em pessoas e orientadas por dados para profissionais de saúde e de cuidado."
+        ]
+      },
+      {
+        "year": 2026,
+        "title": "Engenharia de IA e Crescimento Internacional",
+        "education": "Aprofundamento em Machine Learning, IA aplicada à saúde e acessibilidade. Aceita em um programa de Mestrado em Inteligência Artificial no Reino Unido.",
+        "experience": [
+          "Atuando como AI Engineer na Straas Tech, com foco em Agentic AI e engenharia de aplicações com LLMs, incluindo pipelines RAG, tool calling, avaliações, guardrails e prompt engineering.",
+          "Contribuindo com a Texlink como líder de produto, UX e frontend, ajudando a digitalizar e estruturar a gestão B2B de fornecedores para a indústria têxtil.",
+          "Continuando a aprofundar pesquisa em IA aplicada na interseção entre saúde, acessibilidade e design centrado em pessoas."
         ]
       }
     ]
