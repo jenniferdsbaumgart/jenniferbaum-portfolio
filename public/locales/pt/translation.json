@@ -7,7 +7,7 @@
   },
   "about": {
     "title": "Sobre Mim",
-    "aboutText": "Olá! Sou Jennifer Baumgart — Software Engineer focada em frontend, UX centrada em pessoas e IA aplicada, com histórico na entrega de interfaces responsivas, acessíveis e de alta performance. Nos últimos anos, tenho trabalhado cada vez mais na interseção entre frontend, produtos orientados por dados e IA responsável, especialmente nas áreas de saúde, bem-estar e inclusão financeira. Minha experiência vai de dashboards intensivos em dados e plataformas SaaS até sistemas que apoiam decisões do dia a dia de pessoas reais, sempre conectando design e código para criar produtos verdadeiramente centrados no usuário.\n\nCom formação em Química, tenho conforto para lidar com dados complexos, incertezas e restrições do mundo real; com Ciência da Computação e Desenvolvimento de Software, transformo isso em aplicações robustas e escaláveis. Viver com autismo, TDAH, Síndrome de Ehlers–Danlos e POTS me torna ainda mais atenta à acessibilidade, à carga cognitiva, à justiça e ao impacto concreto das tecnologias que ajudo a construir.\n\nAtuo em equipes multidisciplinares, traduzindo requisitos técnicos e, muitas vezes, clínicos em experiências claras e intuitivas, com foco em acessibilidade (WCAG), design inclusivo e IA responsável. Seja criando sistemas de design, integrando APIs e modelos de linguagem ou otimizando desempenho, meu objetivo é unir rigor técnico, empatia e impacto social em cada projeto."
+    "aboutText": "Oi, eu sou a Jennifer Baumgart! Eu construo tecnologia que entende pessoas. Não apenas seus cliques, mas suas limitações, seu contexto e os momentos em que uma interface mal projetada pode silenciosamente excluir alguém de algo importante.\n\nMeu trabalho vive na interseção entre Engenharia de IA, arquitetura frontend e design centrado em pessoas. Eu projeto sistemas agênticos e pipelines de LLMs com foco em tornar a IA segura, confiável e genuinamente útil em produção — não apenas impressionante em demos. Me importo tanto com os guardrails quanto com as capacidades, e vejo a IA não como uma ferramenta isolada, mas como um meio de potencializar a tomada de decisão humana.\n\nEsse compromisso com design inclusivo não é apenas uma postura profissional; é pessoal. Navegar o mundo com Autismo e TDAH, junto com condições crônicas como Síndrome de Ehlers-Danlos e POTS, me deu uma compreensão intuitiva de carga cognitiva, acessibilidade e o que significa quando a tecnologia não considera o espectro completo da experiência humana. Eu não construo para o usuário médio. Eu construo para pessoas reais.\n\nAo iniciar meu Mestrado em Inteligência Artificial no Reino Unido, estou aprofundando minha pesquisa em ML para saúde e acessibilidade, buscando o tipo de trabalho onde rigor técnico e responsabilidade social não estão em conflito. São o mesmo objetivo."
   },
   "experience": {
     "title": "Formação & Experiência",
@@ -434,7 +434,12 @@
         ],
         "github": "https://github.com/jenniferdsbaumgart/jds-my-portfolio-2.0",
         "demo": "https://jenniferds.netlify.app/",
-        "tech": ["Figma", "HTML", "CSS", "JavaScript"],
+        "tech": [
+          "Figma",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
         "techUsed": "HTML5, CSS3 (estilização customizada, media queries), JavaScript puro (para interatividade). Nenhum framework ou biblioteca foi utilizado — tudo foi codado manualmente do zero.",
         "challengesAndSolutions": [
           {
@@ -512,7 +517,9 @@
         ],
         "github": null,
         "demo": "https://www.figma.com/proto/5VrbzneSbXaxt73mw4oevV/gooday-healthy-app?page-id=103%3A34&node-id=103-146&p=f&viewport=82%2C922%2C0.4&t=O6tGHcTM6s2I3RBL-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=103%3A36&show-proto-sidebar=1",
-        "tech": ["Figma"],
+        "tech": [
+          "Figma"
+        ],
         "techUsed": "Todo o produto foi concebido e desenhado exclusivamente no Figma, criando um protótipo interativo de alta fidelidade. O sistema de design inclui componentes reutilizáveis, estilos consistentes e recursos de acessibilidade, simulando uma experiência real de produto. O foco foi prototipar fluxos de usuários, microinterações e layouts responsivos para validar conceitos de UX antes do desenvolvimento.",
         "challengesAndSolutions": [
           {

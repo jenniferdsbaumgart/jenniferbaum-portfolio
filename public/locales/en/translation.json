@@ -7,7 +7,7 @@
   },
   "about": {
     "title": "About Me",
-    "aboutText": "Hi! I'm Jennifer Baumgart — a Software Engineer focused on frontend engineering, human-centred UX and applied AI, with a track record of delivering responsive, accessible and performance-driven interfaces. Over the last few years, my work has increasingly sat at the intersection of frontend, data-informed products and responsible AI, particularly across health, wellbeing and financial inclusion. My experience spans data-heavy dashboards, SaaS platforms and systems that support everyday decision-making for real people, always bridging design and code to create genuinely user-centred products.\n\nWith a background in Chemistry, I’m comfortable reasoning about complex data, uncertainty and real-world constraints; with a degree in Computer Science & Software Development, I turn that into robust, scalable applications. Living with autism, ADHD, Ehlers–Danlos syndrome and POTS makes me especially attentive to accessibility, cognitive load, fairness and the lived impact of the technologies I help to build.\n\nI thrive in cross-functional teams, translating technical and sometimes clinical requirements into clear, intuitive experiences, with a strong focus on accessibility (WCAG), inclusive design and responsible AI. Whether I’m crafting a design system, integrating APIs and language models, or optimising performance, my goal is to combine technical rigour, empathy and social impact in every project."
+    "aboutText": "Hi, I'm Jennifer Baumgart! I build technology that understands people. Not just their clicks, but their constraints, their context, and the moments where a poorly designed interface can quietly exclude someone from something important.\n\nMy work lives at the intersection of AI Engineering, frontend architecture, and human-centred design. I architect agentic systems and LLM pipelines with a focus on making AI safe, reliable, and genuinely useful in production, not just impressive in demos. I care deeply about the guardrails as much as the capabilities, and I see AI not as a standalone tool, but as a medium to enhance human decision-making.\n\nThat commitment to inclusive design isn't just a professional stance; it's personal. Navigating the world with Autism and ADHD, alongside chronic conditions like EDS and POTS, has given me an intuitive understanding of cognitive load, accessibility, and what it means when technology doesn't account for the full spectrum of human experience. I don't build for the average user. I build for real people.\n\nAs I move into a Master's in Artificial Intelligence in the UK, I'm deepening my research into ML for healthcare and accessibility, pursuing the kind of work where technical rigour and social responsibility aren't in tension. They're the same goal."
   },
   "experience": {
     "title": "Education & Experience",
@@ -172,16 +172,16 @@
         ]
       },
       {
-          "title": "Compath",
-          "tagline": "Your AI-powered entrepreneurial compass for fairer access to opportunities.",
-          "description": "Compath is a platform that helps entrepreneurs discover niches, analyse competition, and identify opportunities based on their region. It features a coin-based system where searches consume credits, which can be earned through invites or purchases, and includes a learning hub with courses. I'm leading the project end to end – from Figma designs and UX research to front-end development, back-end integration, database modelling, API design and AI implementation. A core goal is to make market intelligence and strategic insight accessible to small businesses that typically cannot afford consultancy or complex tools.",
-          "features": [
-            "Search for business opportunities by region, sector and profile.",
-            "Gamified coin-based system to keep exploration focused and sustainable.",
-            "AI-driven recommendations and narrative analysis that translate data into plain-language insights.",
-            "Interactive dashboard with a user-friendly design, summarising competition, demand signals and potential risks."
-          ],
-          "visualIdentity": "Modern, vibrant, and goal-oriented. The interface uses a mix of deep blue and soft greens to convey trust and innovation. Icons and cards reinforce clarity and decision-making, and the layout is clean and modular so users can explore complex information without feeling overwhelmed.",
+        "title": "Compath",
+        "tagline": "Your AI-powered entrepreneurial compass for fairer access to opportunities.",
+        "description": "Compath is a platform that helps entrepreneurs discover niches, analyse competition, and identify opportunities based on their region. It features a coin-based system where searches consume credits, which can be earned through invites or purchases, and includes a learning hub with courses. I'm leading the project end to end – from Figma designs and UX research to front-end development, back-end integration, database modelling, API design and AI implementation. A core goal is to make market intelligence and strategic insight accessible to small businesses that typically cannot afford consultancy or complex tools.",
+        "features": [
+          "Search for business opportunities by region, sector and profile.",
+          "Gamified coin-based system to keep exploration focused and sustainable.",
+          "AI-driven recommendations and narrative analysis that translate data into plain-language insights.",
+          "Interactive dashboard with a user-friendly design, summarising competition, demand signals and potential risks."
+        ],
+        "visualIdentity": "Modern, vibrant, and goal-oriented. The interface uses a mix of deep blue and soft greens to convey trust and innovation. Icons and cards reinforce clarity and decision-making, and the layout is clean and modular so users can explore complex information without feeling overwhelmed.",
         "url": "/projects/compath.svg",
         "images": [
           "/projects/compath/compath1.svg",
@@ -438,7 +438,12 @@
         ],
         "github": "https://github.com/jenniferdsbaumgart/jds-my-portfolio-2.0",
         "demo": "https://jenniferds.netlify.app/",
-        "tech": ["Figma", "HTML", "CSS", "Javascript"],
+        "tech": [
+          "Figma",
+          "HTML",
+          "CSS",
+          "Javascript"
+        ],
         "techUsed": "HTML5, CSS3, Vanilla JavaScript (for interactivity). No frameworks or libraries were used; everything was coded manually from scratch.",
         "challengesAndSolutions": [
           {
@@ -514,7 +519,9 @@
         ],
         "github": null,
         "demo": "https://www.figma.com/proto/5VrbzneSbXaxt73mw4oevV/gooday-healthy-app?page-id=103%3A34&node-id=103-146&p=f&viewport=82%2C922%2C0.4&t=O6tGHcTM6s2I3RBL-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=103%3A36&show-proto-sidebar=1",
-        "tech": ["Figma"],
+        "tech": [
+          "Figma"
+        ],
         "techUsed": "The entire platform was designed as a high-fidelity prototype in Figma, focusing on UX/UI best practices for health and wellness apps. The design system ensures consistency across screens, with reusable components and accessibility considerations baked in.",
         "challengesAndSolutions": [
           {
