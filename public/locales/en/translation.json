@@ -38,9 +38,11 @@
         "title": "Freelance and Skill Expansion",
         "education": "Completed specialised courses in React, Node.js, TypeScript, and accessibility best practices.",
         "experience": [
-          "Worked as a freelance Front-End Developer and UX Designer, delivering responsive, accessible applications using React, Next.js, and TypeScript.",
+          "Worked as a freelance Developer and UX Designer, delivering responsive, accessible applications using React, Next.js, and TypeScript.",
           "Led end-to-end UX processes, translating client goals into wireframes, prototypes, and design systems with 98% design-to-code fidelity.",
-          "Implemented inclusive design improvements (WCAG) that increased user satisfaction and engagement."
+          "Designed and implemented an integration between different platforms using AWS Lambda, API Gateway and EventBridge, automating data flows through REST APIs and delivering a reliable, cloud-native solution.",
+          "Implemented inclusive design improvements (WCAG) that increased user satisfaction and engagement.",
+          "Joined Minerva Controls as UX Designer and Frontend Developer, responsible for designing layouts and implementing production-facing screens for industrial data platforms."
         ]
       },
       {
