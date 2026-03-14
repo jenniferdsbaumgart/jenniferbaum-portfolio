@@ -239,14 +239,14 @@ export const navbarData = [
     icon: HistoryLineIcon,
   },
   {
-    id: "skills",
-    name: "Skills",
-    icon: BriefcaseLineIcon,
-  },
-  {
     id: "projects",
     name: "Projects",
     icon: ProjectorLineIcon,
+  },
+  {
+    id: "skills",
+    name: "Skills",
+    icon: BriefcaseLineIcon,
   },
   {
     id: "contact",
