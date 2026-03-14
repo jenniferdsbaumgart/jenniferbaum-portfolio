@@ -106,6 +106,59 @@
         ]
       },
       {
+        "title": "Texlink",
+        "tagline": "Plataforma B2B de gestão de fornecedores para a indústria têxtil, conectando marcas e facções de costura através de qualificação, visibilidade e operações estruturadas.",
+        "description": "Texlink é uma iniciativa B2B real para a cadeia têxtil, criada para conectar marcas e empresas com demanda de produção a facções e oficinas de costura com capacidade operacional. Diferente de um estudo de caso conceitual, a Texlink já existe como uma iniciativa de negócio em funcionamento, trabalhando com facções e marcas reais enquanto a plataforma digital evolui. Contribuo com pensamento de produto, UX e estratégia de frontend, ajudando a transformar um processo que era informal e fragmentado em uma operação digital mais clara. O objetivo é centralizar onboarding de fornecedores, qualificação, visibilidade de pedidos e dados operacionais, reduzindo a dependência de planilhas, documentos, WhatsApp e fluxos manuais desconectados.",
+        "features": [
+          "Fluxo de onboarding de fornecedores com pré-cadastro, qualificação empresarial e perfil operacional.",
+          "Perfis estruturados de facções incluindo dados da empresa, capacidade produtiva, categorias de produtos, subcategorias e materiais do portfólio.",
+          "Fluxo do lado da marca para lançar oportunidades de produção com volume, fichas técnicas, imagens, modelo de precificação, condições de pagamento e expectativas de entrega.",
+          "Fluxo de aceitar ou recusar para fornecedores avaliando novos pedidos com contexto operacional suficiente para tomar decisões informadas.",
+          "Painel administrativo para a Texlink organizar dados de fornecedores, monitorar status e centralizar informações que antes estavam dispersas em processos manuais.",
+          "Acompanhamento de status operacional desenhado em torno da jornada real do fornecedor, desde pré-cadastro e qualificação até lançamento de pedido, aceite e etapas de entrega."
+        ],
+        "visualIdentity": "Profissional, corporativo e focado em operações. A interface prioriza clareza, fluxos simples e baixo ruído visual, refletindo as necessidades de uma plataforma B2B usada por marcas, facções e usuários administrativos internos. A direção visual é intencionalmente funcional em vez de publicitária, apoiando confiança, usabilidade e tomada de decisão estruturada.",
+        "url": "/projects/texlinkproject.svg",
+        "images": [
+          "/projects/texlink/texlink1.png",
+          "/projects/texlink/texlink2.png",
+          "/projects/texlink/texlink3.png",
+          "/projects/texlink/texlink4.png",
+          "/projects/texlink/texlink5.png"
+        ],
+        "github": "",
+        "demo": "",
+        "tech": [
+          "Figma",
+          "NextJS",
+          "ReactJS",
+          "Typescript",
+          "TailwindCSS",
+          "NestJS",
+          "PostgreSQL",
+          "Prisma",
+          "REST API",
+          "Docker",
+          "Full Stack",
+          "B2B SaaS"
+        ],
+        "techUsed": "A Texlink está sendo desenvolvida com uma arquitetura full-stack moderna focada em manutenibilidade, escalabilidade e fluxos de negócio estruturados. Contribuo em produto, UX e direção de frontend, ajudando a mapear requisitos operacionais complexos em fluxos e interfaces mais claros. A estrutura do produto, jornadas de usuário e decisões de interface são desenhadas no Figma, enquanto a stack de implementação é centrada em Next.js, React, TypeScript e Tailwind CSS no frontend, com NestJS, PostgreSQL, Prisma e APIs REST no backend. A plataforma foi concebida para centralizar processos de gestão de fornecedores que antes eram conduzidos via planilhas, documentos, WhatsApp e outros fluxos manuais, considerando também controle de acesso por perfil, tratamento seguro de dados e capacidades futuras de relatórios.",
+        "challengesAndSolutions": [
+          {
+            "challenge": "Digitalizar um processo de gestão de fornecedores que era informal, descentralizado e altamente dependente de comunicação manual.",
+            "solution": "Estruturei o produto em torno de jornadas claras para facções, marcas e usuários administrativos, centralizando onboarding, qualificação, dados operacionais e fluxos de pedidos em uma única plataforma."
+          },
+          {
+            "challenge": "Projetar para um ambiente operacional real com diferentes perfis de usuário e restrições práticas de negócio.",
+            "solution": "Mapeei a jornada real do fornecedor em detalhe, incluindo pré-cadastro, qualificação, planejamento, aceite de pedido e progressão de status, para que a interface refletisse fluxos reais em vez de um cenário simplificado de vitrine."
+          },
+          {
+            "challenge": "Tornar um fluxo B2B complexo utilizável sem sobrecarregar o usuário.",
+            "solution": "Utilizei uma UX orientada a dashboard mais limpa, reduzi ruído visual e organizei informações em formulários estruturados e etapas operacionais para que os usuários possam agir sobre os dados com mais facilidade."
+          }
+        ]
+      },
+      {
         "title": "Compath",
         "tagline": "Sua bússola empreendedora movida por IA e acesso mais justo a oportunidades.",
         "description": "Compath é uma plataforma que ajuda empreendedores a descobrir nichos, analisar concorrência e identificar oportunidades com base na sua região. Possui um sistema de moedas, em que buscas consomem créditos que podem ser conquistados por convites ou compras, e inclui também um hub de aprendizado com cursos. Lidero o projeto de ponta a ponta — do design no Figma e pesquisa de UX ao desenvolvimento front-end, integração com o back-end, modelagem de banco de dados, APIs e implementação de IA. Um objetivo central é tornar inteligência de mercado e visão estratégica acessíveis a pequenos negócios que, normalmente, não conseguem pagar consultorias ou ferramentas complexas.",

@@ -106,6 +106,59 @@
         ]
       },
       {
+        "title": "Texlink",
+        "tagline": "B2B supplier management platform for the textile industry, connecting brands and sewing suppliers through qualification, visibility and structured operations.",
+        "description": "Texlink is a real-world B2B initiative for the textile supply chain, created to connect brands and companies with production demand to facções and sewing workshops with operational capacity. Unlike a concept-only case study, Texlink already exists as a live business initiative, working with real facções and brands while the digital platform evolves. I contribute to product thinking, UX and frontend strategy, helping transform a process that was previously informal and fragmented into a clearer digital operation. The goal is to centralise supplier onboarding, qualification, order visibility and operational data, reducing dependence on spreadsheets, documents, WhatsApp and disconnected manual workflows.",
+        "features": [
+          "Supplier onboarding flow with pre-registration, business qualification and operational profiling.",
+          "Structured facção profiles including company data, production capacity, product categories, subcategories and portfolio materials.",
+          "Brand-side workflow for launching production opportunities with volume, technical sheets, images, pricing model, payment terms and delivery expectations.",
+          "Accept or decline flow for suppliers evaluating new orders with enough operational context to make informed decisions.",
+          "Administrative panel for Texlink to organise supplier data, monitor statuses and centralise information that was previously scattered across manual processes.",
+          "Operational status tracking designed around the real supplier journey, from pre-registration and qualification to order launch, acceptance and delivery stages."
+        ],
+        "visualIdentity": "Professional, corporate and operationally focused. The interface prioritises clarity, simple flows and low visual noise, reflecting the needs of a B2B platform used by brands, facções and internal admin users. The visual direction is intentionally functional rather than marketing-heavy, supporting trust, usability and structured decision-making.",
+        "url": "/projects/texlinkproject.svg",
+        "images": [
+          "/projects/texlink/texlink1.png",
+          "/projects/texlink/texlink2.png",
+          "/projects/texlink/texlink3.png",
+          "/projects/texlink/texlink4.png",
+          "/projects/texlink/texlink5.png"
+        ],
+        "github": "",
+        "demo": "",
+        "tech": [
+          "Figma",
+          "NextJS",
+          "ReactJS",
+          "Typescript",
+          "TailwindCSS",
+          "NestJS",
+          "PostgreSQL",
+          "Prisma",
+          "REST API",
+          "Docker",
+          "Full Stack",
+          "B2B SaaS"
+        ],
+        "techUsed": "Texlink is being developed with a modern full-stack architecture focused on maintainability, scalability and structured business workflows. I contribute across product, UX and frontend direction, helping map complex operational requirements into clearer user flows and interfaces. Product structure, user journeys and interface decisions are designed in Figma, while the implementation stack is centred on Next.js, React, TypeScript and Tailwind CSS on the frontend, with NestJS, PostgreSQL, Prisma and REST APIs on the backend. The platform was conceived to centralise supplier management processes that were previously handled through spreadsheets, documents, WhatsApp and other manual workflows, while also considering role-based access, secure data handling and future reporting capabilities.",
+        "challengesAndSolutions": [
+          {
+            "challenge": "Digitising a supplier management process that was previously informal, decentralised and heavily dependent on manual communication.",
+            "solution": "Structured the product around clear journeys for facções, brands and admin users, centralising onboarding, qualification, operational data and order flows into one platform."
+          },
+          {
+            "challenge": "Designing for a real operational environment with different user profiles and practical business constraints.",
+            "solution": "Mapped the actual supplier journey in detail, including pre-registration, qualification, planning, order acceptance and status progression, so the interface reflects real workflows instead of a simplified showcase scenario."
+          },
+          {
+            "challenge": "Making a complex B2B workflow usable without overwhelming the user.",
+            "solution": "Used a cleaner dashboard-oriented UX, reduced visual noise, and organised information into structured forms and operational stages so users can act on the data more easily."
+          }
+        ]
+      },
+      {
           "title": "Compath",
           "tagline": "Your AI-powered entrepreneurial compass for fairer access to opportunities.",
           "description": "Compath is a platform that helps entrepreneurs discover niches, analyse competition, and identify opportunities based on their region. It features a coin-based system where searches consume credits, which can be earned through invites or purchases, and includes a learning hub with courses. I'm leading the project end to end – from Figma designs and UX research to front-end development, back-end integration, database modelling, API design and AI implementation. A core goal is to make market intelligence and strategic insight accessible to small businesses that typically cannot afford consultancy or complex tools.",
